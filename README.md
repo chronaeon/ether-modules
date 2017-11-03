@@ -1,1 +1,3 @@
-# modules
+#Modules
+
+Modular documentation for Ethereum.
