@@ -1,0 +1,25 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	authordate,
+	strict,
+	backend=biber
+]
+{biblatex-chicago}
+\usepackage{mathtools}
+\author{}
+\title{Address}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{ads}
+\paragraph{Description}: A 20 character string, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.   
+
+\end{document}
