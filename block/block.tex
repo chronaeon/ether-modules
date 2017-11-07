@@ -1,0 +1,35 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	authordate,
+	strict,
+	backend=biber
+]
+{biblatex-chicago}
+\usepackage{mathtools}
+\author{}
+\title{Block}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: $\mathbb{B}$
+\paragraph{Description}: A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
+
+\begin{enumerate}
+	\item \textbf{Parent Hash}: The hash of the parent block's header: given in Keccak-256.
+	\item \textbf{Ommers Hash}: The hash of the \textsl{Ommers List} portion of this block: given in Keccak-256.
+	\item \textbf{Beneficiary}: The 20-character (160-bit) hash to which block rewards are transferred when the block is successfully mined.
+	\item \textbf{State Root}: The Keccak-256 bit hash of the root node of the state. 
+
+
+\end{enumerate}
+
+\end{document}
+
