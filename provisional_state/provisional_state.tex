@@ -1,6 +1,7 @@
-[10pt,a4paper,oneside]{scrartcl}
+\documentclass[10pt,a4paper,oneside]{scrartcl}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
+\usepackage{listings}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{makeidx}
@@ -14,13 +15,13 @@
 {biblatex-chicago}
 \usepackage{mathtools}
 \author{}
-\title{Total Difficulty}
+\title{Provisional State}
 \date{}
 \addbibresource{~/modules/References.bib}
 \begin{document}
 \maketitle
-\paragraph{Notation}: \textit{$B_t$} or block\_difficulty
-\paragraph{Description}: The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
+\paragraph{Notation}: \texttt{pv\_state}
+\paragraph{Description}: Used to define the \textsc{pre-final state}, the \textsc{provisional state}   
 
 \end{document}
 

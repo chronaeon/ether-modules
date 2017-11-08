@@ -1,0 +1,34 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	authordate,
+	strict,
+	backend=biber
+]
+{biblatex-chicago}
+\usepackage{mathtools}
+\author{}
+\title{Substate}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{substate}
+\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
+
+\begin{itemize}
+        \item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
+        \item The \texttt{logs\_series}, which creates checkpoints in EVM code execution for frontend applications to explore, and is made up of the\texttt{logs\_set} and \texttt{l
+ogs\_bloom} from the \texttt{tx\_receipt}.
+	\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
+\end{itemize}
+ 
+
+\end{document}
+
