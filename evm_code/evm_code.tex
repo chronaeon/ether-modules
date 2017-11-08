@@ -1,4 +1,4 @@
-[10pt,a4paper,oneside]{scrartcl}
+\documentclass[10pt,a4paper,oneside]{scrartcl}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -14,13 +14,13 @@
 {biblatex-chicago}
 \usepackage{mathtools}
 \author{}
-\title{Total Difficulty}
+\title{EVM Code}
 \date{}
 \addbibresource{~/modules/References.bib}
 \begin{document}
 \maketitle
-\paragraph{Notation}: \textit{$B_t$} or block\_difficulty
-\paragraph{Description}: The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
+\paragraph{Notation}: \texttt{evm\_code}
+\paragraph{Description}: The bytecode that the EVM can natively execute. Used to explicitly specify the meaning of a message to an account.
 
 \end{document}
 
