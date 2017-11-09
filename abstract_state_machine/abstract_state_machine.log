@@ -1,19 +1,19 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  4 NOV 2017 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  8 NOV 2017 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **abstract_state_machine.tex
 (./abstract_state_machine.tex
-LaTeX2e <2017-04-15>
-Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
-Document Class: scrartcl 2017/04/13 v3.23 KOMA-Script document class (article)
+Document Class: scrartcl 2016/06/14 v3.21 KOMA-Script document class (article)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-dependent b
+Package: scrkbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-independent 
+Package: scrbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
@@ -21,25 +21,25 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2017/04/13 v3.23 KOMA-Script package (loading files)
+Package: scrlfile 2016/06/14 v3.21 KOMA-Script package (loading files)
 
-Package scrlfile, 2017/04/13 v3.23 KOMA-Script package (loading files)
+Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 ))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2017/04/13 v3.23 KOMA-Script package (handling toc-files)
+Package: tocbasic 2016/06/14 v3.21 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 131.
+(tocbasic)             for `toc' on input line 130.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 133.
+(tocbasic)             for `lof' on input line 131.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 134.
+(tocbasic)             for `lot' on input line 132.
 Package scrartcl Info: You've used standard option `10pt'.
 (scrartcl)             This is correct!
 (scrartcl)             Internally I'm using `fontsize=10pt'.
@@ -53,14 +53,19 @@ Class scrartcl Info: You've used standard option `oneside'.
 (scrartcl)           you'd have to use `twoside=false' there
 (scrartcl)           instead of `oneside', too.
 Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
-ine 2059.
+ine 2052.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2017/04/13 v3.23 KOMA-Script font size class option (10pt
+File: scrsize10pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (10pt
 )
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2017/04/13 v3.23 KOMA-Script package (type area)
+Package: typearea 2016/06/14 v3.21 KOMA-Script package (type area)
+
+Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
 \ta@bcor=\skip42
 \ta@div=\count79
 Package typearea Info: You've used standard option `a4paper'.
@@ -95,7 +100,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 1647.
+(typearea)              on input line 1529.
 )
 \c@part=\count80
 \c@section=\count81
@@ -109,16 +114,15 @@ Package typearea Info: These are the values describing the layout:
 \scr@dte@subsubsection@maxnumwidth=\skip50
 \scr@dte@paragraph@maxnumwidth=\skip51
 \scr@dte@subparagraph@maxnumwidth=\skip52
-LaTeX Info: Redefining \textsubscript on input line 4094.
+LaTeX Info: Redefining \textsubscript on input line 4036.
 \abovecaptionskip=\skip53
 \belowcaptionskip=\skip54
 \c@pti@nb@sid@b@x=\box27
 \c@figure=\count86
 \c@table=\count87
-Class scrartcl Info: Redefining `\numberline' on input line 5233.
+Class scrartcl Info: Redefining `\numberline' on input line 5049.
 \bibindent=\dimen102
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
@@ -198,10 +202,10 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -212,37 +216,39 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/biblatex-chicago.sty
-Package: biblatex-chicago 2017/04/19 v 3.7 biblatex style
+Package: biblatex-chicago 2016/06/01 v 3.4 biblatex style
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count100
+\etb@tempcnta=\count101
 )
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -264,7 +270,7 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count101
+\lrq@indent=\count102
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -279,49 +285,49 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count102
-\decimalpart=\count103
+\integerpart=\count103
+\decimalpart=\count104
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count104
-\c@listtotal=\count105
-\c@listcount=\count106
-\c@liststart=\count107
-\c@liststop=\count108
-\c@citecount=\count109
-\c@citetotal=\count110
-\c@multicitecount=\count111
-\c@multicitetotal=\count112
-\c@instcount=\count113
-\c@maxnames=\count114
-\c@minnames=\count115
-\c@maxitems=\count116
-\c@minitems=\count117
-\c@citecounter=\count118
-\c@savedcitecounter=\count119
-\c@uniquelist=\count120
-\c@uniquename=\count121
-\c@refsection=\count122
-\c@refsegment=\count123
-\c@maxextratitle=\count124
-\c@maxextratitleyear=\count125
-\c@maxextrayear=\count126
-\c@maxextraalpha=\count127
-\c@abbrvpenalty=\count128
-\c@highnamepenalty=\count129
-\c@lownamepenalty=\count130
-\c@maxparens=\count131
-\c@parenlevel=\count132
-\blx@tempcnta=\count133
-\blx@tempcntb=\count134
-\blx@tempcntc=\count135
-\blx@maxsection=\count136
-\blx@maxsegment@0=\count137
-\blx@notetype=\count138
-\blx@parenlevel@text=\count139
-\blx@parenlevel@foot=\count140
-\blx@sectionciteorder@0=\count141
+\c@tabx@nest=\count105
+\c@listtotal=\count106
+\c@listcount=\count107
+\c@liststart=\count108
+\c@liststop=\count109
+\c@citecount=\count110
+\c@citetotal=\count111
+\c@multicitecount=\count112
+\c@multicitetotal=\count113
+\c@instcount=\count114
+\c@maxnames=\count115
+\c@minnames=\count116
+\c@maxitems=\count117
+\c@minitems=\count118
+\c@citecounter=\count119
+\c@savedcitecounter=\count120
+\c@uniquelist=\count121
+\c@uniquename=\count122
+\c@refsection=\count123
+\c@refsegment=\count124
+\c@maxextratitle=\count125
+\c@maxextratitleyear=\count126
+\c@maxextrayear=\count127
+\c@maxextraalpha=\count128
+\c@abbrvpenalty=\count129
+\c@highnamepenalty=\count130
+\c@lownamepenalty=\count131
+\c@maxparens=\count132
+\c@parenlevel=\count133
+\blx@tempcnta=\count134
+\blx@tempcntb=\count135
+\blx@tempcntc=\count136
+\blx@maxsection=\count137
+\blx@maxsegment@0=\count138
+\blx@notetype=\count139
+\blx@parenlevel@text=\count140
+\blx@parenlevel@foot=\count141
+\blx@sectionciteorder@0=\count142
 \labelnumberwidth=\skip58
 \labelalphawidth=\skip59
 \biblabelsep=\skip60
@@ -332,9 +338,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip65
 \blx@bcfin=\read1
 \blx@bcfout=\write4
-\c@mincomprange=\count142
-\c@maxcomprange=\count143
-\c@mincompwidth=\count144
+\c@mincomprange=\count143
+\c@maxcomprange=\count144
+\c@mincompwidth=\count145
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -343,72 +349,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count145
-\c@savedafterword=\count146
-\c@annotator=\count147
-\c@savedannotator=\count148
-\c@author=\count149
-\c@savedauthor=\count150
-\c@bookauthor=\count151
-\c@savedbookauthor=\count152
-\c@commentator=\count153
-\c@savedcommentator=\count154
-\c@editor=\count155
-\c@savededitor=\count156
-\c@editora=\count157
-\c@savededitora=\count158
-\c@editorb=\count159
-\c@savededitorb=\count160
-\c@editorc=\count161
-\c@savededitorc=\count162
-\c@foreword=\count163
-\c@savedforeword=\count164
-\c@holder=\count165
-\c@savedholder=\count166
-\c@introduction=\count167
-\c@savedintroduction=\count168
-\c@namea=\count169
-\c@savednamea=\count170
-\c@nameb=\count171
-\c@savednameb=\count172
-\c@namec=\count173
-\c@savednamec=\count174
-\c@translator=\count175
-\c@savedtranslator=\count176
-\c@shortauthor=\count177
-\c@savedshortauthor=\count178
-\c@shorteditor=\count179
-\c@savedshorteditor=\count180
-\c@labelname=\count181
-\c@savedlabelname=\count182
-\c@institution=\count183
-\c@savedinstitution=\count184
-\c@lista=\count185
-\c@savedlista=\count186
-\c@listb=\count187
-\c@savedlistb=\count188
-\c@listc=\count189
-\c@savedlistc=\count190
-\c@listd=\count191
-\c@savedlistd=\count192
-\c@liste=\count193
-\c@savedliste=\count194
-\c@listf=\count195
-\c@savedlistf=\count196
-\c@location=\count197
-\c@savedlocation=\count198
-\c@organization=\count199
-\c@savedorganization=\count266
-\c@origlocation=\count267
-\c@savedoriglocation=\count268
-\c@origpublisher=\count269
-\c@savedorigpublisher=\count270
-\c@publisher=\count271
-\c@savedpublisher=\count272
-\c@language=\count273
-\c@savedlanguage=\count274
-\c@pageref=\count275
-\c@savedpageref=\count276
+\c@afterword=\count146
+\c@savedafterword=\count147
+\c@annotator=\count148
+\c@savedannotator=\count149
+\c@author=\count150
+\c@savedauthor=\count151
+\c@bookauthor=\count152
+\c@savedbookauthor=\count153
+\c@commentator=\count154
+\c@savedcommentator=\count155
+\c@editor=\count156
+\c@savededitor=\count157
+\c@editora=\count158
+\c@savededitora=\count159
+\c@editorb=\count160
+\c@savededitorb=\count161
+\c@editorc=\count162
+\c@savededitorc=\count163
+\c@foreword=\count164
+\c@savedforeword=\count165
+\c@holder=\count166
+\c@savedholder=\count167
+\c@introduction=\count168
+\c@savedintroduction=\count169
+\c@namea=\count170
+\c@savednamea=\count171
+\c@nameb=\count172
+\c@savednameb=\count173
+\c@namec=\count174
+\c@savednamec=\count175
+\c@translator=\count176
+\c@savedtranslator=\count177
+\c@shortauthor=\count178
+\c@savedshortauthor=\count179
+\c@shorteditor=\count180
+\c@savedshorteditor=\count181
+\c@labelname=\count182
+\c@savedlabelname=\count183
+\c@institution=\count184
+\c@savedinstitution=\count185
+\c@lista=\count186
+\c@savedlista=\count187
+\c@listb=\count188
+\c@savedlistb=\count189
+\c@listc=\count190
+\c@savedlistc=\count191
+\c@listd=\count192
+\c@savedlistd=\count193
+\c@liste=\count194
+\c@savedliste=\count195
+\c@listf=\count196
+\c@savedlistf=\count197
+\c@location=\count198
+\c@savedlocation=\count199
+\c@organization=\count266
+\c@savedorganization=\count267
+\c@origlocation=\count268
+\c@savedoriglocation=\count269
+\c@origpublisher=\count270
+\c@savedorigpublisher=\count271
+\c@publisher=\count272
+\c@savedpublisher=\count273
+\c@language=\count274
+\c@savedlanguage=\count275
+\c@pageref=\count276
+\c@savedpageref=\count277
 \shorthandwidth=\skip66
 \shortjournalwidth=\skip67
 \shortserieswidth=\skip68
@@ -426,13 +432,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count277
-\c@textcitetotal=\count278
-\c@textcitemaxnames=\count279
-\c@biburlnumpenalty=\count280
-\c@biburlucpenalty=\count281
-\c@biburllcpenalty=\count282
-\c@smartand=\count283
+\c@textcitecount=\count278
+\c@textcitetotal=\count279
+\c@textcitemaxnames=\count280
+\c@biburlnumpenalty=\count281
+\c@biburlucpenalty=\count282
+\c@biburllcpenalty=\count283
+\c@smartand=\count284
 )
 Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
 .
@@ -442,8 +448,8 @@ Package biblatex Info: ... file 'chicago-authordate.bbx' found.
 x
 File: chicago-authordate.bbx 2016/06/07 v 3.4 biblatex bibliography style
 \lositemsep=\skip72
-\c@bbx:relatedcount=\count284
-\c@bbx:relatedtotal=\count285
+\c@bbx:relatedcount=\count285
+\c@bbx:relatedtotal=\count286
 )
 Package biblatex Info: Trying to load citation style 'chicago-authordate'...
 Package biblatex Info: ... file 'chicago-authordate.cbx' found.
@@ -456,7 +462,46 @@ Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/chicago-dates-common.
 cbx
-File: chicago-dates-common.cbx 2017/05/02 v 3.7 biblatex citation style
+File: chicago-dates-common.cbx 2016/06/07 v 3.4 biblatex citation style
+
+
+Package biblatex Warning: 'labeldate' option used to determine whether to provi
+de label date fields and
+(biblatex)                extrayear field is renamed to 'labeldateparts', setti
+ng this instead. This option is now used to set the format of the labeldate.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
+se use '\field'.
+
+
+Package biblatex Warning: '\list' is deprecated in sorting specifications, plea
+se use '\field'.
+
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -490,37 +535,37 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )))
-\@quotelevel=\count286
-\@quotereset=\count287
+\@quotelevel=\count287
+\@quotereset=\count288
 
 (./abstract_state_machine.aux)
 \openout1 = `abstract_state_machine.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
+\scratchcounter=\count289
 \scratchdimen=\dimen114
 \scratchbox=\box30
-\nofMPsegments=\count289
-\nofMParguments=\count290
+\nofMPsegments=\count290
+\nofMParguments=\count291
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count291
+\MPscratchCnt=\count292
 \MPscratchDim=\dimen115
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -534,7 +579,7 @@ Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
@@ -551,14 +596,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'abstract_state_machine.bbl' found.
 
 (./abstract_state_machine.bbl)
-Package biblatex Info: Reference section=0 on input line 20.
-Package biblatex Info: Reference segment=0 on input line 20.
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+Package biblatex Info: Reference section=0 on input line 18.
+Package biblatex Info: Reference segment=0 on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -569,17 +614,17 @@ LaTeX Warning: No \author given.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (./abstract_state_machine.aux)
 Package logreq Info: Writing requests to 'abstract_state_machine.run.xml'.
 \openout1 = `abstract_state_machine.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11950 strings out of 492990
- 214978 string characters out of 6135004
- 905916 words of memory out of 5000000
- 15390 multiletter control sequences out of 15000+600000
+ 11974 strings out of 493013
+ 215279 string characters out of 6135683
+ 904801 words of memory out of 5000000
+ 15400 multiletter control sequences out of 15000+600000
  9295 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,6n,62p,8862b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -591,10 +636,10 @@ ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb>
-Output written on abstract_state_machine.pdf (1 page, 87094 bytes).
+Output written on abstract_state_machine.pdf (2 pages, 89962 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
