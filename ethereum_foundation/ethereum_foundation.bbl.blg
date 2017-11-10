@@ -1,5 +1,0 @@
-[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
-[1] Config.pm:357> INFO - Logfile is 'ethereum_foundation.bbl.blg'
-[118] biber:303> INFO - === Tue Nov  7, 2017, 18:07:21
-[328] Utils.pm:180> ERROR - Cannot find control file 'ethereum_foundation.bbl.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[330] Biber.pm:114> INFO - ERRORS: 1
