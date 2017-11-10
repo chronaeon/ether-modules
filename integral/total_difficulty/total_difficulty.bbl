@@ -1,0 +1,53 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{cms/global/}
+    \entry{StarkRobert2017}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=35f2a8465ffb5649aefdd7362e3d7455}{%
+           family={Borger},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{uniquename=0,hash=07cc0e196777da3edd5a5ec362de05ef}{%
+           family={F.},
+           familyi={F\bibinitperiod},
+           given={Stark\bibnamedelima Robert},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{700698a450c3af5aa77c4097fbba2a39}
+      \strng{fullhash}{700698a450c3af5aa77c4097fbba2a39}
+      \strng{authornamehash}{700698a450c3af5aa77c4097fbba2a39}
+      \strng{authorfullhash}{700698a450c3af5aa77c4097fbba2a39}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Abstract state machines: a method for high-level system design and analysis}
+      \field{year}{2003}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
