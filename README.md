@@ -1,3 +1,3 @@
 #Modules
 
-Modular documentation.
+Modular documentation for Ethereum.
