@@ -46,19 +46,18 @@ Accordingly, the post-transactional state of Ethereum is expressed thus:
 While the amount of gas used in the execution is expressed: \texttt{stf(gas\_used)} and the accrued log items belonging to the transaction are expressed: \texttt{stf(logsbloom, content)(logsbloom, set)}
 Information concering the result of a transaction's execution is stored in the transaction receipt \texttt{tx\_receipt}. The set of log events which are created through the execution of the transaction, \texttt{logs\_set} in addition to the bloom filter which contains the actual information from those log events \texttt{logs\_bloom} are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gas\_used) are stored in the transaction receipt. Thusly the transaction receipt is a record of any given \texttt{execution}. \par
 
-The execution of a valid transaction begins with an irrevocable change made to the state: the nonce of the account of the sender is incremented by one and the balance is reduced by part of the up-front cost.
+A valid transaction execution begins with a permanent change to the state: the nonce of the sender account is increased by one and the balance is decreased by the \texttt{collateral\_gas}\footnote{Designated ``\texttt{intrinsic\_gas}'' in the Yellowpaper} which is the amount of gas a transaction is required to pay prior to its execution. The original transactor will differ from the sender if the message call or contract creation comes from a contract account executing code. 
 
-\texttt{Intrinsic gas} is the amount of gas this transaction requires to be paid prior to execution.
+After a transaction is executed, there comes a \textsc{provisional state}:
+\\
 
-The execution of a valid transaction begins with an irrevocable change made to the state: the nonce of the account of the sender is incremented by one, and the balance is reduced by part of the up-front total cost paid by the sender \texttt{valid.transaction = increment.sender(nonce)}. 
+\texttt{post\_execution(provisional.state)}
+\\
 
-The \texttt{original\_transactor} will differ from the \texttt{sender} if the \texttt{message\_call} or \texttt{contract\_creation} comes from a contract account executing code.
-\par
-
-After a transaction is executed, there comes a provisional state\footnote{\texttt{post\_execution(provisional.state)}}, Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state}\footnote{\texttt{productive\_gas}}, and an associated substate \footnote{\texttt{substate\_a}}. 
-
+Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates the provisional state. \texttt{productive\_gas}, and an associated substate \texttt{substate\_a}. 
 
 
+Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
 
 
 \end{document}
