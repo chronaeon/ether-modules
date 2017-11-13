@@ -1,0 +1,141 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Preface}{5}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Introduction}{5}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}FAQ}{6}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Key Terms and Concepts}{6}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline State Machine}{7}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline priorstate}{7}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline presentstate}{7}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline poststate}{7}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline transaction}{7}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline state-transition}{7}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline state-transition[ing] function}{7}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline state-machine}{7}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline state}{7}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Transactions}{8}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Message Calls}{8}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Contract Creation}{8}{subsection.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Gas}{8}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Gasprice}{8}{subsection.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Gaslimit}{8}{subsection.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Gasused}{8}{subsection.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Execution}{8}{subsection.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5}Execution Model}{8}{subsection.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6}Execution Environment}{8}{subsection.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.7}State Machines}{8}{subsection.6.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8}Miner Choice}{8}{subsection.6.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}States}{8}{section.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Substate}{8}{subsection.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}State Transitions}{8}{section.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Currency}{8}{section.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Machine State}{9}{section.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Account Creation}{9}{section.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Ethash}{9}{section.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.1}GHOST Protocol}{9}{subsection.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}A message call}{9}{section.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14}RLP}{9}{section.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1}Well-Formed RLP}{9}{subsection.14.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15}Blocks}{9}{section.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.1}Transaction Receipts}{9}{subsection.15.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.2}Nonce}{9}{subsection.15.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {15.3}Ommers}{9}{subsection.15.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16}OPCODES}{9}{section.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {16.1}Lower-Level Lisp}{9}{subsection.16.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {16.2}Solidity}{9}{subsection.16.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {16.3}EVM Code}{9}{subsection.16.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {16.4}Formal Signs}{9}{subsection.16.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {17}Contract Creation}{9}{section.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18}Bit Sequences}{9}{section.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {19}ECDSA}{9}{section.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.1}Public Keys}{9}{subsection.19.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.2}Private Keys}{9}{subsection.19.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {20}Byte Arrays}{9}{section.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21}Apply Rewards}{9}{section.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22}Verification}{9}{section.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.1}Ommershash}{9}{subsection.22.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.2}Beneficiary}{9}{subsection.22.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.3}Bloom Filter}{9}{subsection.22.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.4}isSibling Property}{9}{subsection.22.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.5}Mining}{9}{subsection.22.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23}Halting}{9}{section.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {24}World State}{9}{section.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {25}Account State}{10}{section.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {25.1}Nonce}{10}{subsection.25.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {25.2}Storage Root}{10}{subsection.25.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {25.3}Code Hash}{10}{subsection.25.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {25.4}Balance}{10}{subsection.25.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {.1}What problems did the original Yellowpaper have?}{11}{subsection.Alph0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {.2}Symbol Key}{11}{subsection.Alph0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Glossary}{12}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Acronyms}{14}{section*.14}
