@@ -1,0 +1,596 @@
+  \documentclass[11pt,a4paper,leqno,bibliography=totoc]{scrartcl}
+  \usepackage[utf8]{inputenc}
+  \usepackage{wallpaper} % Required to set each page to have a background
+  \usepackage{lastpage} % Required to print the total number of pages
+  \usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4.0cm]{geometry} % Adjust page margins
+  \usepackage{amsmath} % Required for equation customization
+  \usepackage{amssymb} % Required to include mathematical symbols
+  \usepackage{xcolor} % Required to specify colors by name
+  \usepackage{makecell}
+  \usepackage{boldline}
+  \usepackage{beton}
+  \usepackage{booktabs}
+  \usepackage[T1]{fontenc}
+  \usepackage[normalem]{ulem}
+  \usepackage{array}
+  \usepackage[colorlinks]{hyperref}
+  \usepackage{graphicx}
+  \usepackage{multicol}
+  \usepackage{setspace}
+  \usepackage{fancyhdr} % Required to customize headers
+  \usepackage[title,titletoc]{appendix}
+  \usepackage{mathtools}
+  \usepackage{subfig}
+  \usepackage{ragged2e}
+  \usepackage[singlelinecheck=false]{caption}
+  \usepackage{wrapfig}
+  \usepackage{IEEEtrantools}
+  \usepackage{lipsum}
+  \usepackage[english]{babel}
+  \usepackage{blindtext}
+  \usepackage{tikz}
+  \usetikzlibrary{mindmap}
+  \usepackage{epigraph}
+  \usepackage{tabularx}
+  \usepackage[perpage]{footmisc}
+  \usepackage[style=ieee,backref=true,autocite=superscript]{biblatex}
+  \usepackage{etoolbox}
+  \usepackage{framed,color}
+  \usepackage[framemethod=tikz]{mdframed}
+  \usetikzlibrary{shadows}
+  \usepackage{minitoc}
+  \usepackage{fancybox}
+  \usepackage{tablefootnote}
+  \usepackage{datatool}
+  \usepackage{footnote}
+  \usepackage{pgfkeys}
+  \usepackage{pgf}
+  \usepackage{microtype}
+  \usepackage{enumitem}
+  \usepackage[acronyms,toc,section=section]{glossaries}
+  \usepackage{endnotes}
+  \usepackage{dirtytalk}
+  \usepackage{pdfpages}
+  \usepackage{kantlipsum}
+  \usepackage{makeidx}
+  \makeindex
+  \usepackage[totoc]{idxlayout}
+
+     % clear the title
+\glstoctrue
+\newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
+
+
+  %\makeatletter
+    %\deffootnotemark{\textsuperscript{\thefootnotemark})}
+  %  \long\def\@makefntext#1{\leavevmode\quad(\@thefnmark)~\nobreak\relax#1}
+%  \makeatother
+
+
+%\usepackage[lf]{electrum} %% lf option gives lining figures as default;
+         % remove option to get oldstyle figures as default
+ %\usepackage[T1]{fontenc}
+
+
+
+%----------------------BEGIN GLOSSARIES-------------------%
+
+\makenoidxglossaries
+
+\setacronymstyle{long-short}
+
+\newacronym{OOP}{OOP}{Object-Oriented Programming}
+
+\newacronym{EVM}{EVM}{Ethereum Virtual Machine}
+
+\newacronym{YP}{YP}{Yellowpaper}
+
+\newacronym{ERE}{ERE}{Ethereum Runtime Environment}
+
+\newacronym{LLL}{LLL}{Lower Level Lisp}
+
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner}}}
+
+\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsc{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all \textsc{previous states} on the \textbf{EVM} which a client might need to reference}}
+
+\newglossaryentry{abstract machine}{name={abstract machine}, description={An abstract machine is a conceptual model of a computer that describes its own operations with perfect accuracy. Since abstract machines are theoretical, all possible outputs can be determined beforehand}}
+
+\newglossaryentry{design pattern}{name={design pattern}, description={a pattern of design in OOP}}
+
+\newglossaryentry{transaction}{name={transaction}, description={An input message to a system that, because of the nature of the real-world event or activity it reflects, requires to be regarded as a single unit of work and must either be processed completely or rejected\autocite{Ngondi2016}}}
+
+\newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about systems should be free and unhindered\autocite{Levy2010}}}
+
+\newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A secure, consensus-based global computer, and the subject of this paper}}
+
+\newglossaryentry{blockchain}{name={blockchain}, description={A consensus-based record of agreement where chunks of data\footnote{As of \today, roughly between 1 and 20 kilobytes in size\autocite{Etherscan2017}} (called blocks) are stored with cryptographic hashes linking each Block to the next, ensuring veracity}}
+
+\newglossaryentry{state machine}{name={state machine}, description={A state machine rests in a universal, stable, singular condition, called a state. State machines  transition to new states given certain compatible inputs.}}
+
+\newglossaryentry{Ethereum Foundation}{name={Ethereum Foundation}, description={The non-profit organization in charge of executing the development processes of Ethereum in line with the \gls{Whitepaper}}}
+
+\newglossaryentry{Whitepaper}{name={Whitepaper}, description={A conceptual map, distinct from the Yellowpaper, which highlights the development goals for Ethereum as a whole\autocite{EF2017}}}
+
+\newglossaryentry{Yellowpaper}{name={Yellowpaper}, description={Ethereum's first formal specification, \autocite{Wood2017} written by Dr. Gavin Wood, one of the founders of Ethereum. Notorious for its difficulty to read,\autocite{reddit} it provides both a boon and an obstacle to potential adopters of Ethereum}}
+
+\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programming which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
+
+\newglossaryentry{specification}{name={specification}, description={Technical descriptions, instructions, and definitions from which other people can create working prototypes}}
+
+\newglossaryentry{State Database}{name={State Database}, description={A database backend that maintains a mapping of bytearrays to bytearrays}}
+
+\newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state$^\sigma$ at a particular time}}
+
+\newglossaryentry{trie}{name={trie}, description={A tree-structure for organizing data, the position of data in the tree contains the particular path from root to leaf node that represents the key (the path from root to leaf is ``one'' key) you are searching the trie structure for. The data of the key is contained in the trie relationships that emerge from related nodes in the trie structure}}
+
+\newglossaryentry{leaf node}{name={leaf node},description={the bottom-most node in a particular tree, of blocks, one half of the ``key'' the other half being the root node, which creates the path between}}
+
+\newglossaryentry{addresses}{name={addresses}, description={160-bit (20-byte) identifiers--the last 20 characters of an Ethereum address}}
+
+\newglossaryentry{public key}{name={public key}, description={A term originating from \textsl{cryptography} and corresponding to  \textbf{private key}, this is the 42-byte (i.e. 42-character) string of ASCII digits which transacts on the public network}}
+
+\newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
+
+\newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
+
+\newglossaryentry{External Actor}{name={External Actor}, description={A person or other entity able to interface to an Ethereum node, but external to the world of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and associated state. Has one (or more) intrinsic Accounts}}
+
+%\newglossaryentry{Intrinsic Account}{name={Instrinsic Account}, description={An}}
+
+\newglossaryentry{Address}{name={Address}, description={A 160-bit (20-byte) code used for identifying Accounts}}
+
+\newglossaryentry{Bit}{name={Bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. The Yellowpaper gives certain values in bits (e.g. 160 bits instead of 20 bytes)}}
+
+%\newglossaryentry{Account}{name={Account}, description={Accounts have an intrinsic balance and transaction count maintained as part of the Ethereum state. They also have some (possibly empty) EVM Code and a (possibly empty) Storage State associated with them. Though homogenous, it makes sense to distinguish between two practical types of account: those with empty associated EVM Code (thus the account balance is controlled, if at all, by some external entity) and those with non-empty associated EVM Code (thus the account represents an Autonomous Object). Each Account has a single Address that identifies it}}
+
+\newglossaryentry{YP-transaction}{name={Transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain}}
+
+\newglossaryentry{Autonomous Object}{name={Autonomous Object}, description={A notional object existent only within the hypothetical state of Ethereum. Has an intrinsic address and thus an associated account; the account will have non-empty associated EVM Code. Incorporated only as the Storage State of that account}}
+
+\newglossaryentry{Storage State}{name={Storage State}, description={The information particular to a given Account that is maintained between the times that the Account's associated EVM Code runs}}
+
+\newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two Accounts, either through the deterministic operation of an Autonomous Object or the cryptographically secure signature of the Transaction}}
+
+\newglossaryentry{Message Call}{name={Message}, description={The act of passing a message from one Account to another. If the destination account is associated with non-empty EVM Code, then the VM will be started with the state of said Object and the Message acted upon. If the message sender is an Autonomous Object, then the Call passes any data returned from the VM operation}}
+
+\newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit. Paid for exclusively by Ether (as of PoC-4), which is converted freely to and from Gas as required. Gas does not exist outside of the internal Ethereum computation engine; its price is set by the Transaction and miners are free to ignore Transactions whose Gas price is too low}}
+
+\newglossaryentry{Contract}{name={Contract}, description={A piece of EVM Code that may be associated with an Account or an Autonomous Object}}
+
+\newglossaryentry{Object}{name={Object}, description={Synonym for Autonomous Object}}
+
+\newglossaryentry{Dapp}{name={Dapp}, description={An end-user-visible application hosted in an Ethereum browser.}}
+
+\newglossaryentry{Ethereum Browser}{name={Ethereum Browser}, description={\footnote{a.k.a. Ethereum Reference Client} A cross-platform GUI of an interface similar to a simplified browser (a la Chrome) that is able to host applications, the backend of which is purely on the Ethereum protocol.}}
+
+\newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
+
+\newglossaryentry{Lower-Level Lisp}{name={Lower-Level Lisp}, description={The Lisp-like Low-level Language, a human-writable language used for authoring simple contracts and general low-level language toolkit for trans-compiling to}}
+
+\newglossaryentry{Balance}{name={Balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
+
+
+
+\addbibresource{References.bib}
+
+
+
+  %\usepackage{lscape}
+
+%---FOOTNOTE FONT---%
+  \makeatletter
+  \patchcmd{\@footnotetext}{\footnotesize}{\small\sffamily}{}{}
+  \makeatother
+
+\def\thesection{\arabic{section}}
+  %\renewcommand\thesection{\arabic{section}}
+  %\renewcommand\thesubsection{\thesection\arabic{subsection}}
+
+
+%---MY CUSTOM COMMANDS---%
+
+\setlength\bibitemsep{1.5\itemsep}
+
+  \newcommand{\sortitem}[1]{%
+    \DTLnewrow{list}% Create a new entry
+    \DTLnewdbentry{list}{description}{#1}% Add entry as description
+  }
+  \newenvironment{sortedlist}{%
+    \DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}% Create new/discard old list
+  }{%
+    \DTLsort{description}{list}% Sort list
+
+      \DTLforeach*{list}{\theDesc=description}{%
+        \item \theDesc}% Print each item
+
+  }
+
+
+
+%---ALPHAFOOTNOTES---%
+  \newenvironment{alphafootnotes}
+    {\par\edef\savedfootnotenumber{\number\value{footnote}}
+    \renewcommand{\thefootnote}{\alph{footnote}}
+     \setcounter{footnote}{0}}
+    {\par\setcounter{footnote}{\savedfootnotenumber}}
+
+%---HEADER SETTINGS---%
+  \setlength{\headheight}{15pt} % Increase the size of the header to accommodate meta info.
+    \pagestyle{fancy} % Use the custom header specified below
+    \renewcommand{\headrulewidth}{0pt} % Remove the default horizontal rule under the header
+    \setlength{\parindent}{0cm} % Remove paragraph indentation
+    \newcommand{\tab}{\hspace*{2em}} % Defines a new command for some horizontal space
+    \newcommand\BackgroundStructure{ % Command to specify the background of each page
+    \setlength{\unitlength}{1mm} % Set the unit length to millimeters
+
+    \setlength\fboxsep{0mm} % Adjusts the distance between the frameboxes and the borderlines
+    \setlength\fboxrule{1mm} % Increase the thickness of the border line
+    \put(10, 10){\fcolorbox{black!}{blue!15}{\framebox(189,277){}}} % Main content box
+    %\put(141, 264){\includegraphics[height=22mm,width=58mm]{logo}} % Logo box - maximum height/width:
+    \put(10, 10){\includegraphics[height=10.9in,width=7.47in]{bg}} % bg box - maximum height/width:
+    }
+
+    \renewcommand{\familydefault}{\rmdefault}
+    \fancyhead[L]{\today}
+    \fancyhead[C]{\textit{Globules:} Globular Specifications for Ethereum \space}
+    \fancyhead[R]{Version 0.2.0}
+    \fancyfoot[C]{\thepage}
+    \setlength{\columnseprule}{0pt}
+    \setlength{\columnsep}{5mm}
+    \hfuzz=0.84074pt
+    \setcounter{secnumdepth}{2}
+
+    \author{\textbf{Micah Dameron}}
+
+
+    \title{\Huge{Globules} \\ \Large{Globular Specifications for Ethereum}}
+
+  %---------------------MAKE INDEX--------------------------%
+
+  \makeindex
+
+  %--------------------  BEGIN DOCUMENT  --------------------%
+  \begin{document}
+  \setstretch{1.15}
+  \begin{alphafootnotes}
+  \AddToShipoutPicture{\BackgroundStructure}
+
+
+
+
+%---TITLE---%
+\maketitle
+
+
+
+
+%---EPIGRAPH---%
+\epigraph{\textsl{Beautiful is better than ugly. \\
+	Explicit is better than implicit. \\
+	Simple is better than complex. \\
+	Complex is better than complicated.
+		}
+	 }	{\textit{The Zen of Python}}
+
+\clearpage
+%\dominitoc
+
+\thispagestyle{empty}
+	\abstract{}
+
+\clearpage
+%---TABLE OF CONTENTS---%
+\tableofcontents
+\clearpage
+
+
+\begin{center}\section*{Acknowledgements}\end{center}
+
+
+Thanks to the founders of Ethereum for creating a product worth writing about in minute detail, thanks to the ConsenSys Mesh for reviewing and contributing to the creation of this work, and thanks to Dr. Gavin Wood for going above and beyond in expressing the political, philosophical, cultural, and contractual implications for Ethereum in his Yellowpaper.
+
+	  \section{Preface}Ethereum's formal specification, \textit{The Yellowpaper}, goes above and beyond the understanding of most lay-readers. With a plethora of astute formal proofs, its author offers nothing short of Newton's \textit{Principia} for Distributed Ledger Technology. But most readers of the Yellowpaper can only partially appreciate the depth of Dr. Wood's understanding, since the paper is written as a historical memoir but also contains its own mathematical alphabet and unique formal structure. Ethereum's inner workings do not avail themselves to most readers to begin with, but the same inner workings are made even more complicated to readers if they must be committed to applying an array of incumbent symbols at the same time. 
+\par
+
+	  Readers of the Yellowpaper are compelled to split their time and attention between the desire to understand the content and their need to become fluent with the new formal alphabet the content is written in. This would not be so much of a problem if \textit{formalisms} Yellowpaper were limited to necessarily formal statements, but they are not. Formalisms are expanded and increased to the point that there are multiple tiers of equations, all in this same new alphabet, that are supposed to explain each other and the finer details of the Ethereum Protocol at the same time. The problem is that once again the reader's attention is split. This lack of clarity contributes to a skepticism about Ethereum in general, and deters many potential adopters from the platform. Therefore, there is a need for a firmer integration between the technical \textsl{facts} of the Ethereum platform and the \textsl{challenges} its developers must face in light of those facts.
+\par
+
+	  In this paper, we aim to make formal descriptions semantically obvious by invoking a procedurally correct pseudocode, saving time and effort for the reader by using concepts they already know, rather than using a customized formal alphabet. In cases where formal proofs use well-established and widely understood standards from Mathematics and Computer Science, we capitulate to those standards where necessary, and take some measures to draw them out for the reader.  
+%---PAGE SETUP---%
+\begin{multicols}{2}
+\justify
+	\section{Introduction}
+
+	Ethereum is a decentralized virtual machine that is accessible to anyone and yet not owned by anyone. The crypto-economic rules of Ethereum stipulate, through thoughtful \textit{mechanism-design}, the conditions under which interaction with the network is possible. The rules of the protocol, which are set out in this paper, revolve around a cryptographically-secured consensus mechanism that ensures fair conduct (conduct that is in line with the rules) is contracted and enforced on the network. 
+
+	This paper, covering different topics (globules) about Ethereum, recognizes a need to integrate the disparate fields which are at play in Ethereum's operation and unify them under one or a few a common headings. This is the second part of a joint project, the first part (modules) covering the establishment of accurate and well-sourced modular documentatifor each of Ethereum's different aspects, and located here: https://www.github.com/chronaeon/modules.git.
+
+
+1. \texttt{message-passing} \par
+2. \texttt{shared-state concurrence} and \par
+3. \texttt{transaction processing} \par
+
+
+  the \textbf{Ethereum Protocol} fosters an environment where software developers are able to precisely execute machine instructions that have the same level of veridicity and certainty as do the financial transactions on other secure blockchains like Bitcoin.  \index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}
+  %\hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\
+  %   \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \columnbreak
+
+   \section{FAQ}
+
+     \begin{description}[style=nextline]
+
+   \item[Q: Who Is This Paper For?] This paper is for anyone who wants a readable \gls{specification} for Ethereum.
+   \index{specification}
+
+    \item[Q: Why is The \gls{EVM} \gls{transaction} based?] A: Since resources on The \gls{EVM} are limited, they must have a computational cost associated with them. If computational costs are transactional, then they will not go through even partially unless the transaction goes through fully. \index{transaction}\index{transactional}
+
+    \item[Q: Bitcoin doesn't have a formal specification, why does Ethereum need one?]\index{formal!specification}\index{Bitcoin!no formal spec,} A: The goal of Bitcoin was to create a decentralized payment network; at that it has succeeded marvelously. The goal of Ethereum is to create a decentralized computer. A formal specification allows developers to build new clients that aren't part of the core wallet. This keeps there from being an unofficial monopoly on the protocol by those who are able to manipulate it. \index{Bitcoin!payment network!a success}\index{formal!specification}\index{non-monopolistic}
+
+    \item[Q: Is there a good way to define Ethereum in a few words?] A: Yes: \par
+    \textsl{\say{Ethereum is a transaction-based virtual machine, following a singleton design pattern and adhering to a shared state.}} \par Don't worry about understanding all of that yet. It will be unpacked and precisely explained throughout the paper.
+
+
+    \item[Q: How is this paper organized?]A: The main body aims to reproduce Yellowpaper content in a more readable form, while the appendices critique Yellowpaper content in its original form.
+
+
+  \end{description}
+
+
+
+\section{Key Terms and Concepts}
+{3}
+
+This section Key Terms section aims to cover the highest-level and most important concepts you need to know to understand Ethereum. Each of the following sections breaks down the EVM one of these abstractions at a time. \par \hfill
+
+
+\begin{shadedbox}
+A few key terms: \gls{state}, \gls{state-transition}, \gls{state}, \gls{transaction}, \gls{state machine}
+\end{shadedbox} \par \hfill
+Ethereum is a transaction-based \gls{state machine}\index{state machine}. A state-machine can only be in one of a set number of configurations depending on its inputs. Picture a gearshift, and picture each change in gears as a change of the machine's (car/truck's) state. Picture the hand on the gearshift as the input. Since all of the possible states in Ethereum are determined beforehand, impossible states are excluded necessarily. \par
+
+A state is a particular static configuration that Ethereum is in. In order to affect the state, valid \gls{transaction}(s) must occur.  Only committed transactions change the state, and committed transactions must be mined.\footnote{The Yellowpaper denotes the concept of Ethereum's state with a Greek symbol; a lowercase Sigma:$\sigma$} Transactions which throw an error, whether an out of gas error or some other error, are transactions that have failed in their execution and thus fail to initiate a valid \textbf{state transition}. A valid state transition is when the hand applies enough energy to the gearshift to push it into another gear and make it switch. An invalid state transition, like say, out of gas errors, would be if the hand didn't have enough energy in its push to get it into the next gear.  Alternatively, the hand might try pushing it toward a gear its already in, or towards a gear that doesn't exist (bad jump dest) and fail to change the state. Ethereum is a \gls{turing-complete} \gls{abstract} model, that excludes these things by definition. It would be as unlikely for someone to hack Ethereum and make counterfeit Ether as it would that your car would pop out another gear and behave autonomously like something out of a Steven King novel. It's just not in Ethereum's instructions to do that. State machines are limited for this exact reason.
+
+
+\paragraph{State Machine}
+
+    \paragraph{priorstate} The state immediately preceding the current state.
+    \paragraph{presentstate} The present state of the Blockchain i.e. now.
+    \paragraph{poststate} The state immediately following the current state.
+
+     \paragraph{transaction}An atomic operation; a message, data modification, or other procedure that is guaranteed to perform completely or not at all.
+     \paragraph{state-transition} The process occurring between two inert states that constitutes the creation of a new state.
+     \paragraph{state-transition[ing] function} One of several possible functions that took Ethereum from a priorstate to a presentstate or takes Ethereum from a presentstate to a poststate.
+    \paragraph{state-machine}A state machine rests in a universal, stable, singular condition, called a state. State machines can transition to new states given certain compatible inputs.
+    \paragraph{state}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+
+    More key content to come...\blindtext
+
+    \clearpage
+
+    \section{Transactions}
+{2}
+      \subsection{Message Calls}
+{2}
+      \subsection{Contract Creation}
+
+    \section{Gas}
+{2}
+    \subsection{Gasprice}
+
+    \subsection{Gaslimit}
+    Any unused gas is refunded to the user.
+
+      \subsection{Gasused}
+
+      \subsection{Execution}
+
+\subsection{Execution Model}
+{2}
+\subsection{Execution Environment}
+
+\subsection{State Machines}
+{2}
+    \subsection{Miner Choice}
+    Miners choose which gas prices they want to accept.
+
+    \section{States}
+    \subsection{Substate}
+    \section{State Transitions}
+
+    \section{Currency}
+    The smallest unit of currency in Ethereum is the Wei, which is $1*10^18$ Ether. All units at the machine level are counted in Wei.
+
+
+
+    \section{Machine State}
+
+
+    \section{Account Creation}
+\section{Ethash}
+\subsection{GHOST Protocol}
+
+
+    \section{A message call}
+
+    \section{RLP}
+    \subsection{Well-Formed RLP}
+    \section{Blocks}
+
+    \subsection{Transaction Receipts}
+
+
+
+    \subsection{Nonce}
+
+    \subsection{Ommers}
+
+\section{OPCODES}
+
+\subsection{Lower-Level Lisp}
+
+\subsection{Solidity}
+
+\subsection{EVM Code}
+
+\subsection{Formal Signs}
+
+\section{Contract Creation}
+
+\section{Bit Sequences}
+\columnbreak
+
+
+\section{ECDSA}
+\subsection{Public Keys}
+\subsection{Private Keys}
+
+\section{Byte Arrays}
+
+
+    \section{Apply Rewards}
+
+    \section{Verification}
+    Verifies Ommer headers
+
+    \subsection{Ommershash}
+
+    \subsection{Beneficiary}
+
+    \subsection{Bloom Filter}
+
+    \subsection{isSibling Property}
+
+    \subsection{Mining}
+
+
+    \section{Halting}
+  \section{World State}
+
+
+
+    The \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}
+
+
+
+
+
+
+    \section{Account State}
+
+    The account state is the state of any particular account during some specified world state $\sigma$.\footnote{Formally \textbf{world state} $=$ $\sigma$.} \par
+
+    		\subsection{Nonce} The \textbf{nonce} aspect of an \textsc{account's state} is the number of transactions sent from, or the number of contract-creations by, the address of that account.\footnote{$\sigma$ is the world state at a certain given time, and \textit{n} is the number of transactions or contract creations by that account.}
+    		\subsection{Storage Root}
+    		The \textbf{storage root} aspect of an \textsc{account's state} is the hash of the trie\footnote{A particular path from root to leaf in the \textbf{\gls{state database}} that encodes the \textsc{storage contents} of the account.}
+    		\subsection{Code Hash}
+    		The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.\footnote{A message call is any interaction with the account on-chain.}\footnote{Formal notation is $\sigma[a]_c$}\footnote{More formal notation is $\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$}
+    		\subsection{Balance}
+    		The amount of \textbf{Wei} \textsc{owned} by this account. \footnote{This formal notation is $\sigma[a]_b$}
+
+
+
+
+
+    \begin{itemize}
+
+    	\item Key/value pair stored inside the root hash. \footnote{$\texttt{\small TRIE}\big(L_I^*(\boldsymbol{\sigma}[a]_\mathbf{s})\big) \equiv \boldsymbol{\sigma}[a]_s$}
+
+
+    		\item $L_I^*$, is defined as the element-wise transformation of the base function\footnote{$L_I$, given as: $L_I\big( (k, v) \big) \equiv \big(\texttt{\small KEC}(k), \texttt{\small RLP}(v)\big)$}
+    			\item The \textsl{element-wise transformation of the base-function} refers to all of the key/value pairs in \textit{$L_I$}
+    				\item $L_I$ refers to a particular \gls{trie}.
+
+
+    \end{itemize}
+
+
+
+\clearpage
+
+
+\appendix
+
+%----------------------APPENDIX BEGIN-------------------------------%
+
+
+
+\end{multicols}
+\subsection{What problems did the original Yellowpaper have?}
+
+There are too many to list them all individually, but this map shows the general ideas:
+
+
+\begin{savenotes}
+\begin{tikzpicture} [font=\footnotesize,
+grow=right, level 1/.style={sibling distance=6em},
+level 2/.style={sibling distance=1em}, level distance=5cm]
+\node {Yellowpaper Obscurantism} % root
+child { node {Organizational Problems}
+child { node {Dispersion of Content} }
+child { node {Unclear Direction} }
+child { node {Undefined Domains} }
+}
+child { node {Prose Problems}
+child { node {Affected Writing} }
+child { node {Esoteric Word Choice} }
+child { node {Arbitrary Complexity} }
+child { node {Technical Jargon} }
+child { node {Aspecific Logic} }
+}
+child { node {Presentational Problems}
+child { node {Small Section Headings} }
+child { node {No Table of Contents} }
+child { node {No Index} }
+child { node {No Glossary} }
+}
+child { node {Abstraction Problems}
+child { node {Heavy on percepts} }
+child { node {Light on concepts} }
+child { node {Overconstrained} }
+child { node {Algebra Tautologies} }
+child { node {Approximation} }
+};
+\end{tikzpicture}
+\end{savenotes}
+
+\begin{multicols}{2}
+
+
+ \clearpage
+
+
+\subsection{Symbol Key}
+ \begin{tabular}{ r l }
+ \toprule
+ \textbf{Sign} & \textbf{Meaning} \\
+ \midrule
+ $\boldsymbol{\sigma}$ &  world state \\
+ $\Upsilon$ &  state transition function \\
+ $\Pi$ &  block-level state transition function \\
+ $\Omega$ &  block-finalization state transition function \\
+ \textit{T} &  substitutes any given transaction \\
+ x$_t$ &  the transaction $_t$ corresponding to x \\
+ $\equiv$ & is equivalent to \\
+ \textit{B} &  substitutes any given block \\
+ (   ) & contain symbols that are logically related \\
+   ... & a defined pattern in a known function \\
+ \bottomrule
+ \end{tabular}
+
+
+\clearpage
+
+
+\printbibliography
+\clearpage
+\printglossary[type=\acronymtype]
+\glsaddall
+\printnoidxglossaries
+\clearpage
+\end{multicols}
+\end{alphafootnotes}
+
+\printindex
+
+
+  \end{document}
