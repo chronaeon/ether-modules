@@ -10,23 +10,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Key Terms and Concepts}{6}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline State Machine}{7}{section*.3}
+\contentsline {paragraph}{\relax State Machine}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline priorstate}{7}{section*.4}
+\contentsline {paragraph}{\relax priorstate}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline presentstate}{7}{section*.5}
+\contentsline {paragraph}{\relax presentstate}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline poststate}{7}{section*.6}
+\contentsline {paragraph}{\relax poststate}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline transaction}{7}{section*.7}
+\contentsline {paragraph}{\relax transaction}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline state-transition}{7}{section*.8}
+\contentsline {paragraph}{\relax state-transition}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline state-transition[ing] function}{7}{section*.9}
+\contentsline {paragraph}{\relax state-transition[ing] function}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline state-machine}{7}{section*.10}
+\contentsline {paragraph}{\relax state-machine}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline state}{7}{section*.11}
+\contentsline {paragraph}{\relax state}{7}{section.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Transactions}{8}{section.5}
 \defcounter {refsection}{0}\relax 
@@ -136,6 +136,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {.2}Symbol Key}{11}{subsection.Alph0.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Glossary}{12}{section*.12}
+\contentsline {section}{Glossary}{12}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Acronyms}{14}{section*.14}
+\contentsline {section}{Acronyms}{14}{section*.5}
