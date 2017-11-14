@@ -44,9 +44,9 @@ This means that:
 
 \begin{enumerate}
 	\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
-	\item If the byte-array contains between $2$ and $56$ bytes then the output is equal to the input number of the byte equal to the length of the byte-array plus $128$.  
-	\item In any other case the output is equal to the input prefixed by the minimal-length bytearray which, when interpreted as a big-endian integer, is equal to the length of the input bytearray which is itself prefixed by the number of bytes required to faithfully encode this length value, plus $183$.
 \end{enumerate}
+
+In other words:
 
 
 \printbibliography
