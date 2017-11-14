@@ -1,4 +1,4 @@
-[10pt,a4paper,oneside]{scrartcl}
+\documentclass[10pt,a4paper,oneside]{scrartcl}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -7,20 +7,19 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage[
-	authordate,
-	strict,
-	backend=biber
-]
-{biblatex-chicago}
+	   style=ieee
+	   ]
+	   {biblatex}
 \usepackage{mathtools}
 \author{}
-\title{Total Difficulty}
+\title{#NAME#}
 \date{}
 \addbibresource{~/modules/References.bib}
 \begin{document}
 \maketitle
-\paragraph{Notation}: \textit{$B_t$} or block\_difficulty
-\paragraph{Description}: The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
+\paragraph{Notation}: #NOTATION#
+\paragraph{Description}: #DESCRIPTION#
 
+\printbibliography
 \end{document}
 

@@ -7,20 +7,19 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage[
-	authordate,
-	strict,
-	backend=biber
-]
-{biblatex-chicago}
+	   style=ieee
+	   ]
+	   {biblatex}
 \usepackage{mathtools}
 \author{}
-\title{}
+\title{#NAME#}
 \date{}
 \addbibresource{~/modules/References.bib}
 \begin{document}
 \maketitle
-\paragraph{Notation}: \texttt{ERE}
-\paragraph{Description}: The environment under which an Autonomous Object executes in the EVM: the EVM runs as a part of this environment.  
+\paragraph{Notation}: #NOTATION#
+\paragraph{Description}: #DESCRIPTION#
 
+\printbibliography
 \end{document}
 
