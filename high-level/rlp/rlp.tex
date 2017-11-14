@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	style=ieee
+]
+{biblatex}
+\usepackage{mathtools}
+\author{}
+\title{Recursive Length Prefix}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{rlp}
+\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth. RLP is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. Positive RLP integers must be represented in big-endian binary form with no leading zeroes. For this reason, the integer value zero is equivalent to the empty byte array. Deserialized positive integers with leading zeros must be treated as invalid. The integer representation of \textsl{string length} and integers in the \textsl{payload}  must also be encoded this way.\supercite{EF2017}
+
+The state database is maintained in a Merkle-Patricia Trie data structure on the end-user's computer.\supercite{Wood2017}
+
+
+\printbibliography
+\end{document}
+
