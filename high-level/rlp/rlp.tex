@@ -18,9 +18,35 @@
 \begin{document}
 \maketitle
 \paragraph{Notation}: \texttt{rlp}
-\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth. RLP is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. Positive RLP integers must be represented in big-endian binary form with no leading zeroes. For this reason, the integer value zero is equivalent to the empty byte array. Deserialized positive integers with leading zeros must be treated as invalid. The integer representation of \textsl{string length} and integers in the \textsl{payload}  must also be encoded this way.\supercite{EF2017}
+\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
+\par
 
-The state database is maintained in a Merkle-Patricia Trie data structure on the end-user's computer.\supercite{Wood2017}
+Positive RLP integers are represented with the most significant value stored at the lowest memory address (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeros it is invalid.\supercite{EF2017}
+\par
+
+The global state database is encoded as RLP for fast traversal and inspection of data. In structure it constitutes a mapping between \textsl{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be traversed speedily and without network delay. RLP encodes values as byte-arrays, or as sequences of further values. \supercite{Wood2017} 
+\par 
+
+This means that:
+\\
+
+\texttt{%
+	\begin{tabular}{ r l c l }
+		if & rlp(x) &  = & bytearray \\
+		then & rlp(bytearray) & = & true \\
+		elif & rlp(x) & = & value \\
+		then & rlp(value) & = & true \\
+		elif & rlp(x) & = & null \\
+		then & rlp(x) & = & false \\
+	\end{tabular}
+}
+\\~\\
+
+\begin{enumerate}
+	\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
+	\item If the byte-array contains between $2$ and $56$ bytes then the output is equal to the input number of the byte equal to the length of the byte-array plus $128$.  
+	\item In any other case the output is equal to the input prefixed by the minimal-length bytearray which, when interpreted as a big-endian integer, is equal to the length of the input bytearray which is itself prefixed by the number of bytes required to faithfully encode this length value, plus $183$.
+\end{enumerate}
 
 
 \printbibliography
