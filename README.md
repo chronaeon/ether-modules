@@ -6,6 +6,7 @@ This project is built entirely in LaTeX. This project aims to provide complete, 
 
 The three main directories high-level, mid-level, and low-level. Low-level contains the most basic Ethereum concepts that easily translate into regular language. Mid-level contains core Ethereum concepts that outline the whole of its operation. High-level  contains concepts that have a broad range of applications and use cases and are not specific just to Ethereum.
 
+Several but not all of the various resources cited can be found in the references directory.
 
-Several but not all of the various resources cited can be found in the references/ directory.
-
+Support the Author: ETH: 0xb7F7511e3f69cdD40963ba6cfb996E9c0a3F8b05
+		    BTC: 17aBhPVeTk3o5zKY9kJsBYNpDdCx8YxFkM
