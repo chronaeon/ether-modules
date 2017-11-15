@@ -1,0 +1,9 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'opcodes.blg'
+[149] biber:303> INFO - === Tue Nov 14, 2017, 19:36:51
+[238] Biber.pm:360> INFO - Reading 'opcodes.bcf'
+[522] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[563] Utils.pm:164> WARN - The file 'opcodes.bcf' does not contain any citations!
+[585] bbl.pm:608> INFO - Writing 'opcodes.bbl' with encoding 'latin1'
+[585] bbl.pm:712> INFO - Output to opcodes.bbl
+[586] Biber.pm:110> INFO - WARNINGS: 1
