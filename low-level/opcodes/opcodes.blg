@@ -1,9 +1,17 @@
 [1] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [1] Config.pm:357> INFO - Logfile is 'opcodes.blg'
-[149] biber:303> INFO - === Tue Nov 14, 2017, 19:36:51
-[238] Biber.pm:360> INFO - Reading 'opcodes.bcf'
-[522] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
-[563] Utils.pm:164> WARN - The file 'opcodes.bcf' does not contain any citations!
-[585] bbl.pm:608> INFO - Writing 'opcodes.bbl' with encoding 'latin1'
-[585] bbl.pm:712> INFO - Output to opcodes.bbl
-[586] Biber.pm:110> INFO - WARNINGS: 1
+[119] biber:303> INFO - === Tue Nov 14, 2017, 23:25:17
+[170] Biber.pm:360> INFO - Reading 'opcodes.bcf'
+[462] Biber.pm:836> INFO - Found 1 citekeys in bib section 0
+[523] Biber.pm:3671> INFO - Processing section 0
+[569] Biber.pm:3841> INFO - Looking for bibtex format file '~/modules/References.bib' for section 0
+[756] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[770] bibtex.pm:1281> INFO - Found BibTeX data source '/home/mddhattr/modules/References.bib'
+[779] Utils.pm:164> WARN - BibTeX subsystem: /tmp/IaXvSPAy6i/References.bib_14027.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[851] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[852] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[852] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[852] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[856] bbl.pm:608> INFO - Writing 'opcodes.bbl' with encoding 'latin1'
+[859] bbl.pm:712> INFO - Output to opcodes.bbl
+[859] Biber.pm:110> INFO - WARNINGS: 1

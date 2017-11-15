@@ -16,5 +16,34 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{Buterin2017}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=850981945102d0f671b6762173c8988a}{%
+           family={Buterin},
+           familyi={B\bibinitperiod},
+           given={Vitalik},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{850981945102d0f671b6762173c8988a}
+      \strng{fullhash}{850981945102d0f671b6762173c8988a}
+      \strng{authornamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authorfullhash}{850981945102d0f671b6762173c8988a}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.github.com/ethereum/pyethereum/ethereum/opcodes.py}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Pyethereum Source}
+      \field{year}{2017}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
