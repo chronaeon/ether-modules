@@ -9,5 +9,7 @@ The three main directories high-level, mid-level, and low-level. Low-level conta
 Several but not all of the various resources cited can be found in the references directory.
 
 Support this work: 
+
 ETH: 0xb7F7511e3f69cdD40963ba6cfb996E9c0a3F8b05
+
 BTC: 17aBhPVeTk3o5zKY9kJsBYNpDdCx8YxFkM
