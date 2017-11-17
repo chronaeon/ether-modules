@@ -1,0 +1,17 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'message.blg'
+[162] biber:303> INFO - === Fri Nov 17, 2017, 17:11:46
+[253] Biber.pm:360> INFO - Reading 'message.bcf'
+[545] Biber.pm:836> INFO - Found 1 citekeys in bib section 0
+[608] Biber.pm:3671> INFO - Processing section 0
+[686] Biber.pm:3841> INFO - Looking for bibtex format file '~/modules/References.bib' for section 0
+[898] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[917] bibtex.pm:1281> INFO - Found BibTeX data source '/home/mddhattr/modules/References.bib'
+[927] Utils.pm:164> WARN - BibTeX subsystem: /tmp/_bfe1MSdKe/References.bib_1936.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[973] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[974] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[974] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[974] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[979] bbl.pm:608> INFO - Writing 'message.bbl' with encoding 'latin1'
+[981] bbl.pm:712> INFO - Output to message.bbl
+[982] Biber.pm:110> INFO - WARNINGS: 1

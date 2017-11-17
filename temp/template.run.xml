@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>opcodes.bcf</file>
+      <file>template.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>opcodes.bbl</file>
+      <file>template.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,19 +67,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>opcodes</infile>
+      <infile>template</infile>
     </cmdline>
     <input>
-      <file>opcodes.bcf</file>
+      <file>template.bcf</file>
     </input>
     <output>
-      <file>opcodes.bbl</file>
+      <file>template.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>opcodes.bbl</file>
+      <file>template.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>opcodes.bcf</file>
+      <file>template.bcf</file>
     </requires>
     <requires type="editable">
       <file>~/modules/References.bib</file>

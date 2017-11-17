@@ -1,0 +1,9 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'template.blg'
+[151] biber:303> INFO - === Wed Nov 15, 2017, 05:53:12
+[241] Biber.pm:360> INFO - Reading 'template.bcf'
+[533] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[572] Utils.pm:164> WARN - The file 'template.bcf' does not contain any citations!
+[594] bbl.pm:608> INFO - Writing 'template.bbl' with encoding 'latin1'
+[595] bbl.pm:712> INFO - Output to template.bbl
+[595] Biber.pm:110> INFO - WARNINGS: 1
