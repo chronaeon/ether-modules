@@ -1,0 +1,22 @@
+\begin{theindex}
+
+  \item Bitcoin, \hyperpage{5}
+  \item blockchain
+    \subitem veracity, \hyperpage{5}
+
+  \indexspace
+
+  \item currency
+    \subitem electronic, \hyperpage{5}
+
+  \indexspace
+
+  \item message-passing, \hyperpage{5}
+
+  \indexspace
+
+  \item shared-state
+    \subitem concurrence, \hyperpage{5}
+  \item state, \hyperpage{5}
+
+\end{theindex}

@@ -1,0 +1,67 @@
+\BOOKMARK [-1][-]{part.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{section.1}{The Evolution of a Protocol}{part.1}% 2
+\BOOKMARK [1][-]{subsection.1.1}{Opcodes}{section.1}% 3
+\BOOKMARK [-1][-]{part.2}{Memory}{}% 4
+\BOOKMARK [0][-]{section.2}{Transactions}{part.2}% 5
+\BOOKMARK [1][-]{subsection.2.1}{Message Calls}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Contract Creation}{subsection.2.1}% 7
+\BOOKMARK [1][-]{section.3}{Gas}{section.2}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Gasprice}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Gaslimit}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Gasused}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Execution}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.5}{Execution Model}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.6}{Execution Environment}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.7}{State Machines}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.8}{Miner Choice}{section.3}% 16
+\BOOKMARK [-1][-]{part.3}{Processing}{}% 17
+\BOOKMARK [0][-]{section.4}{Computation Flow}{part.3}% 18
+\BOOKMARK [1][-]{section.5}{State}{section.4}% 19
+\BOOKMARK [2][-]{subsection.5.1}{Substate}{section.5}% 20
+\BOOKMARK [1][-]{section.6}{State Transitions}{section.4}% 21
+\BOOKMARK [1][-]{section.7}{Currency}{section.4}% 22
+\BOOKMARK [1][-]{section.8}{Machine State}{section.4}% 23
+\BOOKMARK [1][-]{section.9}{Account Creation}{section.4}% 24
+\BOOKMARK [1][-]{section.10}{Ethash}{section.4}% 25
+\BOOKMARK [2][-]{subsection.10.1}{GHOST Protocol}{section.10}% 26
+\BOOKMARK [1][-]{section.11}{Message Calls}{section.4}% 27
+\BOOKMARK [1][-]{section.12}{RLP}{section.4}% 28
+\BOOKMARK [2][-]{subsection.12.1}{Well-Formed RLP}{section.12}% 29
+\BOOKMARK [1][-]{section.13}{Data}{section.4}% 30
+\BOOKMARK [1][-]{section.14}{The Block}{section.4}% 31
+\BOOKMARK [2][-]{subsection.14.1}{Transaction Receipts}{section.14}% 32
+\BOOKMARK [2][-]{subsection.14.2}{Nonce}{section.14}% 33
+\BOOKMARK [2][-]{subsection.14.3}{Ommers}{section.14}% 34
+\BOOKMARK [1][-]{section.15}{Programming Languages}{section.4}% 35
+\BOOKMARK [2][-]{subsection.15.1}{EVM Code}{section.15}% 36
+\BOOKMARK [2][-]{subsection.15.2}{Opcodes}{section.15}% 37
+\BOOKMARK [2][-]{subsection.15.3}{Lower-Level Lisp}{section.15}% 38
+\BOOKMARK [2][-]{subsection.15.4}{Solidity}{section.15}% 39
+\BOOKMARK [2][-]{subsection.15.5}{Formal Signs}{section.15}% 40
+\BOOKMARK [1][-]{section.16}{Contract Creation}{section.4}% 41
+\BOOKMARK [1][-]{section.17}{Bit Sequences}{section.4}% 42
+\BOOKMARK [1][-]{section.18}{ECDSA}{section.4}% 43
+\BOOKMARK [2][-]{subsection.18.1}{Public Keys}{section.18}% 44
+\BOOKMARK [2][-]{subsection.18.2}{Private Keys}{section.18}% 45
+\BOOKMARK [1][-]{section.19}{Byte Arrays}{section.4}% 46
+\BOOKMARK [1][-]{section.20}{Apply Rewards}{section.4}% 47
+\BOOKMARK [1][-]{section.21}{Verification}{section.4}% 48
+\BOOKMARK [2][-]{subsection.21.1}{Ommershash}{section.21}% 49
+\BOOKMARK [2][-]{subsection.21.2}{Beneficiary}{section.21}% 50
+\BOOKMARK [2][-]{subsection.21.3}{Bloom Filter}{section.21}% 51
+\BOOKMARK [2][-]{subsection.21.4}{isSibling Property}{section.21}% 52
+\BOOKMARK [2][-]{subsection.21.5}{Mining}{section.21}% 53
+\BOOKMARK [1][-]{section.22}{Halting}{section.4}% 54
+\BOOKMARK [1][-]{section.23}{World State}{section.4}% 55
+\BOOKMARK [1][-]{section.24}{Account State}{section.4}% 56
+\BOOKMARK [2][-]{subsection.24.1}{Nonce}{section.24}% 57
+\BOOKMARK [2][-]{subsection.24.2}{Storage Root}{section.24}% 58
+\BOOKMARK [2][-]{subsection.24.3}{Code Hash}{section.24}% 59
+\BOOKMARK [2][-]{subsection.24.4}{Balance}{section.24}% 60
+\BOOKMARK [-1][-]{part.4}{Conclusions}{}% 61
+\BOOKMARK [-1][-]{part.5}{Appendix}{}% 62
+\BOOKMARK [0][-]{subsection.Alph0.1}{Symbol Key}{part.5}% 63
+\BOOKMARK [1][-]{section*.3}{References}{subsection.Alph0.1}% 64
+\BOOKMARK [1][-]{section*.4}{Glossary}{subsection.Alph0.1}% 65
+\BOOKMARK [1][-]{section*.6}{Acronyms}{subsection.Alph0.1}% 66
+\BOOKMARK [1][-]{section*.7}{Index}{subsection.Alph0.1}% 67
