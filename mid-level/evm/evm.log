@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  7 NOV 2017 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  18 NOV 2017 07:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,8 +590,7 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )))
 \@quotelevel=\count295
 \@quotereset=\count296
-
-No file evm.aux.
+ (./evm.aux)
 \openout1 = `evm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -606,7 +605,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count297
 \scratchdimen=\dimen136
@@ -669,22 +668,14 @@ m
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./evm.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                evm
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'evm.run.xml'.
 \openout1 = `evm.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12385 strings out of 493013
- 221737 string characters out of 6135683
- 916245 words of memory out of 5000000
+ 12387 strings out of 493013
+ 221753 string characters out of 6135683
+ 916265 words of memory out of 5000000
  15805 multiletter control sequences out of 15000+600000
  7653 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -693,7 +684,7 @@ Here is how much of TeX's memory you used:
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on evm.pdf (1 page, 42621 bytes).
+Output written on evm.pdf (1 page, 44997 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

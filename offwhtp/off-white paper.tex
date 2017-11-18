@@ -31,7 +31,9 @@
 \usepackage{epigraph}
 \usepackage{tabularx}
 \usepackage[perpage]{footmisc}
-\usepackage[style=ieee,backref=true,autocite=superscript]{biblatex}
+\usepackage[style=ieee,
+	backref=true
+	]{biblatex}
 \usepackage{etoolbox}
 \usepackage{framed,color}
 \usepackage[framemethod=tikz]{mdframed}
@@ -54,7 +56,7 @@
 \makeindex
 \usepackage[totoc]{idxlayout}
 \usepackage{longtable}
-\renewcommand{\abstractname}{Executive Summary}    % clear the title
+
 \glstoctrue
 \newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
 
@@ -99,7 +101,7 @@
 \newglossaryentry{abstract machine}{name={abstract machine}, description={An abstract machine is a conceptual model of a computer that describes its own operations with perfect accuracy. Since abstract machines are theoretical, all possible outputs can be determined beforehand}}
 \newglossaryentry{design pattern}{name={design pattern}, description={a pattern of design in OOP}}
 \newglossaryentry{transaction}{name={transaction}, description={An input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}} 
-\newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about and access to proprietary computer systems should be free and unhindered for anyone who is willing and able to explore and improve it.\autocite{Levy2010}}} The open-source and decentralized nature of Ethereum makes it one of the most thorough and robust implementations of the \textsl{Hacker Ethic} to date.
+\newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about and access to proprietary computer systems should be free and unhindered for anyone who is willing and able to explore and improve it.\autocite{Levy2010} The open-source and decentralized nature of Ethereum makes it one of the most thorough and robust implementations of the \textsl{Hacker Ethic} to date.}}
 \newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
 \newglossaryentry{blockchain}{name={blockchain}, description={A consensus-based record of agreement where chunks of data\footnote{As of \today, roughly between 1 and 25 kilobytes in size\autocite{Etherscan2017}} (called blocks) are stored with cryptographic hashes linking each Block to the next, ensuring their validity. See also: \textit{hashing functions}.}}
 \newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.}}
@@ -181,9 +183,9 @@
 
 \setcounter{secnumdepth}{2}
 
-\author{\textbf{Micah Dameron}}
+\author{\textbf{M.D. Dameron}}
 
-\title{\Huge{Off-White Paper} \\ \hfill \\ \Large{An Anchor Specification for Ethereum}}
+\title{\Huge{Off-White Paper} \\ \hfill \\ \Large{A Technical Description of Ethereum}}
 
 \makeindex
 
@@ -197,8 +199,6 @@
 
 	\maketitle
 
-
-
 	\epigraph{\textsl{Beautiful is better than ugly. \\
 	Explicit is better than implicit. \\
 	Simple is better than complex. \\
@@ -206,19 +206,17 @@
 	}}{\textit{The Zen of Python}}
 
 
-
-
-%---EXECUTIVE SUMMARY---%
 \hfill \hfill
 \begin{center}\textbf{Abstract}\end{center}\par
-	\abstract{The goal of this paper\footnote{Formally, \textit{Blanched-Almond Paper}}} is threefold. First, we aim to create and expand concepts from the Yellowpaper that the Yellowpaper omits or fails to isolate from the reader in sufficient detail. Second, we propose a formally correct pseudocode to supplement the Yellowpaper's formal math. Finally, we give an open-source specification for Ethereum that is approachable, direct, and no-nonsense in style.
+	\abstract{The goal of this paper\footnote{Formally, \textit{Blanched-Almond Paper}}} is to create and expand concepts from Ethereum around which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode to describe Ethereum's operation rather than formal math and greek symbols, because pseudocode is actually \textit{preferable} when describing \textsc{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} which Ethereum is. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source has been the Ethereum \textit{Yellowpaper}, but much supplemental knowledge has been found elsewhere and crucial points from other sources have been added as well for the reader's benefit.
+	
 
 \clearpage
 %dominitoc 
 
 \begin{center}\section*{Acknowledgements}\end{center}
 
- Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, and for contributing your vast knowledge and expertise toward a good finished project. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
+ Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, by contributing your vast knowledge and expertise. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
 
 \clearpage
 
@@ -230,7 +228,7 @@
 \TrickSupertabularIntoMulticols
 \justify
 
-\part{Theory and Practice}
+\part{Theory}
 
 	\section{The Evolution of a Protocol}
 	Over the past decade, blockchain technology has proven its longevity and veracity through a number of systems, most notably through Bitcoin, the first electronic currency of its kind to succeed. Bitcoin was successful in its mission to create currency based on a decentralized peer-to-peer Blockchain protocol, and Ethereum takes that concept a step further by creating a \textit{globally-distributed virtual machine}that can ad-hoc run such currency applications, along with any other conceivable applications or programs. Using well-established concepts from the relevant areas of computer science, like \textsc{message-passing}, \textsc{transaction processing}, and \textsc{shared-state concurrence}, the \textsl{Ethereum Protocol} creates an environment for developers to execute machine instructions with the same level of veracity and certainty as monetary transactions have on more standard Blockchains.  
@@ -264,6 +262,7 @@
 		\end{tikzpicture}
 	\end{savenotes}
 	\section{Data Structures}
+	\section{Cryptography} Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.
 	\section{Serialization}
 	\section{Hacker Ethic}
 	\section{Message-Passing Interface}
@@ -293,14 +292,21 @@
 			and this is what turns your solidity code into EVM code and how it's executed in the EVM
 
 \clearpage
-\part{Memory and Storage}
+\part{Practice}
 
-	\section{World State}
+	\section{Memory and Storage}
+			
+		\subsection{Data Structures}
 
-		Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+			\subsection{Trees}
+				\paragraph{Merkletrees}
+				\paragraph{Merkle-Patricia Trees}
 
+%-------			
+				\subsubsection{World State}
+					Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+%--------
 
-	\section{Data Structures}
 
 		\subsection{Byte Arrays}
 
@@ -333,25 +339,24 @@
    			 \subsubsection{Bloom Filter}
 \clearpage
 
-\part{Processing and Computation}
+	\section{Processing and Computation}
 	
-	\section{State Transition Function}
+		\subsection{State Transition Function}
 		State Transitions come about through a what is known as the State Transition Function; this is an abstraction of several operations in Ethereum which comprise the overall act of computing changes to the \textit{machine state} prior to adding them to the \textit{world state}, that is, through them being finalized and rewards applied to a given miner. \texttt{apply\_rewards} and \texttt{block\_beneficiary} are here.
 
     		\subsection{Mining}
 
 			\subsubsection{Ethash}
 	
-				\paragraph{GHOST Protocol}
+			\paragraph{GHOST Protocol}
 
 		\subsection{Verification}
 		    Verifies Ommer headers
 
 			\subsubsection{Ommers}
-		
 				\paragraph{Ommershash}
 
-			\subsubsection{Is-Sibling Property}
+			\subsubsection{\texttt{Is\_Sibling} Property}
 
 		\subsection{Transactions}
 			Transactions are the bread and butter of state transitions, that is of block additions, which are all the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
@@ -493,9 +498,9 @@
 \end{longtable}
 }
 
-\begin{multicols*}{2}
 
 \clearpage
+\begin{multicols*}{2}
 \printbibliography
 \clearpage
 \printglossary[type=\acronymtype]
