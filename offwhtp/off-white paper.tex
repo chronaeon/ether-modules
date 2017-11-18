@@ -104,7 +104,7 @@
 \newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about and access to proprietary computer systems should be free and unhindered for anyone who is willing and able to explore and improve it.\autocite{Levy2010} The open-source and decentralized nature of Ethereum makes it one of the most thorough and robust implementations of the \textsl{Hacker Ethic} to date.}}
 \newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
 \newglossaryentry{blockchain}{name={blockchain}, description={A consensus-based record of agreement where chunks of data\footnote{As of \today, roughly between 1 and 25 kilobytes in size\autocite{Etherscan2017}} (called blocks) are stored with cryptographic hashes linking each Block to the next, ensuring their validity. See also: \textit{hashing functions}.}}
-\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.}}
+\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there can only be one given output.\footnote{Actually, most hashing functions eventually have some collision points where two viable inputs reproduce the same output. But actual collision points are rare discoveries and tend to be followed (if not preceded by) newer more powerful hashing algorithms that are yet harder to break or find collisions in. Since the number space is infinite, we aren't likely to run out of potential new and larger hashing algorithms any time soon. Older hashing algorithms with known collisions, such as MD5 are not recommended for use in applications with  stringent security requirements.}The reason this works is because the hash of a block's data is a certainty, just like two plus two equals four is a certainty.  }}
 \newglossaryentry{state machine}{name={state machine}, description={A state machine rests in a universal, stable, singular condition, called a state. State machines  transition to new states given certain compatible inputs.}}
 \newglossaryentry{Ethereum Foundation}{name={Ethereum Foundation}, description={The non-profit organization in charge of executing the development processes of Ethereum in line with the \gls{Whitepaper}}}
 \newglossaryentry{Whitepaper}{name={Whitepaper}, description={A conceptual map, distinct from the Yellowpaper, which highlights the development goals for Ethereum as a whole\autocite{EF2017}}}
@@ -115,7 +115,7 @@
 \newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state$^\sigma$ at a particular time}}
 \newglossaryentry{trie}{name={trie}, description={A tree-structure for organizing data, the position of data in the tree contains the particular path from root to leaf node that represents the key (the path from root to leaf is ``one'' key) you are searching the trie structure for. The data of the key is contained in the trie relationships that emerge from related nodes in the trie structure}}
 \newglossaryentry{leaf node}{name={leaf node},description={the bottom-most node in a particular tree, of blocks, one half of the ``key'' the other half being the root node, which creates the path between}}
-\newglossaryentry{addresses}{name={addresses}, description={160-bit (20-byte) identifiers--the last 20 characters of an Ethereum address}}
+\newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.}}
 \newglossaryentry{public key}{name={public key}, description={A term originating from \textsl{cryptography} and corresponding to  \textbf{private key}, this is the 42-byte (i.e. 42-character) string of ASCII digits which transacts on the public network}}
 \newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
 \newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
@@ -187,7 +187,7 @@
 
 \author{\textnormal{\textbf{Micah Dameron}}}
 
-\title{\Huge{Blanched-Almond Paper} \\ \hfill \\ \Large{Technical Explanations of Ethereum}}
+\title{\Huge{Blanched-Almond Paper} \\ \hfill \\ \Large{Technical Explanations About Ethereum}}
 
 \makeindex
 
@@ -263,7 +263,6 @@
 		};
 		\end{tikzpicture}
 	\end{savenotes}
-	\section{Data Structures}
 	\section{Cryptography} Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.
 	\section{Serialization}
 	\section{Hacker Ethic}
@@ -300,9 +299,8 @@
 			
 		\subsection{Data Structures}
 
-			\subsection{Trees}
-				\paragraph{Merkletrees}
 				\paragraph{Merkle-Patricia Trees}
+					Merkle-Patricia Trees
 
 %-------			
 				\subsubsection{World State}
