@@ -19,54 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
-    \entry{Buterin2017}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=850981945102d0f671b6762173c8988a}{%
-           family={Buterin},
-           familyi={B\bibinitperiod},
-           given={Vitalik},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {GitHub}%
-      }
-      \strng{namehash}{850981945102d0f671b6762173c8988a}
-      \strng{fullhash}{850981945102d0f671b6762173c8988a}
-      \strng{authornamehash}{850981945102d0f671b6762173c8988a}
-      \strng{authorfullhash}{850981945102d0f671b6762173c8988a}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.github.com/ethereum/pyethereum/ethereum/opcodes.py}}
-      \field{journaltitle}{GitHub repository}
-      \field{title}{Pyethereum Source}
-      \field{year}{2017}
-    \endentry
-    \entry{Wood2017}{paper}{}
-      \name{author}{1}{}{%
-        {{hash=e2eeb49d9390c82ee05b47c738b5ff4e}{%
-           family={Wood},
-           familyi={W\bibinitperiod},
-           given={Dr.\bibnamedelimi Gavin},
-           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {GitHub}%
-      }
-      \strng{namehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
-      \field{journaltitle}{GitHub repository}
-      \field{title}{Ethereum: A Secure Decentralised Generalised Transaction Ledger}
-      \field{year}{2017}
-    \endentry
     \entry{Etherscan2017}{misc}{}
       \name{author}{1}{}{%
         {{hash=6a04a374d549abc7a9c36f67baccad50}{%
@@ -77,8 +29,8 @@
       \strng{fullhash}{6a04a374d549abc7a9c36f67baccad50}
       \strng{authornamehash}{6a04a374d549abc7a9c36f67baccad50}
       \strng{authorfullhash}{6a04a374d549abc7a9c36f67baccad50}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Ethereum Average BlockSize Chart}
@@ -102,8 +54,8 @@
       \strng{fullhash}{7e521cf3616b7c888d511a80e9b82ad5}
       \strng{authornamehash}{7e521cf3616b7c888d511a80e9b82ad5}
       \strng{authorfullhash}{7e521cf3616b7c888d511a80e9b82ad5}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Hackers: Heroes of the Computer Revolution}
@@ -119,8 +71,8 @@
       \strng{fullhash}{e3a36de53b51204b5b96e1974ca0488e}
       \strng{authornamehash}{e3a36de53b51204b5b96e1974ca0488e}
       \strng{authorfullhash}{e3a36de53b51204b5b96e1974ca0488e}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Microsoft Docs}
@@ -130,8 +82,8 @@
       \endverb
     \endentry
     \entry{sourcemaking}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SourceMaking}
       \field{title}{Design Patterns and Refactoring}
@@ -159,8 +111,8 @@
       \strng{fullhash}{f41f8ce554ac862b889808f8056cc3df}
       \strng{authornamehash}{f41f8ce554ac862b889808f8056cc3df}
       \strng{authorfullhash}{f41f8ce554ac862b889808f8056cc3df}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A dictionary of computer science}
@@ -181,8 +133,8 @@
       \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}
@@ -190,9 +142,33 @@
       \field{title}{Ethereum Whitepaper}
       \field{year}{2017}
     \endentry
+    \entry{Wood2017}{paper}{}
+      \name{author}{1}{}{%
+        {{hash=e2eeb49d9390c82ee05b47c738b5ff4e}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Dr.\bibnamedelimi Gavin},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Ethereum: A Secure Decentralised Generalised Transaction Ledger}
+      \field{year}{2017}
+    \endentry
     \entry{reddit}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labeltitlesource}{title}
       \field{journaltitle}{reddit}
       \field{title}{I am a developer and I don't understand the Yellow Paper. • r/ethereum}

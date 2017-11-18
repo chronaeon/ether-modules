@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  17 NOV 2017 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  17 NOV 2017 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -40,21 +40,21 @@ Package tocbasic Info: omitting babel extension for `lof'
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 132.
-Package scrartcl Info: You've used standard option `11pt'.
+Package scrartcl Info: You've used standard option `10pt'.
 (scrartcl)             This is correct!
-(scrartcl)             Internally I'm using `fontsize=11pt'.
+(scrartcl)             Internally I'm using `fontsize=10pt'.
 (scrartcl)             If you'd like to set the option with \KOMAoptions,
-(scrartcl)             you'd have to use `fontsize=11pt' there
-(scrartcl)             instead of `11pt', too.
+(scrartcl)             you'd have to use `fontsize=10pt' there
+(scrartcl)             instead of `10pt', too.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/leqno.clo
 File: leqno.clo 2016/12/29 v1.2a Standard LaTeX option (left equation numbers)
 )
-Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
+Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
 ine 2052.
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (11pt
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (10pt
 )
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
@@ -77,21 +77,21 @@ Package typearea Info: You've used standard option `a4paper'.
 \ta@temp=\skip45
 \footheight=\skip46
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 8
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 418.25555pt
-(typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 595.80026pt
-(typearea)              \topmargin      = -25.16531pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
 (typearea)              on input line 1529.
 )
 \c@part=\count80
@@ -2223,28 +2223,28 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./off-white paper.aux)
 \openout1 = `"off-white paper.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Try loading font information for T1+ccr on input line 204.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Try loading font information for T1+ccr on input line 189.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ccfonts/t1ccr.fd
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 204.
+(lastpage)             ! on input line 189.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2262,15 +2262,15 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \textheight=680.02078pt
 * \oddsidemargin=-35.28133pt
 * \evensidemargin=-35.28133pt
-* \topmargin=-58.45496pt
-* \headheight=17.0pt
-* \headsep=20.40001pt
-* \topskip=11.0pt
-* \footskip=47.6pt
-* \marginparwidth=59.7508pt
+* \topmargin=-54.05495pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
 * \marginparsep=12.8401pt
 * \columnsep=14.22636pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -2281,7 +2281,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box126
-Package hyperref Info: Link coloring ON on input line 204.
+Package hyperref Info: Link coloring ON on input line 189.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2290,9 +2290,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count473
 )
-LaTeX Info: Redefining \ref on input line 204.
-LaTeX Info: Redefining \pageref on input line 204.
-LaTeX Info: Redefining \nameref on input line 204.
+LaTeX Info: Redefining \ref on input line 189.
+LaTeX Info: Redefining \pageref on input line 189.
+LaTeX Info: Redefining \nameref on input line 189.
 
 (./off-white paper.out) (./off-white paper.out)
 \@outlinefile=\write11
@@ -2341,7 +2341,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 204.
+LaTeX Info: Redefining \selectfont on input line 189.
  ABD: EveryShipout initializing macros
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2352,8 +2352,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"off-white paper".bbl' found.
 
 (./off-white paper.bbl)
-Package biblatex Info: Reference section=0 on input line 204.
-Package biblatex Info: Reference segment=0 on input line 204.
+Package biblatex Info: Reference section=0 on input line 189.
+Package biblatex Info: Reference segment=0 on input line 189.
 \c@minilofdepth=\count480
 \c@minilotdepth=\count481
 \c@partlofdepth=\count482
@@ -2392,7 +2392,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-LaTeX Info: Redefining \microtypecontext on input line 204.
+LaTeX Info: Redefining \microtypecontext on input line 189.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2415,7 +2415,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \GPT@outputbox=\box128
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 213.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 198.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -2430,7 +2430,7 @@ Package microtype Info: Loading generic settings for font family
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 213.
+LaTeX Font Info:    Try loading font information for U+msa on input line 198.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2438,7 +2438,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 213.
+LaTeX Font Info:    Try loading font information for U+msb on input line 198.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2447,98 +2447,71 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 213.
-LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 227.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 198.
+LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 212.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 23
-9.
+Package tocbasic Info: character protrusion at toc deactivated on input line 22
+4.
  (./off-white paper.toc [3
 
-] [4])
+])
 \tf@toc=\write12
 \openout12 = `"off-white paper.toc"'.
 
-
-[5]
+ [4]
 part I.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 249.
+(scrkbase)              on input line 232.
 
-Overfull \hbox (11.4364pt too wide) in paragraph at lines 275--275
-[][][][]\T1/ccr/m/n/9 (-20) Cryptoeconomics  
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 234.
+
+
+Overfull \hbox (5.92075pt too wide) in paragraph at lines 262--262
+[][][][]\T1/ccr/m/n/8 (-20) Cryptoeconomics  
  []
 
 
-Overfull \hbox (1.52982pt too wide) in paragraph at lines 275--275
-[][][][]\T1/ccr/m/n/9 (-20) Organizational 
- []
-
-
-Overfull \hbox (14.40532pt too wide) in paragraph at lines 276--279
+Overfull \hbox (11.39702pt too wide) in paragraph at lines 263--265
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 281.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 285.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 282.
 
 part II.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 304.
+(scrkbase)              on input line 295.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 306.
+(hyperref)                than one, level fixed on input line 297.
 
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 308.
-
-[6
+[5
 
 ]
-part III.
-Package scrkbase Info: You've told me to use the font selection of the element
-(scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 333.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 336.
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 315.
 
-[7]
-LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <9> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 422.
+LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 319.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 326.
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 8 might be wrong on input line 425.
-
-
-[8]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 428.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
@@ -2546,93 +2519,118 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 332.
+
+[6
+
+]
+part III.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 335.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 337.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 340.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 342.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 342.
+
+[7
+
+]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 349.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 363.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 384.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+[8] [9
+
+]
+Overfull \vbox (466.89987pt too high) has occurred while \output is active []
+
+
+[10
+
+] [11
+
+]
 part IV.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 433.
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 438.
+(scrkbase)              on input line 410.
 
-(/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 414.
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 493.
+
+Underfull \vbox (badness 10000) detected at line 493
+ []
+
+[12]
+
+Package biblatex Warning: No driver for entry type 'paper'.
+(biblatex)                Using fallback driver on input line 498.
+
+
+Package biblatex Warning: No driver for entry type 'paper'.
+(biblatex)                Using fallback driver on input line 498.
+
+
+Overfull \vbox (518.85371pt too high) has occurred while \output is active []
+
+
+[13
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 498.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 438
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
-File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
-)
-LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 438.
- [9
-
-]
-part V.
-Package scrkbase Info: You've told me to use the font selection of the element
-(scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 456.
-[10] [11
-
-]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 546.
-
-Overfull \hbox (25.54086pt too wide) in paragraph at lines 546--546
-[]  [] 
- []
-
-
-Overfull \vbox (25.67491pt too high) has occurred while \output is active []
-
-
-[12
-
-]
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 549.
-
-
-Overfull \hbox (22.3956pt too wide) in paragraph at lines 550--566
-[] 
- []
-
-[13]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 571.
-
-
-Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 571.
-
-
-Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 571.
-
 
 LaTeX Font Warning: Font shape `OMS/ccr/m/it' undefined
 (Font)              using `OMS/ccr/m/n' instead
-(Font)              for symbol `textbullet' on input line 571.
+(Font)              for symbol `textbullet' on input line 498.
 
-[14
-
-]
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 498
+.
+(/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
+File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
+)
+LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 498.
+ [14]
 No file "off-white paper".acr.
-
-Overfull \hbox (3.42952pt too wide) in paragraph at lines 575--575
-[]\T1/ccr/m/n/10.95 (-20) A se-cure, consensus-
- []
-
 [15
 
-] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-[]\T1/ccr/m/n/10.95 (+20) Ethereum's first for-mal
- []
-
-[18] (./off-white paper.ind) 
+] [16] [17] (./off-white paper.ind) 
 AED: lastpage setting LastPage
-[19
+[18
 
 ]
 Package minitoc Info: I0009
@@ -2646,13 +2644,13 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the "off-white paper".log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 583.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 583.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 510.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 510.
 (./off-white paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 583.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 583.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 510.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 510.
 Package rerunfilecheck Info: File `"off-white paper".out' has not changed.
-(rerunfilecheck)             Checksum: 73BDE9CAC4CFA847291028F821B0C6EC;3941.
+(rerunfilecheck)             Checksum: 7E821C9173ABA2FB3871BF93AA97ACB0;3397.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2660,24 +2658,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to '"off-white paper".run.xml'.
 \openout1 = `"off-white paper.run.xml"'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 583.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 510.
  ) 
 Here is how much of TeX's memory you used:
- 52396 strings out of 493013
- 995533 string characters out of 6135683
- 1874655 words of memory out of 5000000
- 54487 multiletter control sequences out of 15000+600000
- 45037 words of font info for 171 fonts, out of 8000000 for 9000
+ 51809 strings out of 493013
+ 983735 string characters out of 6135683
+ 1869979 words of memory out of 5000000
+ 53979 multiletter control sequences out of 15000+600000
+ 41555 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,12n,104p,10426b,2303s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
+ 91i,10n,104p,10426b,2362s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not ex
 ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2718,40 +2710,35 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/mddhattr/.te
-xlive2016/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.657pk></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfocc10.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sform10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfor
-m6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfoti10.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sftt1095.pfb>
-Output written on "off-white paper.pdf" (19 pages, 488702 bytes).
+ </home/mddhattr/.texlive2016/texmf-var/fonts/pk/ljfour/public/concmath-fonts/x
+ccsy10.600pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfocc1
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform10.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sform6.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sform7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfosl10.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfosl9.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfoti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sftt1000.pfb>
+Output written on "off-white paper.pdf" (18 pages, 438262 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 775 compressed objects within 8 object streams
- 177 named destinations out of 1000 (max. 500000)
- 40581 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 715 PDF objects out of 1000 (max. 8388607)
+ 643 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 39973 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,leqno,bibliography=totoc]{scrartcl}
+\documentclass[10pt,a4paper,leqno,bibliography=totoc]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage{lastpage} % Required to print the total number of pages
 \usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4.0cm]{geometry} % Adjust page margins
@@ -99,14 +99,15 @@
 \newglossaryentry{abstract machine}{name={abstract machine}, description={An abstract machine is a conceptual model of a computer that describes its own operations with perfect accuracy. Since abstract machines are theoretical, all possible outputs can be determined beforehand}}
 \newglossaryentry{design pattern}{name={design pattern}, description={a pattern of design in OOP}}
 \newglossaryentry{transaction}{name={transaction}, description={An input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}} 
-\newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about systems should be free and unhindered\autocite{Levy2010}}}
-\newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A secure, consensus-based global computer, and the subject of this paper}}
-\newglossaryentry{blockchain}{name={blockchain}, description={A consensus-based record of agreement where chunks of data\footnote{As of \today, roughly between 1 and 20 kilobytes in size\autocite{Etherscan2017}} (called blocks) are stored with cryptographic hashes linking each Block to the next, ensuring veracity}}
+\newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about and access to proprietary computer systems should be free and unhindered for anyone who is willing and able to explore and improve it.\autocite{Levy2010}}} The open-source and decentralized nature of Ethereum makes it one of the most thorough and robust implementations of the \textsl{Hacker Ethic} to date.
+\newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
+\newglossaryentry{blockchain}{name={blockchain}, description={A consensus-based record of agreement where chunks of data\footnote{As of \today, roughly between 1 and 25 kilobytes in size\autocite{Etherscan2017}} (called blocks) are stored with cryptographic hashes linking each Block to the next, ensuring their validity. See also: \textit{hashing functions}.}}
+\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.}}
 \newglossaryentry{state machine}{name={state machine}, description={A state machine rests in a universal, stable, singular condition, called a state. State machines  transition to new states given certain compatible inputs.}}
 \newglossaryentry{Ethereum Foundation}{name={Ethereum Foundation}, description={The non-profit organization in charge of executing the development processes of Ethereum in line with the \gls{Whitepaper}}}
 \newglossaryentry{Whitepaper}{name={Whitepaper}, description={A conceptual map, distinct from the Yellowpaper, which highlights the development goals for Ethereum as a whole\autocite{EF2017}}}
-\newglossaryentry{Yellowpaper}{name={Yellowpaper}, description={Ethereum's first formal specification, \autocite{Wood2017} written by Dr. Gavin Wood, one of the founders of Ethereum. Notorious for its difficulty to read,\autocite{reddit} it provides both a boon and an obstacle to potential adopters of Ethereum}}
-\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programming which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
+\newglossaryentry{Yellowpaper}{name={Yellowpaper}, description={Ethereum's primary formal specification, written by Dr. Gavin Wood, one of the founders of Ethereum. }}
+\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programmdng which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
 \newglossaryentry{specification}{name={specification}, description={Technical descriptions, instructions, and definitions from which other people can create working prototypes}}
 \newglossaryentry{State Database}{name={State Database}, description={A database backend that maintains a mapping of bytearrays to bytearrays}}
 \newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state$^\sigma$ at a particular time}}
@@ -133,25 +134,10 @@
 \newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
 \newglossaryentry{Lower-Level Lisp}{name={Lower-Level Lisp}, description={The Lisp-like Low-level Language, a human-writable language used for authoring simple contracts and general low-level language toolkit for trans-compiling to}}
 \newglossaryentry{Balance}{name={Balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
-\newglossaryentry{nonce}{name={nonce}, description={A value equal to the number of transactions sent from this address or the number of contract creations made by this account. a 64-bit hash which proves, combined with the mix-hash, that a sufficient amount of computation has been carried out on this block; formally $H_m$}}
 \newglossaryentry{beneficiary}{name={beneficiary}, description={The 160-bit address to which all fees collected from the successful mining of this block be transferred}}
-\newglossaryentry{block header}{name={block header}, description={The information in a block besides transaction information. It consists of several elements: the, the, , , , , and , , the, and , }}
-\newglossaryentry{parent hash}{name={parent hash}, description={The Keccak 256-bit hash of the parent block's header, in its entirety; formally $H_p$}}
-\newglossaryentry{ommers hash}{name={ommers hash}, description={The Keccak 256-bit hash of the ommers list portion of this block; formally $H_o$}}
-\newglossaryentry{state root}{name={state root}, description={The Keccak 256-bit hash of the root node of the state trie, after all transactions are executed and finalizations applied; formally $H_r$}}
-\newglossaryentry{transactions root}{name={transactions root}, description={The Keccak 256-bit hash of the root node of the true structure populated with each transaction in the transactions list portion of the block; formally $H_t$}}
-\newglossaryentry{receipts root}{name={receipts root}, description={The Keccak 256-bit hash of the root node of the true structure populated with the receipts of each transaction in the transactions list portion of the block; formally $H_e$}}
-\newglossaryentry{logs bloom}{name={logs bloom}, description={The Bloom filter composed from indexable information (logger address and log topics) contained in each log entry from the receipt of each transaction in the transactions list; formally $H_b$.}}
-\newglossaryentry{difficulty}{name={difficulty}, description={A scalar value corresponding to the difficulty level of a current block. This can be calculated from the previous block's difficulty level and the timestamp; formally $H_d$}}
-\newglossaryentry{number}{name={number}, description={A scalar value equal to the number of ancestor blocks. The genesis block has a number of zero; formally$H_i$.}}
-\newglossaryentry{gas limit}{name={gas limit}, description={A scalar value equal to the current limit of gas expenditure per block; formally $H_l$}}
-\newglossaryentry{gas used}{name={gas used}, description={A scalar value equal to the total gas used in transactions in this block; formally $H_g$}}
-\newglossaryentry{timestamp}{name={timestamp}, description={A scalar value equal to the reasonable output of Unix's time() at this block's inception; formally $H_s$}}
-\newglossaryentry{mixhash}{name={mixhash}, description={a 256-bit hash which proves, combined with the nonce, that a sufficient amount of computation has been carried out on this block; formally $H_m$.}}
-\newglossaryentry{state}{name={state}, description={A permanent, static, state  $H_m$.}}
-\newglossaryentry{state-transition}{name={state-transition}, description={}}
-\newglossaryentry{turing-complete}{name={turing-complete}, description={}}
-\newglossaryentry{abstract}{name={abstract}, description={}}
+\newglossaryentry{block header}{name={block header}, description={The information in a block besides transaction information. It consists of a dozen parts: (lists the 12 parts) }}
+\newglossaryentry{state}{name={state}, description={A permanent, static, state  \texttt{state}}}
+\newglossaryentry{transition}{name={state-transition}, description={}}
 
 
 \addbibresource{References.bib}
@@ -232,241 +218,203 @@
 
 \begin{center}\section*{Acknowledgements}\end{center}
 
- Thank you to the Ethereum founders for creating a product worth writing about and understanding. Thank you to the ConsenSys Mesh for reviewing my work and supporting this endeavor.  Thank you to Dr. Gavin Wood for your technical astuteness and creative genius. 
+ Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, and for contributing your vast knowledge and expertise toward a good finished project. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
 
 \clearpage
-%---TABLE OF CONTENTS---%
+
 \tableofcontents
+
 \clearpage
 
-
-%---PAGE SETUP---%
 \begin{multicols*}{2}
 \TrickSupertabularIntoMulticols
 \justify
-\columnbreak
 
-	\part{Introduction}
+\part{Theory and Practice}
 
-%	\begin{minipage}{\paperwidth}\raggedright
-	\paragraph{A Conceptual Map of the Ethereum Protocol}
-\begin{savenotes}
-\begin{tikzpicture} [font=\scriptsize,
-grow cyclic, 
-level 1/.style={level distance=1.4cm,sibling angle=135},
-level 2/.style={text width=2cm, font=\footnotesize, level distance=2cm,sibling angle=45}]
-\node {Ethereum} % root
-child { node {Memory}
-child { node {Merkle-Patricia Trie} }
-child { node {Blockdrive} }
-child { node {State} }
-child { node {Hash Functions} }
-}
-child { node {CPU}
-child { node {State Transitions} }
-child { node {Opcodes} }
-child { node {EVM Code} }
-child { node {Propogation Time} }
-}
-child { node {Theory}
-child { node {Cryptoeconomics} }
-child { node {Game Theory} }
-child { node {Organizational Design} }
-};
-\end{tikzpicture}
-\end{savenotes}
-%\end{minipage}
-
-
-\section{The Evolution of a Protocol}
+	\section{The Evolution of a Protocol}
 	Over the past decade, blockchain technology has proven its longevity and veracity through a number of systems, most notably through Bitcoin, the first electronic currency of its kind to succeed. Bitcoin was successful in its mission to create currency based on a decentralized peer-to-peer Blockchain protocol, and Ethereum takes that concept a step further by creating a \textit{globally-distributed virtual machine}that can ad-hoc run such currency applications, along with any other conceivable applications or programs. Using well-established concepts from the relevant areas of computer science, like \textsc{message-passing}, \textsc{transaction processing}, and \textsc{shared-state concurrence}, the \textsl{Ethereum Protocol} creates an environment for developers to execute machine instructions with the same level of veracity and certainty as monetary transactions have on more standard Blockchains.  
-	\index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}
+	\index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}	
 
-	\subsection{Opcodes}
-	But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix \_} \\
+\paragraph{A Conceptual Map of the Ethereum Protocol}
 
-\centering
+	\begin{savenotes}
+		\begin{tikzpicture} [font=\scriptsize,
+		grow cyclic, 
+		level 1/.style={level distance=1.4cm,sibling angle=135},
+		level 2/.style={text width=2cm, font=\footnotesize, level distance=2cm,sibling angle=45}]
+		\node {Ethereum} % root
+		child { node {Memory}
+		child { node {Merkle-Patricia Trie} }
+		child { node {Blockdrive} }
+		child { node {State} }
+		child { node {Hash Functions} }
+		}
+		child { node {CPU}
+		child { node {State Transitions} }
+		child { node {Opcodes} }
+		child { node {EVM Code} }
+		child { node {Propogation Time} }
+		}
+		child { node {Theory}
+		child { node {Cryptoeconomics} }
+		child { node {Game Theory} }
+		child { node {Organizational Design} }
+		};
+		\end{tikzpicture}
+	\end{savenotes}
+	\section{Data Structures}
+	\section{Serialization}
+	\section{Hacker Ethic}
+	\section{Message-Passing Interface}
+	\section{Singleton Pattern}
+	\section{State Machines}
+	\section{Processor Technology}
+	\section{Turing Machines}
+		\subsection{Turing-Completeness}
+	\section{Intrinsic Currency}
+		The smallest unit of currency in Ethereum is the Wei, which is $1*10^(18)$ Ether. All units at the machine level are counted in Wei.
+	\section{Computation Flow}
 
-\begin{tabular}{|rcl|}
+	\section{ECDSA}
+
+		\subsection{Public Key Cryptography}
+				\paragraph{Diffie Helman} hypothesis--stated in their paper (citation to it)
+			\subsubsection{Public Keys}
+
+			\subsubsection{Private Keys}
+
+	\section{Programming Languages}
+
+		\subsection{Lower-Level Lisp}
+			and this is what turns your LLL code into EVM code and how it's executed in the evm
+	
+		\subsection{Solidity}
+			and this is what turns your solidity code into EVM code and how it's executed in the EVM
+
+\clearpage
+\part{Memory and Storage}
+
+	\section{World State}
+
+		Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+
+
+	\section{Data Structures}
+
+		\subsection{Byte Arrays}
+
+		\subsection{Bit Sequences}
+			Message Calls are either bit sequences or byte arrays.
+
+		\subsection{The Block}
+
+		\subsection{State Database}
+
+		\subsection{Merkle-Patricia Trees}
+
+			\subsubsection{RLP}
+				Well-Formed RLP
+	
+			\subsubsection{Account State}
+				The account state is the state of any particular account during some specified world state $\sigma$.\footnote{Formally \textbf{world state} $=$ $\sigma$.} \par
+
+    				\paragraph{Nonce} 
+					The \textbf{nonce} aspect of an \textsc{account's state} is the number of transactions sent from, or the number of contract-creations by, the address of that account.\footnote{$\sigma$ is the world state at a certain given time, and \textit{n} is the number of transactions or contract creations by that account.}
+    				\paragraph{Storage Root}
+    					The \textbf{storage root} aspect of an \textsc{account's state} is the hash of the trie\footnote{A particular path from root to leaf in the \textbf{\gls{state database}} that encodes the \textsc{storage contents} of the account.}
+    				\paragraph{Code Hash}
+    					The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.\footnote{A message call is any interaction with the account on-chain.}\footnote{Formal notation is $\sigma[a]_c$}\footnote{More formal notation is $\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$}
+    				\paragraph{Balance}
+    					The amount of \textbf{Wei} \textsc{owned} by this account. \footnote{This formal notation is $\sigma[a]_b$}
+
+		\subsection{Transaction Receipts}
+
+   			 \subsubsection{Bloom Filter}
+\clearpage
+
+\part{Processing and Computation}
+	
+	\section{State Transition Function}
+		State Transitions come about through a what is known as the State Transition Function; this is an abstraction of several operations in Ethereum which comprise the overall act of computing changes to the \textit{machine state} prior to adding them to the \textit{world state}, that is, through them being finalized and rewards applied to a given miner. \texttt{apply\_rewards} and \texttt{block\_beneficiary} are here.
+
+    		\subsection{Mining}
+
+			\subsubsection{Ethash}
+	
+				\paragraph{GHOST Protocol}
+
+		\subsection{Verification}
+		    Verifies Ommer headers
+
+			\subsubsection{Ommers}
+		
+				\paragraph{Ommershash}
+
+			\subsubsection{Is-Sibling Property}
+
+		\subsection{Transactions}
+			Transactions are the bread and butter of state transitions, that is of block additions, which are all the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+
+		\subsection{Execution}
+
+	
+				\paragraph{Execution Model}
+	
+			\subsubsection{Message Calls}
+
+			\subsubsection{Contract Creation}
+		
+			\subsubsection{Account Creation}
+			
+			\subsection{Halting}
+				\paragraph{Execution Environment}
+	
+			\subsection{Gas}
+	
+				\paragraph{Miner Choice}
+					Miners choose which gas prices they want to accept.
+	
+				\paragraph{Gasprice}
+
+				\paragraph{Gaslimit}
+					Any unused gas is refunded to the user.
+
+				\paragraph{Gasused}
+		
+			\subsubsection{Machine State}
+
+				\paragraph{Substate}
+					The \texttt{substate} is an emergent, ever-changing ball of computational energy that is about to be applied to the main state. It is the \textit{meta state} by which transactions are decided valid and to be added to the blockchain.
+		
+			\subsubsection{EVM Code}
+
+			\subsubsection{Opcodes}
+				But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix B} \\
+
+\begin{tabular}{|rclll|}
 	\hline
-	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} \\
+	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{In} & \textbf{Out}  \\
 	\hline
-	0x00 & STOP & 0 \\
-	0x01 & ADD & 3 \\
-	0x02 & MUL & 5 \\
-	0x03 & SUB & 3 \\
-	0x04 & DIV & 5 \\
+	0x00 & STOP & 0 & 2 & 1 \\
+	0x01 & ADD & 3 & 2 & 1 \\
+	0x02 & MUL & 5 & 2 & 1 \\
+	0x03 & SUB & 3 & 2 & 1 \\
+	0x04 & DIV & 5 & 2 & 1 \\ 
 	\hline
 \end{tabular}
 
-\justify
-
-	\part{Memory}
-
-\section{Transactions}
-
-\subsection{Message Calls}
-
-\subsection{Contract Creation}
-
-\section{Gas}
-
-\subsection{Gasprice}
-
-\subsection{Gaslimit}
-Any unused gas is refunded to the user.
-
-\subsection{Gasused}
-
-\subsection{Execution}
-
-\subsection{Execution Model}
-
-\subsection{Execution Environment}
-
-\subsection{State Machines}
-
-\subsection{Miner Choice}
-Miners choose which gas prices they want to accept.
-
-
-	\part{Processing}
-
-
-\section{Computation Flow}
-
-\section{State}
-	\paragraph{state}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-
-	\subsection{Substate}
-
-\section{State Transitions}
-
-\section{Currency}
-	The smallest unit of currency in Ethereum is the Wei, which is $1*10^(18)$ Ether. All units at the machine level are counted in Wei.
-
-\section{Machine State}
-
-\section{Account Creation}
-
-\section{Ethash}
-
-	\subsection{GHOST Protocol}
-
-\section{Message Calls}
-
-\section{RLP}
-
-	\subsection{Well-Formed RLP}
-
-\section{Data}
-
-\section{The Block}
-
-\subsection{Transaction Receipts}
-
-	\subsection{Nonce}
-
-	\subsection{Ommers}
-
-\section{Programming Languages}
-
-	\subsection{EVM Code}
-
-	\subsection{Opcodes}
-
-	\subsection{Lower-Level Lisp}
-
-	\subsection{Solidity}
-
-	\subsection{Formal Signs}
-
-\section{Contract Creation}
-
-\section{Bit Sequences}
-\columnbreak
-
-
-\section{ECDSA}
-\subsection{Public Keys}
-\subsection{Private Keys}
-
-\section{Byte Arrays}
-
-
-    \section{Apply Rewards}
-
-    \section{Verification}
-    Verifies Ommer headers
-
-    \subsection{Ommershash}
-
-    \subsection{Beneficiary}
-
-    \subsection{Bloom Filter}
-
-    \subsection{isSibling Property}
-
-    \subsection{Mining}
-
-
-    \section{Halting}
-  \section{World State}
-
-
-
-The \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}
-
-    \section{Account State}
-
-    The account state is the state of any particular account during some specified world state $\sigma$.\footnote{Formally \textbf{world state} $=$ $\sigma$.} \par
-
-    		\subsection{Nonce} The \textbf{nonce} aspect of an \textsc{account's state} is the number of transactions sent from, or the number of contract-creations by, the address of that account.\footnote{$\sigma$ is the world state at a certain given time, and \textit{n} is the number of transactions or contract creations by that account.}
-    		\subsection{Storage Root}
-    		The \textbf{storage root} aspect of an \textsc{account's state} is the hash of the trie\footnote{A particular path from root to leaf in the \textbf{\gls{state database}} that encodes the \textsc{storage contents} of the account.}
-    		\subsection{Code Hash}
-    		The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.\footnote{A message call is any interaction with the account on-chain.}\footnote{Formal notation is $\sigma[a]_c$}\footnote{More formal notation is $\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$}
-    		\subsection{Balance}
-    		The amount of \textbf{Wei} \textsc{owned} by this account. \footnote{This formal notation is $\sigma[a]_b$}
-
-
-\part{Conclusions}
-
-
-    \begin{itemize}
-
-    	\item Key/value pair stored inside the root hash. \footnote{$\texttt{\small TRIE}\big(L_I^*(\boldsymbol{\sigma}[a]_\mathbf{s})\big) \equiv \boldsymbol{\sigma}[a]_s$}
-
-
-    		\item $L_I^*$, is defined as the element-wise transformation of the base function\footnote{$L_I$, given as: $L_I\big( (k, v) \big) \equiv \big(\texttt{\small KEC}(k), \texttt{\small RLP}(v)\big)$}
-    			\item The \textsl{element-wise transformation of the base-function} refers to all of the key/value pairs in \textit{$L_I$}
-    				\item $L_I$ refers to a particular \gls{trie}.
-
-
-    \end{itemize}
-
-
+				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{machine\_state}), the state which decides every new \texttt{world\_state}. 
 
 \clearpage
-
+\end{multicols*}
+\part{Appendix}
 
 \appendix
 
-
-\part{Appendix}
-
-\end{multicols}
-
-There are too many to list them all individually, but this map shows the general ideas:
-
-
-\begin{multicols}{2}
-
-
- \clearpage
-
+\section{Opcodes}
 \texttt{%
-\begin{supertabular}{|ccccc|}
+\begin{longtable}{|ccccc|}
 \hline
 \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output}  \\
 \hline
@@ -542,32 +490,12 @@ There are too many to list them all individually, but this map shows the general
 0xfd & REVERT & 0 & 2 & 0 \\
 0xff & SUICIDE & 5000 & 1 & 1 \\
 \hline
-\end{supertabular}
+\end{longtable}
 }
 
-
-\subsection{Symbol Key}
- \begin{tabular}{ r l }
- \toprule
- \textbf{Sign} & \textbf{Meaning} \\
- \midrule
- $\boldsymbol{\sigma}$ &  world state \\
- $\Upsilon$ &  state transition function \\
- $\Pi$ &  block-level state transition function \\
- $\Omega$ &  block-finalization state transition function \\
- \textit{T} &  substitutes any given transaction \\
- x$_t$ &  the transaction $_t$ corresponding to x \\
- $\equiv$ & is equivalent to \\
- \textit{B} &  substitutes any given block \\
- (   ) & contain symbols that are logically related \\
-   ... & a defined pattern in a known function \\
- \bottomrule
- \end{tabular}
-
+\begin{multicols*}{2}
 
 \clearpage
-
-
 \printbibliography
 \clearpage
 \printglossary[type=\acronymtype]
@@ -580,4 +508,4 @@ There are too many to list them all individually, but this map shows the general
 \printindex
 
 
-  \end{document}
+\end{document}

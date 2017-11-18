@@ -1,22 +1,22 @@
 \begin{theindex}
 
-  \item Bitcoin, \hyperpage{5}
+  \item Bitcoin, \hyperpage{6}
   \item blockchain
-    \subitem veracity, \hyperpage{5}
+    \subitem veracity, \hyperpage{6}
 
   \indexspace
 
   \item currency
-    \subitem electronic, \hyperpage{5}
+    \subitem electronic, \hyperpage{6}
 
   \indexspace
 
-  \item message-passing, \hyperpage{5}
+  \item message-passing, \hyperpage{6}
 
   \indexspace
 
   \item shared-state
-    \subitem concurrence, \hyperpage{5}
-  \item state, \hyperpage{5}
+    \subitem concurrence, \hyperpage{6}
+  \item state, \hyperpage{6}
 
 \end{theindex}
