@@ -19,6 +19,30 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{Wood2017}{paper}{}
+      \name{author}{1}{}{%
+        {{hash=e2eeb49d9390c82ee05b47c738b5ff4e}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Dr.\bibnamedelimi Gavin},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Ethereum: A Secure Decentralised Generalised Transaction Ledger}
+      \field{year}{2017}
+    \endentry
     \entry{Etherscan2017}{misc}{}
       \name{author}{1}{}{%
         {{hash=6a04a374d549abc7a9c36f67baccad50}{%
@@ -29,8 +53,8 @@
       \strng{fullhash}{6a04a374d549abc7a9c36f67baccad50}
       \strng{authornamehash}{6a04a374d549abc7a9c36f67baccad50}
       \strng{authorfullhash}{6a04a374d549abc7a9c36f67baccad50}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Ethereum Average BlockSize Chart}
@@ -54,8 +78,8 @@
       \strng{fullhash}{7e521cf3616b7c888d511a80e9b82ad5}
       \strng{authornamehash}{7e521cf3616b7c888d511a80e9b82ad5}
       \strng{authorfullhash}{7e521cf3616b7c888d511a80e9b82ad5}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Hackers: Heroes of the Computer Revolution}
@@ -71,8 +95,8 @@
       \strng{fullhash}{e3a36de53b51204b5b96e1974ca0488e}
       \strng{authornamehash}{e3a36de53b51204b5b96e1974ca0488e}
       \strng{authorfullhash}{e3a36de53b51204b5b96e1974ca0488e}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Microsoft Docs}
@@ -82,8 +106,8 @@
       \endverb
     \endentry
     \entry{sourcemaking}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SourceMaking}
       \field{title}{Design Patterns and Refactoring}
@@ -111,8 +135,8 @@
       \strng{fullhash}{f41f8ce554ac862b889808f8056cc3df}
       \strng{authornamehash}{f41f8ce554ac862b889808f8056cc3df}
       \strng{authorfullhash}{f41f8ce554ac862b889808f8056cc3df}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A dictionary of computer science}
@@ -133,8 +157,8 @@
       \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}

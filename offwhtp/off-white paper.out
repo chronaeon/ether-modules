@@ -1,58 +1,59 @@
 \BOOKMARK [-1][-]{part.1}{Theory}{}% 1
-\BOOKMARK [0][-]{section.1}{The Evolution of a Protocol}{part.1}% 2
-\BOOKMARK [1][-]{section.2}{Data Structures}{section.1}% 3
-\BOOKMARK [1][-]{section.3}{Cryptography}{section.1}% 4
-\BOOKMARK [1][-]{section.4}{Serialization}{section.1}% 5
-\BOOKMARK [1][-]{section.5}{Hacker Ethic}{section.1}% 6
-\BOOKMARK [1][-]{section.6}{Message-Passing Interface}{section.1}% 7
-\BOOKMARK [1][-]{section.7}{Singleton Pattern}{section.1}% 8
-\BOOKMARK [1][-]{section.8}{State Machines}{section.1}% 9
-\BOOKMARK [1][-]{section.9}{Processor Technology}{section.1}% 10
-\BOOKMARK [1][-]{section.10}{Turing Machines}{section.1}% 11
-\BOOKMARK [2][-]{subsection.10.1}{Turing-Completeness}{section.10}% 12
-\BOOKMARK [1][-]{section.11}{Intrinsic Currency}{section.1}% 13
-\BOOKMARK [1][-]{section.12}{Computation Flow}{section.1}% 14
+\BOOKMARK [0][-]{section.1}{The Evolution of Blockchains}{part.1}% 2
+\BOOKMARK [1][-]{section.2}{Cryptography}{section.1}% 3
+\BOOKMARK [1][-]{section.3}{Serialization}{section.1}% 4
+\BOOKMARK [1][-]{section.4}{Hacker Ethic}{section.1}% 5
+\BOOKMARK [1][-]{section.5}{Message-Passing Interface}{section.1}% 6
+\BOOKMARK [1][-]{section.6}{Singleton Pattern}{section.1}% 7
+\BOOKMARK [1][-]{section.7}{State Machines}{section.1}% 8
+\BOOKMARK [1][-]{section.8}{Processor Technology}{section.1}% 9
+\BOOKMARK [1][-]{section.9}{Turing Machines}{section.1}% 10
+\BOOKMARK [2][-]{subsection.9.1}{Turing-Completeness}{section.9}% 11
+\BOOKMARK [1][-]{section.10}{Intrinsic Currency}{section.1}% 12
+\BOOKMARK [1][-]{section.11}{Computation Flow}{section.1}% 13
+\BOOKMARK [1][-]{section.12}{External Actors}{section.1}% 14
 \BOOKMARK [1][-]{section.13}{ECDSA}{section.1}% 15
 \BOOKMARK [2][-]{subsection.13.1}{Public Key Cryptography}{section.13}% 16
-\BOOKMARK [3][-]{section*.5}{Public Keys}{subsection.13.1}% 17
-\BOOKMARK [3][-]{section*.6}{Private Keys}{subsection.13.1}% 18
+\BOOKMARK [3][-]{section*.3}{Public Keys}{subsection.13.1}% 17
+\BOOKMARK [3][-]{section*.3}{Private Keys}{subsection.13.1}% 18
 \BOOKMARK [1][-]{section.14}{Programming Languages}{section.1}% 19
 \BOOKMARK [2][-]{subsection.14.1}{Lower-Level Lisp}{section.14}% 20
 \BOOKMARK [2][-]{subsection.14.2}{Solidity}{section.14}% 21
 \BOOKMARK [-1][-]{part.2}{Practice}{}% 22
 \BOOKMARK [0][-]{section.15}{Memory and Storage}{part.2}% 23
 \BOOKMARK [1][-]{subsection.15.1}{Data Structures}{section.15}% 24
-\BOOKMARK [2][-]{subsection.15.2}{Trees}{subsection.15.1}% 25
-\BOOKMARK [3][-]{section*.9}{World State}{subsection.15.2}% 26
-\BOOKMARK [2][-]{subsection.15.3}{Byte Arrays}{subsection.15.1}% 27
-\BOOKMARK [2][-]{subsection.15.4}{Bit Sequences}{subsection.15.1}% 28
-\BOOKMARK [2][-]{subsection.15.5}{The Block}{subsection.15.1}% 29
-\BOOKMARK [2][-]{subsection.15.6}{State Database}{subsection.15.1}% 30
-\BOOKMARK [2][-]{subsection.15.7}{Merkle-Patricia Trees}{subsection.15.1}% 31
-\BOOKMARK [3][-]{section*.10}{RLP}{subsection.15.7}% 32
-\BOOKMARK [3][-]{section*.11}{Account State}{subsection.15.7}% 33
-\BOOKMARK [2][-]{subsection.15.8}{Transaction Receipts}{subsection.15.1}% 34
-\BOOKMARK [3][-]{section*.16}{Bloom Filter}{subsection.15.8}% 35
+\BOOKMARK [2][-]{section*.4}{World State}{subsection.15.1}% 25
+\BOOKMARK [2][-]{subsection.15.2}{Byte Arrays}{subsection.15.1}% 26
+\BOOKMARK [2][-]{subsection.15.3}{Bit Sequences}{subsection.15.1}% 27
+\BOOKMARK [2][-]{subsection.15.4}{The Block}{subsection.15.1}% 28
+\BOOKMARK [3][-]{Item.4}{Block Header}{subsection.15.4}% 29
+\BOOKMARK [2][-]{subsection.15.5}{State Database}{subsection.15.1}% 30
+\BOOKMARK [2][-]{subsection.15.6}{Merkle-Patricia Trees}{subsection.15.1}% 31
+\BOOKMARK [3][-]{section*.5}{RLP}{subsection.15.6}% 32
+\BOOKMARK [3][-]{section*.5}{Account State}{subsection.15.6}% 33
+\BOOKMARK [2][-]{subsection.15.7}{Transaction Receipts}{subsection.15.1}% 34
+\BOOKMARK [3][-]{section*.6}{Bloom Filter}{subsection.15.7}% 35
 \BOOKMARK [1][-]{section.16}{Processing and Computation}{section.15}% 36
 \BOOKMARK [2][-]{subsection.16.1}{State Transition Function}{section.16}% 37
 \BOOKMARK [2][-]{subsection.16.2}{Mining}{section.16}% 38
-\BOOKMARK [3][-]{section*.17}{Ethash}{subsection.16.2}% 39
+\BOOKMARK [3][-]{section*.7}{Ethash}{subsection.16.2}% 39
 \BOOKMARK [2][-]{subsection.16.3}{Verification}{section.16}% 40
-\BOOKMARK [3][-]{section*.19}{Ommers}{subsection.16.3}% 41
-\BOOKMARK [3][-]{section*.21}{Is\137Sibling Property}{subsection.16.3}% 42
+\BOOKMARK [3][-]{section*.8}{Ommers}{subsection.16.3}% 41
+\BOOKMARK [3][-]{section*.8}{Is\137Sibling Property}{subsection.16.3}% 42
 \BOOKMARK [2][-]{subsection.16.4}{Transactions}{section.16}% 43
 \BOOKMARK [2][-]{subsection.16.5}{Execution}{section.16}% 44
-\BOOKMARK [3][-]{section*.23}{Message Calls}{subsection.16.5}% 45
-\BOOKMARK [3][-]{section*.24}{Contract Creation}{subsection.16.5}% 46
-\BOOKMARK [3][-]{section*.25}{Account Creation}{subsection.16.5}% 47
-\BOOKMARK [2][-]{subsection.16.6}{Halting}{section.16}% 48
-\BOOKMARK [2][-]{subsection.16.7}{Gas}{section.16}% 49
-\BOOKMARK [3][-]{section*.31}{Machine State}{subsection.16.7}% 50
-\BOOKMARK [3][-]{section*.33}{EVM Code}{subsection.16.7}% 51
-\BOOKMARK [3][-]{section*.34}{Opcodes}{subsection.16.7}% 52
-\BOOKMARK [-1][-]{part.3}{Appendix}{}% 53
-\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.3}% 54
-\BOOKMARK [1][-]{section*.36}{References}{appendix.A}% 55
-\BOOKMARK [1][-]{section*.37}{Glossary}{appendix.A}% 56
-\BOOKMARK [1][-]{section*.39}{Acronyms}{appendix.A}% 57
-\BOOKMARK [1][-]{section*.41}{Index}{appendix.A}% 58
+\BOOKMARK [3][-]{section*.9}{Intrinsic Validity}{subsection.16.5}% 45
+\BOOKMARK [3][-]{section*.9}{Message Calls}{subsection.16.5}% 46
+\BOOKMARK [3][-]{section*.9}{Contract Creation}{subsection.16.5}% 47
+\BOOKMARK [3][-]{section*.9}{Account Creation}{subsection.16.5}% 48
+\BOOKMARK [2][-]{subsection.16.6}{Halting}{section.16}% 49
+\BOOKMARK [2][-]{subsection.16.7}{Gas}{section.16}% 50
+\BOOKMARK [3][-]{section*.10}{Machine State}{subsection.16.7}% 51
+\BOOKMARK [3][-]{section*.10}{EVM Code}{subsection.16.7}% 52
+\BOOKMARK [3][-]{section*.10}{Opcodes/EVM Assembly}{subsection.16.7}% 53
+\BOOKMARK [-1][-]{part.3}{Appendix}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.3}% 55
+\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 56
+\BOOKMARK [1][-]{section*.11}{Glossary}{appendix.A}% 57
+\BOOKMARK [1][-]{section*.13}{Acronyms}{appendix.A}% 58
+\BOOKMARK [1][-]{section*.14}{Index}{appendix.A}% 59

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  11 NOV 2017 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  18 NOV 2017 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,7 +591,7 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 \@quotelevel=\count295
 \@quotereset=\count296
 
-No file transaction.aux.
+(./transaction.aux)
 \openout1 = `transaction.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -606,6 +606,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count297
@@ -662,22 +663,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./transaction.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                transaction
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'transaction.run.xml'.
 \openout1 = `transaction.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12383 strings out of 493013
- 221796 string characters out of 6135683
- 916240 words of memory out of 5000000
+ 12385 strings out of 493013
+ 221828 string characters out of 6135683
+ 916260 words of memory out of 5000000
  15804 multiletter control sequences out of 15000+600000
  7300 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

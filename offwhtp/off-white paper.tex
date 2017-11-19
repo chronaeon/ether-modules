@@ -140,7 +140,7 @@
 \newglossaryentry{block header}{name={block header}, description={The information in a block besides transaction information. It consists of a dozen parts: (lists the 12 parts) }}
 \newglossaryentry{state}{name={state}, description={A permanent, static, state  \texttt{state}}}
 \newglossaryentry{transition}{name={state-transition}, description={}}
-
+\newglossaryentry{bit}{name={bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. It is common to speak of cryptographic hashing algorithms using bits (e.g. 160-bits instead of 20-bytes)}}
 
 \addbibresource{References.bib}
 
@@ -187,7 +187,7 @@
 
 \author{\textnormal{\textbf{Micah Dameron}}}
 
-\title{\Huge{Blanched-Almond Paper} \\ \hfill \\ \Large{Technical Explanations About Ethereum}}
+\title{\Huge{Off-Whitepaper} \\ \hfill \\ \Large{Ethereal Explanations}}
 
 \makeindex
 
@@ -210,7 +210,7 @@
 
 \hfill \hfill
 \begin{center}\textbf{Abstract}\end{center}\par
-	\abstract{The goal of this paper \footnote{Formally, \textit{Off-White Paper}}is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsc{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source has been the Ethereum \textit{Yellowpaper}, but much supplemental knowledge has been found elsewhere and crucial points from other sources have been added as well for the reader's benefit.}
+	\abstract{The goal of this paper\footnote{Formally, \textit{Blanched-Almond} Paper}is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsc{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source has been the Ethereum \textit{Yellowpaper}, but much supplemental knowledge has been found elsewhere and crucial points from other sources have been added as well for the reader's benefit.}
 	
 
 \clearpage
@@ -232,7 +232,7 @@
 
 \part{Theory}
 
-	\section{The Evolution of a Protocol}
+	\section{The Evolution of Blockchains}
 	Over the past decade, blockchain technology has proven its longevity and veracity through a number of systems, most notably through Bitcoin, the first electronic currency of its kind to succeed. Bitcoin was successful in its mission to create currency based on a decentralized peer-to-peer Blockchain protocol, and Ethereum takes that concept a step further by creating a \textit{globally-distributed virtual machine}that can ad-hoc run such currency applications, along with any other conceivable applications or programs. Using well-established concepts from the relevant areas of computer science, like \textsc{message-passing}, \textsc{transaction processing}, and \textsc{shared-state concurrence}, the \textsl{Ethereum Protocol} creates an environment for developers to execute machine instructions with the same level of veracity and certainty as monetary transactions have on more standard Blockchains.  
 	\index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}	
 
@@ -275,6 +275,8 @@
 	\section{Intrinsic Currency}
 		The smallest unit of currency in Ethereum is the Wei, which is $1*10^(18)$ Ether. All units at the machine level are counted in Wei.
 	\section{Computation Flow}
+	
+	\section{External Actors} A person or other entity able to interface to an Ethereum node, but not a part of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and its state. By nature of the fact that external actors need an account in order to interface with the Blockchain, they necessarily (in the context of this paper, at least) have one or more intrinsic accounts.
 
 	\section{ECDSA}
 
@@ -314,6 +316,40 @@
 			Message Calls are either bit sequences or byte arrays.
 
 		\subsection{The Block}
+			\paragraph{Notation}: $\mathbb{B}$
+			\paragraph{Description}: A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
+
+			\begin{enumerate}
+				\item \textbf{Parent Hash}: The hash of the parent block's header: given in Keccak-256.
+				\item \textbf{Ommers Hash}: The hash of the \textsl{Ommers List} portion of this block: given in Keccak-256.
+				\item \textbf{Beneficiary}: The 20-character (160-bit) hash to which block rewards are transferred when the block is successfully mined.
+				\item \textbf{State Root}: The Keccak-256 bit hash of the root node of the state. 
+			
+			\end{enumerate}
+				\subsubsection{Block Header}
+				\paragraph{Notation}: \texttt{H} 
+				\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
+
+				\begin{enumerate}
+					\item \textsc{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
+					\item \textsc{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
+					\item \textsc{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
+					\item \textsc{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
+					\item \textsc{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
+					\item \textsc{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
+					\item \textsc{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
+					\item \textsc{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
+					\item \textsc{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
+					\item \textsc{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
+					\item \textsc{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
+					\item \textsc{Timestamp} -- This is a record of Unix's time at this block's inception.
+					\item \textsc{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
+					\item \textsc{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textsc{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textsc{Ommer Block Headers} -- These are the same components listed above for any ommers.
+					\item \textsc{Transaction Series} -- This is the only non-header content in the block.
+				\end{enumerate}
+
 
 		\subsection{State Database}
 
@@ -323,6 +359,17 @@
 				Well-Formed RLP
 	
 			\subsubsection{Account State}
+				\paragraph{Notation}: \texttt{body}
+				\paragraph{Description}: The EVM-code fragment that executes each time an account receives a message call. 
+
+				\paragraph{Description}: The account state is made up of four variables:
+				\begin{enumerate}
+					\item \textbf{nonce} The number of transactions sent from this address, or the number of contract creations made by the account associated with this address.
+					\item \textbf{balance} The number of Wei owned by this address.
+					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a Merkle Patricia tree that encodes the storage contents of the account.
+					\item \textbf{code\_hash} The hash of the EVM code of this account's contract.
+				\end{enumerate}
+
 				The account state is the state of any particular account during some specified world state $\sigma$.\footnote{Formally \textbf{world state} $=$ $\sigma$.} \par
 
     				\paragraph{Nonce} 
@@ -332,8 +379,13 @@
     				\paragraph{Code Hash}
     					The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.\footnote{A message call is any interaction with the account on-chain.}\footnote{Formal notation is $\sigma[a]_c$}\footnote{More formal notation is $\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$}
     				\paragraph{Balance}
-    					The amount of \textbf{Wei} \textsc{owned} by this account. \footnote{This formal notation is $\sigma[a]_b$}
-
+    					The amount of \textbf{Wei} \textsc{owned} by this account. 
+					    \begin{itemize}
+				            \item Key/value pair stored inside the root hash. 
+					    \item $L_I^*$, is defined as the element-wise transformation of the base function
+					    \item The \textsl{element-wise transformation of the base-function} refers to all of the key/value pairs in \textit{$L_I$}
+					    \item $L_I$ refers to a particular \gls{trie}.
+					    \end{itemize}
 		\subsection{Transaction Receipts}
 
    			 \subsubsection{Bloom Filter}
@@ -345,6 +397,8 @@
 		State Transitions come about through a what is known as the State Transition Function; this is an abstraction of several operations in Ethereum which comprise the overall act of computing changes to the \textit{machine state} prior to adding them to the \textit{world state}, that is, through them being finalized and rewards applied to a given miner. \texttt{apply\_rewards} and \texttt{block\_beneficiary} are here.
 
     		\subsection{Mining}
+			\paragraph{Block Beneficiary} The 160-bit (20-byte, or 20-character) address to which all fees collected from the successful mining of a block are transferred.
+			\paragraph{Apply Rewards} The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. A scalar value corresponding to the difficulty level of a current block. This can be calculated from the previous block's difficulty level and the timestamp. 
 
 			\subsubsection{Ethash}
 	
@@ -359,22 +413,76 @@
 			\subsubsection{\texttt{Is\_Sibling} Property}
 
 		\subsection{Transactions}
-			Transactions are the bread and butter of state transitions, that is of block additions, which are all the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and evolution of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which are all the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+\paragraph{Notation}: \texttt{sender}
+\paragraph{Description}: A function that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve, (excepting the latter three signature fields) as the datum to sign. The sender of a given transaction can be represented:
+\texttt{transaction.sender}
 
 		\subsection{Execution}
+			\paragraph{Notation}: \texttt{execution}
+			\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
+			\subsubsection{Intrinsic Validity}
+				The criteria for intrinsic validity are as follows:
+				\begin{itemize}
+				\item The transaction follows the rules for \textsl{well-formed RLPs} (recursive length prefixes.)
+				\item The \textsl{signature} on the transaction is valid.
+				\item The \textsl{nonce} on the transaction is valid, i.e. it is equivalent to the sender account's current nonce.
+				\item The \texttt{gas\_limit} is greater than or equal to the \texttt{intrinsic\_gas} used by the transaction.
+				\item The sender's account balance contains the cost required in up-front payment.
+				\end{itemize}
+
+				Accordingly, the post-transactional state of Ethereum is expressed thus: 
+				\\
+				\texttt{transaction(post.state) = stf(present.state, transaction)}  
+				\\
+				While the amount of gas used in the execution is expressed: \texttt{stf(gas\_used)} and the accrued log items belonging to the transaction are expressed: \texttt{stf(logsbloom, content)(logsbloom, set)} Information concering the result of a transaction's execution is stored in the transaction receipt \texttt{tx\_receipt}. The set of log events which are created through the execution of the transaction, \texttt{logs\_set} in addition to the bloom filter which contains the actual information from those log events \texttt{logs\_bloom} are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gas\_used) are stored in the transaction receipt. Thusly the transaction receipt is a record of any given \texttt{execution}. \par
+
+																			A valid transaction execution begins with a permanent change to the state: the nonce of the sender account is increased by one and the balance is decreased by the \texttt{collateral\_gas}\footnote{Designated ``\texttt{intrinsic\_gas}'' in the Yellowpaper} which is the amount of gas a transaction is required to pay prior to its execution. The original transactor will differ from the sender if the message call or contract creation comes from a contract account executing code. 
+\paragraph{}After a transaction is executed, there comes a \textsc{provisional state}:
+			\\
+			\texttt{post\_execution(provisional.state)}
+			\\
+			Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates the provisional state. \texttt{productive\_gas}, and an associated substate \texttt{substate\_a}. 
+\par
+																			Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
+
 
 	
 				\paragraph{Execution Model}
+	\paragraph{Notation}: \texttt{EVM}
+	\paragraph{Description}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
 	
 			\subsubsection{Message Calls}
+\paragraph{Description}: Messages allow communication between accounts (whether contract or external,) and are a carryover from established concepts in Computer Science, most notably the \textsl{MPI: Message-Passing Framework}. Messages can come in the form of \texttt{msg\_calls} which give output data. If an account has EVM code in it (a contract account,) this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. A message call can come through a transaction, or through the internal execution of code. Message call \texttt{transactions} only contain data. They are separate from regular, standard \textit{transactions}.
+
+\paragraph{}Message calls always have a universally agreed-upon cost in gas. There is a strong distinction between contract creation transactions and message call transactions. Computation performed, whether it is a contract creation or a message call, represents the currently legal valid state. There can be no invalid transactions from this point. \supercite{Wood2017} There is also a message call/contract creation \textit{stack}. This stack has a depth, depending on how many transactions are in it. Contract creations and message calls have entirely different ways of executing, and are entirely different in their roles in Ethereum. The concepts can be conflated. Message calls can result in computation that occurs in the next state rather than the current one. If an account that is currently executing receives a message call, no code will execute, because the account might exist but has no code in it yet. To execute a message call transactions are required:
+
+\begin{itemize}
+	\item \texttt{Sender}
+	\item \texttt{Transaction\_Originator} 
+	\item \texttt{Recipient}
+	\item \texttt{Account} (usually the same as the recipient) 
+	\item \texttt{Available\_Gas} 
+	\item \texttt{Value}
+	\item \texttt{Gas\_Price}
+	\item An arbitrary length byte-array. \texttt{arb\_array}
+	\item \texttt{Present\_Depth} of the message call/contract creation stack.
+\end{itemize}
+\paragraph{Notation}: \texttt{data}
+\paragraph{Description}: User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
 
 			\subsubsection{Contract Creation}
-		
+				Contract creation transactions are equal the recurisive length prefix of an empty byte-sequence. 		
 			\subsubsection{Account Creation}
 			
 			\subsection{Halting}
 				\paragraph{Execution Environment}
-	
+					\paragraph{Notation}: \texttt{ERE}
+					\paragraph{Description}: The environment under which an Autonomous Object executes in the EVM: the EVM runs as a part of this environment.  
+
+				\paragraph{Notation}: \texttt{big\_endian\_f}
+				\paragraph{Description}:\textsc{Big Endian Function} This function expands a positive-integer value to a big-endian byte array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation. The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
+
 			\subsection{Gas}
 	
 				\paragraph{Miner Choice}
@@ -393,9 +501,9 @@
 					The \texttt{substate} is an emergent, ever-changing ball of computational energy that is about to be applied to the main state. It is the \textit{meta state} by which transactions are decided valid and to be added to the blockchain.
 		
 			\subsubsection{EVM Code}
-
-			\subsubsection{Opcodes}
-				But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix B} \\
+				The bytecode that the EVM can natively execute. Used to explicitly specify the meaning of a message to an account.
+			\subsubsection{Opcodes/EVM Assembly}
+		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix B} \\
 
 \begin{tabular}{|rclll|}
 	\hline

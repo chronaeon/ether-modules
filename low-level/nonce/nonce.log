@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  18 NOV 2017 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  18 NOV 2017 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**evm.tex
-(./evm.tex
+**nonce.tex
+(./nonce.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -249,13 +249,6 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count104
 \@thisrulewidth=\dimen126
 )
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/biblatex-chicago.sty
-Package: biblatex-chicago 2016/06/01 v 3.4 biblatex style
-
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count105
-)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
@@ -274,6 +267,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -366,7 +363,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
+Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count150
@@ -460,100 +457,77 @@ File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 \c@biburllcpenalty=\count287
 \c@smartand=\count288
 )
-Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
-.
-Package biblatex Info: ... file 'chicago-authordate.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.bb
-x
-File: chicago-authordate.bbx 2016/06/07 v 3.4 biblatex bibliography style
-\lositemsep=\skip72
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2016/12/30 vvv1.2 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count289
 \c@bbx:relatedtotal=\count290
-)
-Package biblatex Info: Trying to load citation style 'chicago-authordate'...
-Package biblatex Info: ... file 'chicago-authordate.cbx' found.
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.cb
-x
-File: chicago-authordate.cbx 2016/06/07 v 3.4 biblatex citation style
-Package biblatex Info: Trying to load citation style 'chicago-dates-common'...
-Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2016/12/30 vvv1.2 biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/chicago-dates-common.
-cbx
-File: chicago-dates-common.cbx 2016/06/07 v 3.4 biblatex citation style
-
-
-Package biblatex Warning: 'labeldate' option used to determine whether to provi
-de label date fields and
-(biblatex)                extrayear field is renamed to 'labeldateparts', setti
-ng this instead. This option is now used to set the format of the labeldate.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\name' is deprecated in sorting specifications, plea
-se use '\field'.
-
-
-Package biblatex Warning: '\list' is deprecated in sorting specifications, plea
-se use '\field'.
-
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count291
+\c@cbx@tempcntb=\count292
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\footcites'.
-Package biblatex Info: Redefining '\footcitetexts'.
-Package biblatex Info: Patching 'autolang=other' option.
-))
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+)
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-)))
+))
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count291
-\calc@Bcount=\count292
+\calc@Acount=\count293
+\calc@Bcount=\count294
 \calc@Adimen=\dimen127
 \calc@Bdimen=\dimen128
-\calc@Askip=\skip73
-\calc@Bskip=\skip74
+\calc@Askip=\skip72
+\calc@Bskip=\skip73
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count293
-\calc@Cskip=\skip75
+\calc@Ccount=\count295
+\calc@Cskip=\skip74
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
@@ -562,9 +536,9 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count294
+\g_MT_multlinerow_int=\count296
 \l_MT_multwidth_dim=\dimen129
-\origjot=\skip76
+\origjot=\skip75
 \l_MT_shortvdotswithinadjustabove_dim=\dimen130
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen131
 \l_MT_above_intertext_sep=\dimen132
@@ -572,51 +546,53 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen134
 \l_MT_below_shortintertext_sep=\dimen135
 )
-Package biblatex Info: Trying to load language 'english' -> 'cms-american'...
-Package biblatex Info: ... file 'cms-american.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-chicago/cms-american.lbx
-File: cms-american.lbx 2016/06/01 v 3.4 biblatex localization
-Package biblatex Info: Trying to load language 'american'...
-Package biblatex Info: ... file 'american.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
-File: american.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+! Illegal parameter number in definition of \@title.
+<to be read again> 
+                   N
+l.15 \title{#NAME#}
+                   
+? 
+! Illegal parameter number in definition of \@title.
+<to be read again> 
+                   }
+l.15 \title{#NAME#}
+                   
+? 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-)))
-\@quotelevel=\count295
-\@quotereset=\count296
- (./evm.aux)
-\openout1 = `evm.aux'.
+)
+\@quotelevel=\count297
+\@quotereset=\count298
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+No file nonce.aux.
+\openout1 = `nonce.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
+\scratchcounter=\count299
 \scratchdimen=\dimen136
 \scratchbox=\box30
-\nofMPsegments=\count298
-\nofMParguments=\count299
+\nofMPsegments=\count300
+\nofMParguments=\count301
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count300
+\MPscratchCnt=\count302
 \MPscratchDim=\dimen137
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -641,53 +617,84 @@ e
 Package biblatex Info: Input encoding 'latin1' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'latin1'.
-\openout4 = `evm.bcf'.
+\openout4 = `nonce.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'evm.bbl' not found.
+Package biblatex Info: ... file 'nonce.bbl' not found.
 
-No file evm.bbl.
-Package biblatex Info: Reference section=0 on input line 20.
-Package biblatex Info: Reference segment=0 on input line 20.
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+No file nonce.bbl.
+Package biblatex Info: Reference section=0 on input line 18.
+Package biblatex Info: Reference segment=0 on input line 18.
+! You can't use `macro parameter character #' in vertical mode.
+\@title ->##
+            NAME##
+l.20 \paragraph
+               {Notation}: #NOTATION#
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+\@title ->##NAME##
+                  
+l.20 \paragraph
+               {Notation}: #NOTATION#
+? 
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.04343pt too wide) in paragraph at lines 23--24
- \OT1/cmss/bx/n/10 De-scrip-tion[] \OT1/cmr/m/n/10 : The stack-based \OT1/cmr/m
-/sl/10 vir-tual ma-chine \OT1/cmr/m/n/10 which lies at the heart of the Ethereu
-m
- []
+! You can't use `macro parameter character #' in horizontal mode.
+l.20 \paragraph{Notation}: #
+                            NOTATION#
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.20 \paragraph{Notation}: #NOTATION#
+                                     
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.21 \paragraph{Description}: #
+                               DESCRIPTION#
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.21 \paragraph{Description}: #DESCRIPTION#
+                                           
+? 
+
+LaTeX Warning: Empty bibliography on input line 23.
 
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./evm.aux)
-Package logreq Info: Writing requests to 'evm.run.xml'.
-\openout1 = `evm.run.xml'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./nonce.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                nonce
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'nonce.run.xml'.
+\openout1 = `nonce.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12387 strings out of 493013
- 221753 string characters out of 6135683
- 916265 words of memory out of 5000000
- 15805 multiletter control sequences out of 15000+600000
- 7653 words of font info for 30 fonts, out of 8000000 for 9000
+ 11244 strings out of 493013
+ 196247 string characters out of 6135683
+ 708921 words of memory out of 5000000
+ 14665 multiletter control sequences out of 15000+600000
+ 7132 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,6n,51p,8843b,1357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,6n,51p,8845b,702s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on evm.pdf (1 page, 44997 bytes).
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on nonce.pdf (1 page, 21914 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
