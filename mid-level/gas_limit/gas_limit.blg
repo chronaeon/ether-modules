@@ -1,0 +1,9 @@
+[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[0] Config.pm:357> INFO - Logfile is 'gas_limit.blg'
+[47] biber:303> INFO - === Sun Nov 19, 2017, 06:08:09
+[72] Biber.pm:360> INFO - Reading 'gas_limit.bcf'
+[230] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[243] Utils.pm:164> WARN - The file 'gas_limit.bcf' does not contain any citations!
+[252] bbl.pm:608> INFO - Writing 'gas_limit.bbl' with encoding 'latin1'
+[253] bbl.pm:712> INFO - Output to gas_limit.bbl
+[253] Biber.pm:110> INFO - WARNINGS: 1

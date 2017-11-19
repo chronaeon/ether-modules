@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  19 NOV 2017 06:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  19 NOV 2017 06:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**gas.tex
-(./gas.tex
+**gas_limit.tex
+(./gas_limit.tex
 LaTeX2e <2017-04-15>
 Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -545,8 +545,9 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )))
 \@quotelevel=\count294
 \@quotereset=\count295
- (./gas.aux)
-\openout1 = `gas.aux'.
+
+(./gas_limit.aux)
+\openout1 = `gas_limit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -560,7 +561,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
 \scratchdimen=\dimen136
@@ -596,16 +598,16 @@ e
 Package biblatex Info: Input encoding 'latin1' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'latin1'.
-\openout4 = `gas.bcf'.
+\openout4 = `gas_limit.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'gas.bbl' not found.
+Package biblatex Info: ... file 'gas_limit.bbl' found.
 
-No file gas.bbl.
+(./gas_limit.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 LaTeX Font Info:    Try loading font information for U+msa on input line 22.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 22.
@@ -615,23 +617,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./gas.aux)
-Package logreq Info: Writing requests to 'gas.run.xml'.
-\openout1 = `gas.run.xml'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./gas_limit.aux)
+Package logreq Info: Writing requests to 'gas_limit.run.xml'.
+\openout1 = `gas_limit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12365 strings out of 492990
- 221652 string characters out of 6135004
- 918850 words of memory out of 5000000
- 15798 multiletter control sequences out of 15000+600000
+ 12370 strings out of 492990
+ 221811 string characters out of 6135004
+ 918862 words of memory out of 5000000
+ 15801 multiletter control sequences out of 15000+600000
  7300 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,6n,51p,8843b,1357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,6n,51p,8849b,1357s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on gas.pdf (1 page, 34301 bytes).
+Output written on gas_limit.pdf (1 page, 34963 bytes).
 PDF statistics:
  20 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream

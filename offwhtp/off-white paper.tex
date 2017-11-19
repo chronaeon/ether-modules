@@ -289,7 +289,8 @@
 	\section{Programming Languages}
 
 		\subsection{Lower-Level Lisp}
-			and this is what turns your LLL code into EVM code and how it's executed in the evm
+			\paragraph{Notation}: \texttt{LLL}
+			\paragraph{Description}: The Lisp-Like low level language: a human-writable language used for authoring simple contracts and general low-level language for trans-compiling to. 			and this is what turns your LLL code into EVM code and how it's executed in the evm
 	
 		\subsection{Solidity}
 			and this is what turns your solidity code into EVM code and how it's executed in the EVM
@@ -304,10 +305,10 @@
 				\paragraph{Merkle-Patricia Trees}
 					Merkle-Patricia Trees
 
-%-------			
+			
 				\subsubsection{World State}
 					Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-%--------
+
 
 
 		\subsection{Byte Arrays}
@@ -386,9 +387,13 @@
 					    \item The \textsl{element-wise transformation of the base-function} refers to all of the key/value pairs in \textit{$L_I$}
 					    \item $L_I$ refers to a particular \gls{trie}.
 					    \end{itemize}
-		\subsection{Transaction Receipts}
 
-   			 \subsubsection{Bloom Filter}
+   		\subsection{Bloom Filter}
+				\paragraph{Notation}: \texttt{logs\_bloom}
+				\paragraph{Description}: The Bloom Filter is composed from indexable information (logger address and log topics) contained in each log entry from the receipt of each transaction in the transactions list. 
+
+		\subsubsection{Transaction Receipts}
+
 \clearpage
 
 	\section{Processing and Computation}
@@ -448,10 +453,24 @@
 
 
 	
-				\paragraph{Execution Model}
-	\paragraph{Notation}: \texttt{EVM}
-	\paragraph{Description}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
+			\subsubsection{Execution Model}
+				\paragraph{Notation}: \texttt{EVM}
+				\paragraph{Description}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
 	
+				In addition to the system state $\boldsymbol{\sigma}$, and the remaining gas for computation $g$, there are several pieces of important information used in the execution environment that the execution agent must provide; these are contained in the tuple $I$:
+
+				\begin{itemize}
+					\item \texttt{account\_address}, the address of the account which owns the code that is executing.
+					\item \texttt{sender\_address} the sender address of the transaction that originated this execution.
+					\item \texttt{originator\_price} the price of gas in the transaction that originated this execution.
+					\item \texttt{input\_data}, a byte array that is the input data to this execution; if the execution agent is a transaction, this would be the transaction data.
+					\item \texttt{account\_address}  the address of the account which caused the code to be executing; if the execution agent is a transaction, this would be the transaction sender.
+					\item \texttt{newstate\_value} the value, in Wei, passed to this account if the execution agent is a transaction, this would be the transaction value.\supercite{Wood2017}
+					\item \texttt{code.array} the byte array that is the machine code to be executed.\supercite{Wood2017}
+					\item \texttt{samestate\_header} the block header of the present block.
+					\item \texttt{the stack depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
+				\end{itemize}
+
 			\subsubsection{Message Calls}
 \paragraph{Description}: Messages allow communication between accounts (whether contract or external,) and are a carryover from established concepts in Computer Science, most notably the \textsl{MPI: Message-Passing Framework}. Messages can come in the form of \texttt{msg\_calls} which give output data. If an account has EVM code in it (a contract account,) this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. A message call can come through a transaction, or through the internal execution of code. Message call \texttt{transactions} only contain data. They are separate from regular, standard \textit{transactions}.
 
@@ -472,7 +491,8 @@
 \paragraph{Description}: User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
 
 			\subsubsection{Contract Creation}
-				Contract creation transactions are equal the recurisive length prefix of an empty byte-sequence. 		
+				\paragraph{Notation}: \texttt{init}
+				\paragraph{Description}: When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. 				Contract creation transactions are equal the recurisive length prefix of an empty byte-sequence. 		
 			\subsubsection{Account Creation}
 			
 			\subsection{Halting}
@@ -484,17 +504,19 @@
 				\paragraph{Description}:\textsc{Big Endian Function} This function expands a positive-integer value to a big-endian byte array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation. The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
 
 			\subsection{Gas}
-	
+				\paragraph{Description}: The fundamental network cost unit converted to and from Ether as needed to complete the transaction while it is sent. Gas is arbitrarily determined at the moment it is needed, by the block and according to the miners decision to charge certain fees. 
 				\paragraph{Miner Choice}
 					Miners choose which gas prices they want to accept.
 	
 				\paragraph{Gasprice}
-
+					\paragraph{Notation}: \texttt{gas\_limit}
+					\paragraph{Description}: A value equal to the current limit of gas expenditure per block, according to the miners. 
 				\paragraph{Gaslimit}
 					Any unused gas is refunded to the user.
 
 				\paragraph{Gasused}
-		
+		\ragraph{Description}: A value equal to the total gas used in transactions in this block. 
+
 			\subsubsection{Machine State}
 
 				\paragraph{Substate}
