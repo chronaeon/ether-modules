@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>"off-white paper".bcf</file>
+      <file>machine_state.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>"off-white paper".bbl</file>
+      <file>machine_state.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,22 +67,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>"off-white paper"</infile>
+      <infile>machine_state</infile>
     </cmdline>
     <input>
-      <file>"off-white paper".bcf</file>
+      <file>machine_state.bcf</file>
     </input>
     <output>
-      <file>"off-white paper".bbl</file>
+      <file>machine_state.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>"off-white paper".bbl</file>
+      <file>machine_state.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>"off-white paper".bcf</file>
+      <file>machine_state.bcf</file>
     </requires>
     <requires type="editable">
-      <file>References.bib</file>
+      <file>~/modules/References.bib</file>
     </requires>
   </external>
 </requests>

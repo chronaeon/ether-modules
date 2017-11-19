@@ -18,25 +18,60 @@
 \begin{document}
 \maketitle
 \paragraph{Notation}: \texttt{machine\_state}
-\paragraph{Description}: The machine state consists of several elements:
+\paragraph{Description}: The machine state is a tuple consisting of five elements:
+
+	\begin{enumerate}
+		\item \texttt{gas\_available}
+		\item \texttt{program\_counter}
+		\item \texttt{memory\_contents} A series of zeroes of size $2^{256}$
+		\item \texttt{memory\_words.count}
+		\item \texttt{stack\_contents}
+	\end{enumerate}
+	
+	There is also, \texttt[to\_execute]: the current operation to be executed
+
+\subsubsection{Exceptional Halting}
+An exceptional halt may be caused by a handful of boolean values:
+
+\begin{verbatim}
+	forall instruction.x
+	if gas_empty = true
+	then signal halt
+	elif instruction.x = fake
+	then signal halt
+	elif stack = terse
+	then signal halt
+	elif jumpdest = bad
+	then signal halt
+	else exec instruction.x
+	
+	forall instruction.y 
+	[...]
+	[...]
+	[...]
+	[...]
+
+	forall instruction.z 
+	[...]
+	[...]
+	[...]
+	[...]
+
+	then signal controlled_halt
+\end{verbatim}
+
+No instruction can, through its execution, cause an exceptional halt. They can only happen if some instruction, for whatever reason, fails to execute.
+
 \begin{itemize}
 	\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
-	\item A simple iterative loop\supercite{Wood2017} with a boolean return value: 
-\begin{itemize}
+	\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
+		\begin{itemize}
+		\item	[true] indicating that in the run of computation, an exception was signaled
+		\item	[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
+		\end{itemize}
+\end{itemize}
 
-$X$ is thus cycled (recursively here, but implementations are generally expected to use a simple iterative loop) until either $Z$ becomes true indicating that the present state is exceptional and that the machine must be halted and any changes discarded or until $H$ becomes a series (rather than the empty set) indicating that the machine has reached a controlled halt.
 
-\subsubsection{Machine State}
-The machine state $\boldsymbol{\mu}$ is defined as the tuple $(g, pc, \mathbf{m}, i, \mathbf{s})$ which are the gas available, the program counter $pc \in \mathbb{P}_{256}$ , the memory contents, the active number of words in memory (counting continuously from position 0), and the stack contents. The memory contents $\boldsymbol{\mu}_\mathbf{m}$ are a series of zeroes of size $2^{256}$.
-
-For the ease of reading, the instruction mnemonics, written in small-caps (\eg \space {\small ADD}), should be interpreted as their numeric equivalents; the full table of instructions and their specifics is given in Appendix \ref{app:vm}.
-
-For the purposes of defining $Z$, $H$ and $O$, we define $w$ as the current operation to be executed:
-\begin{equation}\label{eq:currentoperation}
-w \equiv \begin{cases} I_\mathbf{b}[\boldsymbol{\mu}_{pc}] & \text{if} \quad \boldsymbol{\mu}_{pc} < \lVert I_\mathbf{b} \rVert \\
-\text{\small STOP} & \text{otherwise}
-\end{cases}
-\end{equation}
 \printbibliography
 \end{document}
 
