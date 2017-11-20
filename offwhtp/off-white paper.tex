@@ -230,11 +230,11 @@
 \TrickSupertabularIntoMulticols
 \justify
 
-\part{Theory}
+\part{Theoretical Considerations}
 
-	\section{The Evolution of Blockchains}
+	\section{The Evolution of a Protocol}
 	Over the past decade, blockchain technology has proven its longevity and veracity through a number of systems, most notably through Bitcoin, the first electronic currency of its kind to succeed. Bitcoin was successful in its mission to create currency based on a decentralized peer-to-peer Blockchain protocol, and Ethereum takes that concept a step further by creating a \textit{globally-distributed virtual machine}that can ad-hoc run such currency applications, along with any other conceivable applications or programs. Using well-established concepts from the relevant areas of computer science, like \textsc{message-passing}, \textsc{transaction processing}, and \textsc{shared-state concurrence}, the \textsl{Ethereum Protocol} creates an environment for developers to execute machine instructions with the same level of veracity and certainty as monetary transactions have on more standard Blockchains.  
-	\index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}	
+	\index{}\index{blockchain!evolution}\index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}	
 
 \paragraph{A Conceptual Map of the Ethereum Protocol}
 
@@ -263,10 +263,12 @@
 		};
 		\end{tikzpicture}
 	\end{savenotes}
-	\section{Cryptography} Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.
-	\section{Serialization}
-	\section{Hacker Ethic}
-	\section{Message-Passing Interface}
+
+		\subsection{The Hacker Ethic} ``But,'' one might ask, ``what were the motivations behind the development of the Ethereum protocol?'' Several answers might be given: ROI for investors, a more robust blockchain, a more accessible trustless system, and all of these are true. But a most prominent, fundamental, and underlying motivation is a more solid implementation of \textit{The Hacker Ethic}. What is the Hacker Ethic? Here are the basic highlights:
+			
+		\subsection{Cryptography} Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.
+			\subsubsection{Serialization}
+		\subsection{Message-Passing Interface}
 	\section{Singleton Pattern}
 	\section{State Machines}
 	\section{Processor Technology}
@@ -296,7 +298,7 @@
 			and this is what turns your solidity code into EVM code and how it's executed in the EVM
 
 \clearpage
-\part{Practice}
+\part{Concrete Details}
 
 	\section{Memory and Storage}
 			
@@ -307,7 +309,6 @@
 			
 				\subsubsection{World State}
 					Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-
 		\subsection{Byte Arrays}
 
 		\subsection{Bit Sequences}
@@ -364,6 +365,7 @@
 					\item \textbf{nonce} The number of transactions sent from this address, or the number of contract creations made by the account associated with this address.
 					\item \textbf{balance} The number of Wei owned by this address.
 					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a Merkle Patricia tree that encodes the storage contents of the account.
+					\item The storage root aspect of an account’s state is the hash of the trie
 					\item \textbf{code\_hash} The hash of the EVM code of this account's contract.
 				\end{enumerate}
 
@@ -567,12 +569,15 @@
 				\item[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
 			\end{itemize}
 		\end{itemize}
-    		\
+    	
 				\paragraph{Substate}
 					The \texttt{substate} is an emergent, ever-changing ball of computational energy that is about to be applied to the main state. It is the \textit{meta state} by which transactions are decided valid and to be added to the blockchain.
 		
 			\subsubsection{EVM Code}
-				The bytecode that the EVM can natively execute. Used to explicitly specify the meaning of a message to an account.
+				\paragraph{}The bytecode that the EVM can natively execute. Used to explicitly specify the meaning of a message to an account.
+				\paragraph{Notation}: \texttt{contract}
+				\paragraph{Description}: A piece of EVM Code that may be associated with an Account or an Autonomous Object. 
+
 			\subsubsection{Opcodes/EVM Assembly}
 		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix B} \\
 
