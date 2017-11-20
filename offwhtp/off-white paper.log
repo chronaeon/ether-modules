@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  19 NOV 2017 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  20 NOV 2017 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2561,54 +2561,50 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [8
 
 ] [9]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 399.
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 [] \T1/cmss/bx/n/10 Ap-ply Re-wards[][] \T1/ccr/m/n/10 (+20) The third pro-cess
  in
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 456.
+(hyperref)                be the same. Added a new anchor on input line 403.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 463.
+(hyperref)                be the same. Added a new anchor on input line 410.
 
-[10
-
-]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 466.
-
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 413.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 477.
+(hyperref)                be the same. Added a new anchor on input line 424.
 
-[11]
-Underfull \hbox (badness 5504) in paragraph at lines 487--491
+
+Underfull \hbox (badness 5504) in paragraph at lines 434--438
 []\T1/ccr/m/n/10 (+20) Accordingly, the post-transactional state of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--491
+Underfull \hbox (badness 10000) in paragraph at lines 434--438
 \T1/cmtt/m/n/10 transaction(post.state) = stf(present.state,
  []
 
+[10
+
+]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 12 might be wrong on input line 524
+(multicol)                Footnotes on page 11 might be wrong on input line 456
 .
 
-[12] [13]
+[11] [12]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 568.
+(hyperref)                be the same. Added a new anchor on input line 517.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
@@ -2620,36 +2616,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 576--577
 part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 594.
+(scrkbase)              on input line 595.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 598.
+(hyperref)                than one, level fixed on input line 599.
 
 
-Underfull \vbox (badness 10000) detected at line 677
+Underfull \vbox (badness 10000) detected at line 678
  []
 
 [18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 682.
+(biblatex)                Using fallback driver on input line 683.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 682.
+(biblatex)                Using fallback driver on input line 683.
 
 [20
 
 ]
 No file "off-white paper".acr.
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 21 might be wrong on input line 686
+(multicol)                Footnotes on page 21 might be wrong on input line 687
 .
 
 [21
@@ -2670,17 +2666,20 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the "off-white paper".log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 694.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 694.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 695.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 695.
 (./off-white paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 694.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 694.
-Package rerunfilecheck Info: File `"off-white paper".out' has not changed.
-(rerunfilecheck)             Checksum: 62DDF8CC1EBB07F80165C54125FB4432;3887.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 695.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 695.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `"off-white paper".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `"off-white paper".out':
+(rerunfilecheck)             Before: 62DDF8CC1EBB07F80165C54125FB4432;3887
+(rerunfilecheck)             After:  988369166ACAFB0C1003B07E3172CC93;3753.
 
 Package biblatex Warning: Please rerun LaTeX.
 (biblatex)                Page breaks have changed.
@@ -2688,14 +2687,14 @@ Package biblatex Warning: Please rerun LaTeX.
 Package logreq Info: Writing requests to '"off-white paper".run.xml'.
 \openout1 = `"off-white paper.run.xml"'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 694.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 695.
  ) 
 Here is how much of TeX's memory you used:
- 51980 strings out of 493013
- 986530 string characters out of 6135683
+ 51978 strings out of 493013
+ 986485 string characters out of 6135683
  1873392 words of memory out of 5000000
- 54063 multiletter control sequences out of 15000+600000
- 45820 words of font info for 181 fonts, out of 8000000 for 9000
+ 54060 multiletter control sequences out of 15000+600000
+ 45589 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,10n,104p,10426b,2316s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
@@ -2746,6 +2745,12 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+pdfTeX warning (dest): name{subsection.16.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.16.7} has been referenced but does not e
+xist, replaced by a fixed one
+
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/mddhattr/.te
 xlive2016/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.600pk></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/te
@@ -2775,12 +2780,11 @@ r/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr
 ype1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sftt1200.pfb>
-Output written on "off-white paper.pdf" (24 pages, 545234 bytes).
+pe1/public/cm-super/sftt1000.pfb>
+Output written on "off-white paper.pdf" (24 pages, 525550 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 760 compressed objects within 8 object streams
+ 842 PDF objects out of 1000 (max. 8388607)
+ 757 compressed objects within 8 object streams
  181 named destinations out of 1000 (max. 500000)
- 42589 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 42077 words of extra memory for PDF output out of 42996 (max. 10000000)
 
