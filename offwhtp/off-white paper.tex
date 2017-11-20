@@ -304,12 +304,9 @@
 
 				\paragraph{Merkle-Patricia Trees}
 					Merkle-Patricia Trees
-
 			
 				\subsubsection{World State}
 					Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-
-
 
 		\subsection{Byte Arrays}
 
@@ -350,7 +347,6 @@
 					\item \textsc{Ommer Block Headers} -- These are the same components listed above for any ommers.
 					\item \textsc{Transaction Series} -- This is the only non-header content in the block.
 				\end{enumerate}
-
 
 		\subsection{State Database}
 
@@ -400,8 +396,7 @@
 	
 		\subsection{State Transition Function}
 		State Transitions come about through a what is known as the State Transition Function; this is an abstraction of several operations in Ethereum which comprise the overall act of computing changes to the \textit{machine state} prior to adding them to the \textit{world state}, that is, through them being finalized and rewards applied to a given miner. \texttt{apply\_rewards} and \texttt{block\_beneficiary} are here.
-
-    		\subsection{Mining}
+		subsection{Mining}
 			\paragraph{Block Beneficiary} The 160-bit (20-byte, or 20-character) address to which all fees collected from the successful mining of a block are transferred.
 			\paragraph{Apply Rewards} The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. A scalar value corresponding to the difficulty level of a current block. This can be calculated from the previous block's difficulty level and the timestamp. 
 
@@ -515,10 +510,62 @@
 					Any unused gas is refunded to the user.
 
 				\paragraph{Gasused}
-		\ragraph{Description}: A value equal to the total gas used in transactions in this block. 
+		\paragraph{Description}: A value equal to the total gas used in transactions in this block. 
 
 			\subsubsection{Machine State}
-
+			The machine state is a tuple consisting of five elements:
+		
+		\begin{enumerate}
+			\item \texttt{gas\_available}
+			\item \texttt{program\_counter}
+			\item \texttt{memory\_contents} A series of zeroes of size $2^{256}$
+			\item \texttt{memory\_words.count}
+			\item \texttt{stack\_contents}
+		\end{enumerate}
+		
+		There is also, \texttt[to\_execute]: the current operation to be executed
+		
+		\subsubsection{Exceptional Halting}
+		An exceptional halt may be caused by a handful of boolean values:
+		
+		\begin{verbatim}
+		forall instruction.x
+		if gas_empty = true
+		then signal halt
+		elif instruction.x = fake
+		then signal halt
+		elif stack = terse
+		then signal halt
+		elif jumpdest = bad
+		then signal halt
+		else exec instruction.x
+		
+		forall instruction.y 
+		[...]
+		[...]
+		[...]
+		[...]
+		
+		forall instruction.z 
+		[...]
+		[...]
+		[...]
+		[...]
+		
+		then signal controlled_halt
+		\end{verbatim}
+		
+		No instruction can, through its execution, cause an exceptional halt. They can only happen if some instruction, for whatever reason, fails to execute.
+		
+		\begin{itemize}
+			\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
+			\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
+			\begin{itemize}
+				\item[true] indicating that in the run of computation, an exception was signaled
+				\item[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
+			\end{itemize}
+		\end{itemize}
+    		\
 				\paragraph{Substate}
 					The \texttt{substate} is an emergent, ever-changing ball of computational energy that is about to be applied to the main state. It is the \textit{meta state} by which transactions are decided valid and to be added to the blockchain.
 		

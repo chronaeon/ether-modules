@@ -35,26 +35,28 @@
 \BOOKMARK [3][-]{section*.6}{Transaction Receipts}{subsection.15.7}% 35
 \BOOKMARK [1][-]{section.16}{Processing and Computation}{section.15}% 36
 \BOOKMARK [2][-]{subsection.16.1}{State Transition Function}{section.16}% 37
-\BOOKMARK [2][-]{subsection.16.2}{Mining}{section.16}% 38
-\BOOKMARK [3][-]{section*.7}{Ethash}{subsection.16.2}% 39
-\BOOKMARK [2][-]{subsection.16.3}{Verification}{section.16}% 40
-\BOOKMARK [3][-]{section*.8}{Ommers}{subsection.16.3}% 41
-\BOOKMARK [3][-]{section*.8}{Is\137Sibling Property}{subsection.16.3}% 42
-\BOOKMARK [2][-]{subsection.16.4}{Transactions}{section.16}% 43
-\BOOKMARK [2][-]{subsection.16.5}{Execution}{section.16}% 44
-\BOOKMARK [3][-]{section*.9}{Intrinsic Validity}{subsection.16.5}% 45
-\BOOKMARK [3][-]{section*.9}{Execution Model}{subsection.16.5}% 46
-\BOOKMARK [3][-]{section*.9}{Message Calls}{subsection.16.5}% 47
-\BOOKMARK [3][-]{section*.9}{Contract Creation}{subsection.16.5}% 48
-\BOOKMARK [3][-]{section*.9}{Account Creation}{subsection.16.5}% 49
-\BOOKMARK [2][-]{subsection.16.6}{Halting}{section.16}% 50
-\BOOKMARK [2][-]{subsection.16.7}{Gas}{section.16}% 51
-\BOOKMARK [3][-]{section*.10}{Machine State}{subsection.16.7}% 52
-\BOOKMARK [3][-]{section*.10}{EVM Code}{subsection.16.7}% 53
-\BOOKMARK [3][-]{section*.10}{Opcodes/EVM Assembly}{subsection.16.7}% 54
-\BOOKMARK [-1][-]{part.3}{Appendix}{}% 55
-\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.3}% 56
-\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 57
-\BOOKMARK [1][-]{section*.11}{Glossary}{appendix.A}% 58
-\BOOKMARK [1][-]{section*.13}{Acronyms}{appendix.A}% 59
-\BOOKMARK [1][-]{section*.14}{Index}{appendix.A}% 60
+\BOOKMARK [2][-]{subsection.16.2}{machine\137state}{section.16}% 38
+\BOOKMARK [3][-]{Item.30}{Exceptional Halting}{subsection.16.2}% 39
+\BOOKMARK [2][-]{subsection.16.3}{Mining}{section.16}% 40
+\BOOKMARK [3][-]{section*.7}{Ethash}{subsection.16.3}% 41
+\BOOKMARK [2][-]{subsection.16.4}{Verification}{section.16}% 42
+\BOOKMARK [3][-]{section*.8}{Ommers}{subsection.16.4}% 43
+\BOOKMARK [3][-]{section*.8}{Is\137Sibling Property}{subsection.16.4}% 44
+\BOOKMARK [2][-]{subsection.16.5}{Transactions}{section.16}% 45
+\BOOKMARK [2][-]{subsection.16.6}{Execution}{section.16}% 46
+\BOOKMARK [3][-]{section*.9}{Intrinsic Validity}{subsection.16.6}% 47
+\BOOKMARK [3][-]{section*.9}{Execution Model}{subsection.16.6}% 48
+\BOOKMARK [3][-]{section*.9}{Message Calls}{subsection.16.6}% 49
+\BOOKMARK [3][-]{section*.9}{Contract Creation}{subsection.16.6}% 50
+\BOOKMARK [3][-]{section*.9}{Account Creation}{subsection.16.6}% 51
+\BOOKMARK [2][-]{subsection.16.7}{Halting}{section.16}% 52
+\BOOKMARK [2][-]{subsection.16.8}{Gas}{section.16}% 53
+\BOOKMARK [3][-]{section*.10}{Machine State}{subsection.16.8}% 54
+\BOOKMARK [3][-]{section*.10}{EVM Code}{subsection.16.8}% 55
+\BOOKMARK [3][-]{section*.10}{Opcodes/EVM Assembly}{subsection.16.8}% 56
+\BOOKMARK [-1][-]{part.3}{Appendix}{}% 57
+\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.3}% 58
+\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 59
+\BOOKMARK [1][-]{section*.11}{Glossary}{appendix.A}% 60
+\BOOKMARK [1][-]{section*.13}{Acronyms}{appendix.A}% 61
+\BOOKMARK [1][-]{section*.14}{Index}{appendix.A}% 62

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  19 NOV 2017 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  19 NOV 2017 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2461,7 +2461,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 22
  (./off-white paper.toc [3
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 127.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 119.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -2520,15 +2520,15 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 309.
+(hyperref)                than one, level fixed on input line 308.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 309.
+(hyperref)                be the same. Added a new anchor on input line 308.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 6 might be wrong on input line 319.
+(multicol)                Footnotes on page 6 might be wrong on input line 316.
 
 
 [6] [7
@@ -2536,126 +2536,127 @@ Package multicol Warning: I moved some lines to the next page.
 ]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 359.
+(hyperref)                be the same. Added a new anchor on input line 355.
 
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 374.
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 385.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 370.
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 381.
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 385
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 381
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 385.
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 381.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 395.
+(hyperref)                be the same. Added a new anchor on input line 391.
 
 [8
 
 ] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 399.
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
 [] \T1/cmss/bx/n/10 Ap-ply Re-wards[][] \T1/ccr/m/n/10 (+20) The third pro-cess
  in
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 408.
+(hyperref)                be the same. Added a new anchor on input line 456.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 415.
-
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 418.
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 429.
-
-
-Underfull \hbox (badness 5504) in paragraph at lines 439--443
-[]\T1/ccr/m/n/10 (+20) Accordingly, the post-transactional state of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--443
-\T1/cmtt/m/n/10 transaction(post.state) = stf(present.state,
- []
+(hyperref)                be the same. Added a new anchor on input line 463.
 
 [10
 
 ]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 466.
 
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 11 might be wrong on input line 461
-.
-
-[11] [12]
-! Undefined control sequence.
-l.518 		\ragraph
-                {Description}: A value equal to the total gas used in transa...
-
-? 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 520.
+(hyperref)                be the same. Added a new anchor on input line 477.
+
+[11]
+Underfull \hbox (badness 5504) in paragraph at lines 487--491
+[]\T1/ccr/m/n/10 (+20) Accordingly, the post-transactional state of
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
+\T1/cmtt/m/n/10 transaction(post.state) = stf(present.state,
+ []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 12 might be wrong on input line 524
+.
+
+[12] [13]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 568.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 
  []
 
-[13] [14
+[14
 
-]
+] [15
+
+] [16] [17]
 part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 546.
+(scrkbase)              on input line 594.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 550.
+(hyperref)                than one, level fixed on input line 598.
 
 
-Underfull \vbox (badness 10000) detected at line 629
+Underfull \vbox (badness 10000) detected at line 677
  []
 
-[15] [16]
+[18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 634.
+(biblatex)                Using fallback driver on input line 682.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 634.
+(biblatex)                Using fallback driver on input line 682.
 
-[17
+[20
 
 ]
 No file "off-white paper".acr.
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--638
+Underfull \hbox (badness 10000) in paragraph at lines 686--686
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 18 might be wrong on input line 638
+(multicol)                Footnotes on page 21 might be wrong on input line 686
 .
 
-[18
-
-] [19] [20] (./off-white paper.ind) 
-AED: lastpage setting LastPage
 [21
+
+] [22] [23] (./off-white paper.ind) 
+AED: lastpage setting LastPage
+[24
 
 ]
 Package minitoc Info: I0009
@@ -2669,20 +2670,14 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the "off-white paper".log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 694.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 694.
 (./off-white paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 694.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 694.
+Package rerunfilecheck Info: File `"off-white paper".out' has not changed.
+(rerunfilecheck)             Checksum: 62DDF8CC1EBB07F80165C54125FB4432;3887.
 
-
-Package rerunfilecheck Warning: File `"off-white paper".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"off-white paper".out':
-(rerunfilecheck)             Before: C0725601C6E239682C04A3A8205E5C78;3703
-(rerunfilecheck)             After:  E04324D15E396CD224582B540DF463E7;3751.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -2693,14 +2688,14 @@ Package biblatex Warning: Please rerun LaTeX.
 Package logreq Info: Writing requests to '"off-white paper".run.xml'.
 \openout1 = `"off-white paper.run.xml"'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 694.
  ) 
 Here is how much of TeX's memory you used:
- 51987 strings out of 493013
- 986640 string characters out of 6135683
- 1873344 words of memory out of 5000000
- 54064 multiletter control sequences out of 15000+600000
- 45507 words of font info for 180 fonts, out of 8000000 for 9000
+ 51980 strings out of 493013
+ 986530 string characters out of 6135683
+ 1873392 words of memory out of 5000000
+ 54063 multiletter control sequences out of 15000+600000
+ 45820 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,10n,104p,10426b,2316s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
@@ -2751,54 +2746,6 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.66} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.64} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.62} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.61} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.59} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.58} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.56} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.46} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.45} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.40} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.35} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.30} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.28} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.26} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.23} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.15} has been referenced but does not exist
-, replaced by a fixed one
-
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/mddhattr/.te
 xlive2016/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.600pk></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/te
@@ -2828,11 +2775,12 @@ r/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr
 ype1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sftt1000.pfb>
-Output written on "off-white paper.pdf" (21 pages, 521008 bytes).
+pe1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sftt1200.pfb>
+Output written on "off-white paper.pdf" (24 pages, 545234 bytes).
 PDF statistics:
- 827 PDF objects out of 1000 (max. 8388607)
- 745 compressed objects within 8 object streams
- 188 named destinations out of 1000 (max. 500000)
- 42053 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 846 PDF objects out of 1000 (max. 8388607)
+ 760 compressed objects within 8 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 42589 words of extra memory for PDF output out of 42996 (max. 10000000)
 
