@@ -154,7 +154,11 @@
 \newglossaryentry{state}{name={state}, description={A permanent, static, state  \texttt{state}}}
 \newglossaryentry{transition}{name={state-transition}, description={}}
 \newglossaryentry{bit}{name={bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. It is common to use bits when referring to cryptographic hashing algorithms (e.g. 160-bits instead of 20-bytes).}}
-\newglossaryentry{storage\_root}{name={storage\_root}, description={}}
+\newglossaryentry{storage_root}{name={storage_root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
+\newglossaryentry{interfacer}{name={interfacer}, description={A person or a piece of software that is able to interface to an Ethereum node. This denotes anyone or anything that can effect the state of the blockchain. Since Ethereum's state is effected only through actions made by accounts, every factual  interfacer with Ethereum has at least one account.
+
+}}
+
 \addbibresource{References.bib}
 
 
@@ -261,12 +265,10 @@
 
 		\subsection{EVM Code}
 
-	\section{External Actors} A person or other entity able to interface to an Ethereum node, but not a part of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and its state. By nature of the fact that external actors need an account in order to interface with the Blockchain, they necessarily (in the context of this paper) have one or more intrinsic accounts. 
-
-	\section{Programming Languages}
+	\section{External Actors} 	\section{Programming Languages}
 
 		\subsection{Lower-Level Lisp}
-			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and general low-level language for trans-compiling to.
+			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and trans-compiling to higher-level languages.
 	
 		\subsection{Solidity}
 			A JavaScript-like language, and the most commonly used language for creating smart contracts in Ethereum.

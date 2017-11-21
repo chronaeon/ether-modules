@@ -34,11 +34,11 @@
 \BOOKMARK [2][-]{subsection.5.6}{Gas}{section.5}% 34
 \BOOKMARK [3][-]{subsubsection.5.6.1}{Machine State}{subsection.5.6}% 35
 \BOOKMARK [3][-]{subsubsection.5.6.2}{Exceptional Halting}{subsection.5.6}% 36
-\BOOKMARK [-1][-]{part.1}{Appendix}{}% 39
-\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.1}% 40
 \BOOKMARK [3][-]{subsubsection.5.6.3}{EVM Code}{subsection.5.6}% 37
 \BOOKMARK [3][-]{subsubsection.5.6.4}{Opcodes/EVM Assembly}{subsection.5.6}% 38
-\BOOKMARK [1][-]{section*.51}{References}{appendix.A}% 41
-\BOOKMARK [1][-]{section*.52}{Glossary}{appendix.A}% 42
-\BOOKMARK [1][-]{section*.54}{Acronyms}{appendix.A}% 43
-\BOOKMARK [1][-]{section*.56}{Index}{appendix.A}% 44
+\BOOKMARK [-1][-]{part.1}{Appendix}{}% 39
+\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.1}% 40
+\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 41
+\BOOKMARK [1][-]{section*.3}{Glossary}{appendix.A}% 42
+\BOOKMARK [1][-]{section*.5}{Acronyms}{appendix.A}% 43
+\BOOKMARK [1][-]{section*.6}{Index}{appendix.A}% 44
