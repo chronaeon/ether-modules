@@ -62,9 +62,9 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{Off-Whitepaper: Ethereal Explanations}
+\fancyhead[C]{Off-Whitepaper: Ethereum}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{Version 0.1.63}
+\fancyhead[R]{Version 0.1.64}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -200,7 +200,7 @@
 
 \author{\textnormal{\textbf{Micah Dameron}}}
 
-\title{\Huge{Off-Whitepaper} \\ \hfill \\ \Large{Ethereal Explanations}}
+\title{\LARGE{Off-Whitepaper} \\ \hfill \\ \large{Ethereum}}
 
 \makeindex
 
@@ -248,15 +248,15 @@
 
 	\section{Native Currency \& Native Code}
 		Because Ethereum is turing-complete, there needs to be a \textsl{fundamental network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
-
-		\begin{tabular}{lll}
-		\toprule
-		\textbf{Unit} & \textbf{Ether} & \textbf{Wei} \\
-		\midrule
-		Ether & $\Xi$1 & 1,000,000,000,000,000,000 \\
-		Finney & $\Xi$0.001 & 1,000,000,000,000,000 \\
-		Szabo & $\Xi$0.000001 & 1,000,000,000,000 \\
-		\bottomrule
+		\begin{tabular}{llr}
+			\toprule
+			\textbf{Unit} & \textbf{Ether} & \textbf{Wei} \\
+			\midrule
+			\scriptsize{Ether} & \scriptsize{$\Xi$1.000000000000000000} & \scriptsize{1,000,000,000,000,000,000} \\		
+			\scriptsize{Finney} & \scriptsize{$\Xi$0.001000000000000000} & \scriptsize{1,000,000,000,000,000} \\
+			\scriptsize{Szabo} & \scriptsize{$\Xi$0.000001000000000000} & \scriptsize{1,000,000,000,000} \\
+			\scriptsize{Wei} & \scriptsize{$\Xi$0.000000000000000001} & \scriptsize{1} \\
+			\bottomrule
 		\end{tabular}
 
 		\subsection{EVM Code}

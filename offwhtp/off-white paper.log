@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  21 NOV 2017 07:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  21 NOV 2017 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2546,13 +2546,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 \openout12 = `"off-white paper.toc"'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-
- []
-
-
-Overfull \hbox (2.76273pt too wide) in paragraph at lines 252--261
-[][] 
+Overfull \hbox (3.15166pt too wide) in paragraph at lines 250--261
+[] 
  []
 
 
@@ -2689,11 +2684,11 @@ Package logreq Info: Writing requests to '"off-white paper".run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
  ) 
 Here is how much of TeX's memory you used:
- 53006 strings out of 492990
- 1009692 string characters out of 6135004
- 1914690 words of memory out of 5000000
- 55096 multiletter control sequences out of 15000+600000
- 572096 words of font info for 188 fonts, out of 8000000 for 9000
+ 53009 strings out of 492990
+ 1009745 string characters out of 6135004
+ 1914652 words of memory out of 5000000
+ 55098 multiletter control sequences out of 15000+600000
+ 572859 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,11n,104p,10426b,3394s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
@@ -2769,14 +2764,15 @@ sr/share/texmf/fonts/type1/public/cm-super/sfosl9.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfoti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/s
 hare/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sftt1000.pfb>
-Output written on "off-white paper.pdf" (19 pages, 505079 bytes).
+e1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+tt1000.pfb>
+Output written on "off-white paper.pdf" (19 pages, 520705 bytes).
 PDF statistics:
- 804 PDF objects out of 1000 (max. 8388607)
- 725 compressed objects within 8 object streams
+ 808 PDF objects out of 1000 (max. 8388607)
+ 728 compressed objects within 8 object streams
  220 named destinations out of 1000 (max. 500000)
- 41933 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 42445 words of extra memory for PDF output out of 42996 (max. 10000000)
 
