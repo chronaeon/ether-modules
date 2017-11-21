@@ -250,7 +250,7 @@
 
 			
 
-	\section{Native Currency \& Native Code}
+	\section{Native Currency \& Mining}
 		Because Ethereum is turing-complete, there needs to be a \textsl{fundamental network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
 		\begin{tabular}{llr}
 			\toprule
@@ -262,18 +262,33 @@
 			\scriptsize{Wei} & \scriptsize{$\Xi$0.000000000000000001} & \scriptsize{1} \\
 			\bottomrule
 		\end{tabular}
+		\subsection{Mining}
+			\subsubsection{Total Difficulty}
+				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
+			\par
+		\begin{tabular}{cc}
+	   \toprule
+	   \textbf{Pseudocode} & \textbf{Definition} \\
+	   \midrule
+	   \texttt{presentstate(total.difficulty)} & Total difficulty of \textsl{this block}. \\
+	   \texttt{presentstate(block.parent)}     & \textsl{This block's} parent block. \\
+	   \texttt{presentstate(block.difficulty)} & \textsl{This block's} difficulty. \\
+	   \bottomrule
+		  \end{tabular}
+
+
 
 		\subsection{EVM Code}
+		
+ 		\subsection{Programming Languages}
 
-	\section{External Actors} 	\section{Programming Languages}
-
-		\subsection{Lower-Level Lisp}
+		\subsubsection{Lower-Level Lisp}
 			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and trans-compiling to higher-level languages.
 	
-		\subsection{Solidity}
+		\subsubsection{Solidity}
 			A JavaScript-like language, and the most commonly used language for creating smart contracts in Ethereum.
-		\subsection{Serpent}
-		\subsection{Viper}
+		\subsubsection{Serpent}
+		\subsubsection{Viper}
 
 	\section{Memory and Storage}
 			
@@ -382,10 +397,8 @@
 			\subsubsection{Ommers}
 				\paragraph{Ommershash}
 
-			\subsubsection{\texttt{Is\_Sibling} Property}
-
 		\subsection{Transactions}
-			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and evolution of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and flexibility of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
 \paragraph{Notation}: \texttt{sender}
 \paragraph{Description}: A function that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve, (excepting the latter three signature fields) as the datum to sign. The sender of a given transaction can be represented:
 \texttt{transaction.sender}
@@ -436,6 +449,15 @@
 					\item \texttt{samestate\_header} the block header of the present block.
 					\item \texttt{the stack depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
 				\end{itemize}
+				\subsection{Substate}
+				\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
+
+\begin{itemize}
+        \item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
+        \item The \texttt{logs\_series}, which creates checkpoints in EVM code execution for frontend applications to explore, and is made up of the\texttt{logs\_set} and \texttt{l
+ogs\_bloom} from the \texttt{tx\_receipt}.
+	\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
+\end{itemize}
 
 			\subsubsection{Message Calls}
 \paragraph{Description}:\paragraph{Notation}: \texttt{message\_call}

@@ -19,21 +19,18 @@
 \addbibresource{~/modules/References.bib}
 \begin{document}
 \maketitle
-\paragraph{Notation}: \textit{$B_t$} or block\_difficulty
-\paragraph{Description}: The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
-\begin{align}
-B_t & \equiv B'_t + B_d \\
-B' & \equiv P(B_H)	
-\end{align}
-\par
-\begin{tabular}{ r l }
-	\toprule
-	  \textbf{Math Symbol} & \textbf{Meaning} \\
-	\midrule
-	   $B_t$ 	       & Total difficulty of \textsl{this block}. \\
-	   $B'$	 	       & \textsl{This block's} parent block. \\
-	   $B_d$	       & \textsl{This block's} difficulty. \\
-	\bottomrule
-\end{tabular}
+\paragraph{Notation}: \texttt{difficulty}
+\paragraph{Description}: The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block.
+        	\par
+                \begin{tabular}{rl}
+           \toprule
+           \textbf{Pseudocode} & \textbf{Definition} \\
+           \midrule
+           \texttt{presentstate(total.difficulty)} & Total difficulty of the \texttt{presentstate}. \\
+	   \texttt{presentstate(block.parent)}     & This block's \texttt{parent}. \\
+           \texttt{presentstate(block.difficulty)} & \textsl{This block's} difficulty. \\
+           \bottomrule
+                  \end{tabular}
+ 
 
 \end{document}
