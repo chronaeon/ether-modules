@@ -56,6 +56,19 @@
 \makeindex
 \usepackage[totoc]{idxlayout}
 \usepackage{longtable}
+\usepackage{fancyhdr}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Off-Whitepaper: Ethereal Explanations}
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{Version 0.1.63}
+\fancyfoot[C]{\thepage} 
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
 
 \glstoctrue
 \newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
@@ -233,21 +246,32 @@
 
 			
 
-	\section{Intrinsic Currency}
-		The smallest unit of currency in Ethereum is the Wei, which is $1*10^(18)$ Ether. All units at the machine level are counted in Wei.
-	
-	\section{External Actors} A person or other entity able to interface to an Ethereum node, but not a part of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and its state. By nature of the fact that external actors need an account in order to interface with the Blockchain, they necessarily (in the context of this paper, at least) have one or more intrinsic accounts.
+	\section{Native Currency \& Native Code}
+		Because Ethereum is turing-complete, there needs to be a \textsl{fundamental network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+
+		\begin{tabular}{lll}
+		\toprule
+		\textbf{Unit} & \textbf{Ether} & \textbf{Wei} \\
+		\midrule
+		Ether & $\Xi$1 & 1,000,000,000,000,000,000 \\
+		Finney & $\Xi$0.001 & 1,000,000,000,000,000 \\
+		Szabo & $\Xi$0.000001 & 1,000,000,000,000 \\
+		\bottomrule
+		\end{tabular}
+
+		\subsection{EVM Code}
+
+	\section{External Actors} A person or other entity able to interface to an Ethereum node, but not a part of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and its state. By nature of the fact that external actors need an account in order to interface with the Blockchain, they necessarily (in the context of this paper) have one or more intrinsic accounts. 
 
 	\section{Programming Languages}
 
 		\subsection{Lower-Level Lisp}
-			\paragraph{Notation}: \texttt{LLL}
-			\paragraph{Description}: The Lisp-Like low level language: a human-writable language used for authoring simple contracts and general low-level language for trans-compiling to. 			and this is what turns your LLL code into EVM code and how it's executed in the evm
+			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and general low-level language for trans-compiling to.
 	
 		\subsection{Solidity}
-			and this is what turns your solidity code into EVM code and how it's executed in the EVM
-
-\clearpage
+			A JavaScript-like language, and the most commonly used language for creating smart contracts in Ethereum.
+		\subsection{Serpent}
+		\subsection{Viper}
 
 	\section{Memory and Storage}
 			
