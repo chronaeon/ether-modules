@@ -1,60 +1,41 @@
-\BOOKMARK [-1][-]{part.1}{Theory}{}% 1
-\BOOKMARK [0][-]{section.1}{The Evolution of Blockchains}{part.1}% 2
-\BOOKMARK [1][-]{section.2}{Cryptography}{section.1}% 3
-\BOOKMARK [1][-]{section.3}{Serialization}{section.1}% 4
-\BOOKMARK [1][-]{section.4}{Hacker Ethic}{section.1}% 5
-\BOOKMARK [1][-]{section.5}{Message-Passing Interface}{section.1}% 6
-\BOOKMARK [1][-]{section.6}{Singleton Pattern}{section.1}% 7
-\BOOKMARK [1][-]{section.7}{State Machines}{section.1}% 8
-\BOOKMARK [1][-]{section.8}{Processor Technology}{section.1}% 9
-\BOOKMARK [1][-]{section.9}{Turing Machines}{section.1}% 10
-\BOOKMARK [2][-]{subsection.9.1}{Turing-Completeness}{section.9}% 11
-\BOOKMARK [1][-]{section.10}{Intrinsic Currency}{section.1}% 12
-\BOOKMARK [1][-]{section.11}{Computation Flow}{section.1}% 13
-\BOOKMARK [1][-]{section.12}{External Actors}{section.1}% 14
-\BOOKMARK [1][-]{section.13}{ECDSA}{section.1}% 15
-\BOOKMARK [2][-]{subsection.13.1}{Public Key Cryptography}{section.13}% 16
-\BOOKMARK [3][-]{section*.3}{Public Keys}{subsection.13.1}% 17
-\BOOKMARK [3][-]{section*.3}{Private Keys}{subsection.13.1}% 18
-\BOOKMARK [1][-]{section.14}{Programming Languages}{section.1}% 19
-\BOOKMARK [2][-]{subsection.14.1}{Lower-Level Lisp}{section.14}% 20
-\BOOKMARK [2][-]{subsection.14.2}{Solidity}{section.14}% 21
-\BOOKMARK [-1][-]{part.2}{Practice}{}% 22
-\BOOKMARK [0][-]{section.15}{Memory and Storage}{part.2}% 23
-\BOOKMARK [1][-]{subsection.15.1}{Data Structures}{section.15}% 24
-\BOOKMARK [2][-]{section*.4}{World State}{subsection.15.1}% 25
-\BOOKMARK [2][-]{subsection.15.2}{Byte Arrays}{subsection.15.1}% 26
-\BOOKMARK [2][-]{subsection.15.3}{Bit Sequences}{subsection.15.1}% 27
-\BOOKMARK [2][-]{subsection.15.4}{The Block}{subsection.15.1}% 28
-\BOOKMARK [3][-]{Item.4}{Block Header}{subsection.15.4}% 29
-\BOOKMARK [2][-]{subsection.15.5}{State Database}{subsection.15.1}% 30
-\BOOKMARK [2][-]{subsection.15.6}{Merkle-Patricia Trees}{subsection.15.1}% 31
-\BOOKMARK [3][-]{section*.5}{RLP}{subsection.15.6}% 32
-\BOOKMARK [3][-]{section*.5}{Account State}{subsection.15.6}% 33
-\BOOKMARK [2][-]{subsection.15.7}{Bloom Filter}{subsection.15.1}% 34
-\BOOKMARK [3][-]{section*.6}{Transaction Receipts}{subsection.15.7}% 35
-\BOOKMARK [1][-]{section.16}{Processing and Computation}{section.15}% 36
-\BOOKMARK [2][-]{subsection.16.1}{State Transition Function}{section.16}% 37
-\BOOKMARK [3][-]{section*.7}{Ethash}{subsection.16.1}% 38
-\BOOKMARK [2][-]{subsection.16.2}{Verification}{section.16}% 39
-\BOOKMARK [3][-]{section*.8}{Ommers}{subsection.16.2}% 40
-\BOOKMARK [3][-]{section*.8}{Is\137Sibling Property}{subsection.16.2}% 41
-\BOOKMARK [2][-]{subsection.16.3}{Transactions}{section.16}% 42
-\BOOKMARK [2][-]{subsection.16.4}{Execution}{section.16}% 43
-\BOOKMARK [3][-]{section*.9}{Intrinsic Validity}{subsection.16.4}% 44
-\BOOKMARK [3][-]{section*.9}{Execution Model}{subsection.16.4}% 45
-\BOOKMARK [3][-]{section*.9}{Message Calls}{subsection.16.4}% 46
-\BOOKMARK [3][-]{section*.9}{Contract Creation}{subsection.16.4}% 47
-\BOOKMARK [3][-]{section*.9}{Account Creation}{subsection.16.4}% 48
-\BOOKMARK [2][-]{subsection.16.5}{Halting}{section.16}% 49
-\BOOKMARK [2][-]{subsection.16.6}{Gas}{section.16}% 50
-\BOOKMARK [3][-]{section*.10}{Machine State}{subsection.16.6}% 51
-\BOOKMARK [3][-]{Item.30}{Exceptional Halting}{subsection.16.6}% 52
-\BOOKMARK [3][-]{Item.30}{EVM Code}{subsection.16.6}% 53
-\BOOKMARK [3][-]{Item.30}{Opcodes/EVM Assembly}{subsection.16.6}% 54
-\BOOKMARK [-1][-]{part.3}{Appendix}{}% 55
-\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.3}% 56
-\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 57
-\BOOKMARK [1][-]{section*.11}{Glossary}{appendix.A}% 58
-\BOOKMARK [1][-]{section*.13}{Acronyms}{appendix.A}% 59
-\BOOKMARK [1][-]{section*.14}{Index}{appendix.A}% 60
+\BOOKMARK [1][-]{section.1}{Intrinsic Currency}{}% 1
+\BOOKMARK [1][-]{section.2}{External Actors}{}% 2
+\BOOKMARK [1][-]{section.3}{Programming Languages}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Lower-Level Lisp}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Solidity}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Memory and Storage}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Data Structures}{section.4}% 7
+\BOOKMARK [3][-]{subsubsection.4.1.1}{World State}{subsection.4.1}% 8
+\BOOKMARK [2][-]{subsection.4.2}{The Block}{section.4}% 9
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Block Header}{subsection.4.2}% 10
+\BOOKMARK [2][-]{subsection.4.3}{State Database}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Merkle-Patricia Trees}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.4.1}{RLP}{subsection.4.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Account State}{subsection.4.4}% 14
+\BOOKMARK [2][-]{subsection.4.5}{Bloom Filter}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Transaction Receipts}{subsection.4.5}% 16
+\BOOKMARK [1][-]{section.5}{Processing and Computation}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{State Transition Function}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Ethash}{subsection.5.1}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Verification}{section.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Ommers}{subsection.5.2}% 21
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Is\137Sibling Property}{subsection.5.2}% 22
+\BOOKMARK [2][-]{subsection.5.3}{Transactions}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.4}{Execution}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Intrinsic Validity}{subsection.5.4}% 25
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Execution Model}{subsection.5.4}% 26
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Message Calls}{subsection.5.4}% 27
+\BOOKMARK [3][-]{subsubsection.5.4.4}{Contract Creation}{subsection.5.4}% 28
+\BOOKMARK [3][-]{subsubsection.5.4.5}{Account Creation}{subsection.5.4}% 29
+\BOOKMARK [2][-]{subsection.5.5}{Halting}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.6}{Gas}{section.5}% 31
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Machine State}{subsection.5.6}% 32
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Exceptional Halting}{subsection.5.6}% 33
+\BOOKMARK [3][-]{subsubsection.5.6.3}{EVM Code}{subsection.5.6}% 34
+\BOOKMARK [3][-]{subsubsection.5.6.4}{Opcodes/EVM Assembly}{subsection.5.6}% 35
+\BOOKMARK [-1][-]{part.1}{Appendix}{}% 36
+\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.1}% 37
+\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 38
+\BOOKMARK [1][-]{section*.3}{Glossary}{appendix.A}% 39
+\BOOKMARK [1][-]{section*.5}{Acronyms}{appendix.A}% 40
+\BOOKMARK [1][-]{section*.6}{Index}{appendix.A}% 41

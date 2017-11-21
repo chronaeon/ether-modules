@@ -1,18 +1,18 @@
-[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
-[0] Config.pm:357> INFO - Logfile is 'off-white paper.blg'
-[733] biber:303> INFO - === Sun Nov 19, 2017, 06:01:43
-[1026] Biber.pm:360> INFO - Reading 'off-white paper.bcf'
-[1136] Biber.pm:836> INFO - Found 7 citekeys in bib section 0
-[1159] Biber.pm:3671> INFO - Processing section 0
-[1235] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
-[1257] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[1278] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
-[1317] Utils.pm:164> WARN - BibTeX subsystem: /tmp/z67id3_R8F/References.bib_11538.utf8, line 3, warning: 37 characters of junk seen at toplevel
-[1317] Utils.pm:164> WARN - BibTeX subsystem: /tmp/z67id3_R8F/References.bib_11538.utf8, line 11, warning: 35 characters of junk seen at toplevel
-[1337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1337] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[1337] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[1343] bbl.pm:608> INFO - Writing 'off-white paper.bbl' with encoding 'UTF-8'
-[1345] bbl.pm:712> INFO - Output to off-white paper.bbl
-[1345] Biber.pm:110> INFO - WARNINGS: 2
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'off-white paper.blg'
+[131] biber:303> INFO - === Mon Nov 20, 2017, 19:56:48
+[183] Biber.pm:360> INFO - Reading 'off-white paper.bcf'
+[476] Biber.pm:836> INFO - Found 7 citekeys in bib section 0
+[536] Biber.pm:3671> INFO - Processing section 0
+[580] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
+[585] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[599] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
+[648] Utils.pm:164> WARN - BibTeX subsystem: /tmp/fWcGiccUhk/References.bib_22149.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[648] Utils.pm:164> WARN - BibTeX subsystem: /tmp/fWcGiccUhk/References.bib_22149.utf8, line 11, warning: 35 characters of junk seen at toplevel
+[735] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[736] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[736] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[736] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[751] bbl.pm:608> INFO - Writing 'off-white paper.bbl' with encoding 'UTF-8'
+[756] bbl.pm:712> INFO - Output to off-white paper.bbl
+[756] Biber.pm:110> INFO - WARNINGS: 2

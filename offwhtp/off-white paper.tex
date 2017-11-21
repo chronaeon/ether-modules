@@ -96,7 +96,7 @@
 \newacronym{YP}{YP}{Yellowpaper}
 \newacronym{ERE}{ERE}{Ethereum Runtime Environment}
 \newacronym{LLL}{LLL}{Lower Level Lisp}
-\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner}}}
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner} In Ethereum, most data is serialized through \gls{Recursive Length Prefix} tree structures.}}
 \newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsc{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all \textsc{previous states} on the \textbf{EVM} which a client might need to reference}}
 \newglossaryentry{abstract machine}{name={abstract machine}, description={An abstract machine is a conceptual model of a computer that describes its own operations with perfect accuracy. Since abstract machines are theoretical, all possible outputs can be determined beforehand}}
 \newglossaryentry{design pattern}{name={design pattern}, description={a pattern of design in OOP}}
@@ -181,7 +181,7 @@
 
 \hfuzz=0.84074pt
 
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 
 \date{}
 
@@ -230,63 +230,13 @@
 \TrickSupertabularIntoMulticols
 \justify
 
-\part{Theoretical Considerations}
 
-	\section{The Evolution of a Protocol}
-	Over the past decade, blockchain technology has proven its longevity and veracity through a number of systems, most notably through Bitcoin, the first electronic currency of its kind to succeed. Bitcoin was successful in its mission to create currency based on a decentralized peer-to-peer Blockchain protocol, and Ethereum takes that concept a step further by creating a \textit{globally-distributed virtual machine}that can ad-hoc run such currency applications, along with any other conceivable applications or programs. Using well-established concepts from the relevant areas of computer science, like \textsc{message-passing}, \textsc{transaction processing}, and \textsc{shared-state concurrence}, the \textsl{Ethereum Protocol} creates an environment for developers to execute machine instructions with the same level of veracity and certainty as monetary transactions have on more standard Blockchains.  
-	\index{}\index{blockchain!evolution}\index{blockchain!veracity}\index{currency!electronic}\index{Bitcoin}\index{state}\index{message-passing}\index{shared-state!concurrence}	
-
-\paragraph{A Conceptual Map of the Ethereum Protocol}
-
-	\begin{savenotes}
-		\begin{tikzpicture} [font=\scriptsize,
-		grow cyclic, 
-		level 1/.style={level distance=1.4cm,sibling angle=135},
-		level 2/.style={text width=2cm, font=\footnotesize, level distance=2cm,sibling angle=45}]
-		\node {Ethereum} % root
-		child { node {Memory}
-		child { node {Merkle-Patricia Trie} }
-		child { node {Blockdrive} }
-		child { node {State} }
-		child { node {Hash Functions} }
-		}
-		child { node {CPU}
-		child { node {State Transitions} }
-		child { node {Opcodes} }
-		child { node {EVM Code} }
-		child { node {Propogation Time} }
-		}
-		child { node {Theory}
-		child { node {Cryptoeconomics} }
-		child { node {Game Theory} }
-		child { node {Organizational Design} }
-		};
-		\end{tikzpicture}
-	\end{savenotes}
-
-		\subsection{The Hacker Ethic} ``But,'' one might ask, ``what were the motivations behind the development of the Ethereum protocol?'' Several answers might be given: ROI for investors, a more robust blockchain, a more accessible trustless system, and all of these are true. But a most prominent, fundamental, and underlying motivation is a more solid implementation of \textit{The Hacker Ethic}. What is the Hacker Ethic? Here are the basic highlights:
 			
-		\subsection{Cryptography} Cryptographic hashing is what makes Blockchain technology possible. We take for granted that from a certain hash function, (say SHA-256 in the case of Bitcoin) there are a certain, limited number of hashes from the previous block's nonce function as solutions to an equation. Out there, somewhere in the world of numbers, there already exist cryptographic hashes that fit the requirements of the current block's nonce. Since it's impossible for someone to convincingly fake the current block, due to everyone running an identical protocol, bad blocks are spotted. Good solutions to the next true block are attempted instead, since it's easier (though still notably difficult)  to mine for the next hash, that is, to search for the next needle-in-a-haystack that solves the equation, than it is to try and fool the peer-to-peer network into agreeing on a false block. A classic game of economics is here at play, and it runs assuming man's inherent self-interest. Not the bad kind of self-interest, but the good kind that is interested in a self's healthy growth and development. If there were not these hashing functions for us to utilize from broader studies in Mathematics, the entire cryptocurrency market and concept would fall like a house of cards. The fact that these networks are still up and running proves that the Math works. The biggest problem for hashing is the emergence of hash collisions, where two inputs produce the same output hash. These sometimes take years to find, and with a good enough hashing function usually are not found until the next more powerful hashing function has arrived on the scene.
-			\subsubsection{Serialization}
-		\subsection{Message-Passing Interface}
-	\section{Singleton Pattern}
-	\section{State Machines}
-	\section{Processor Technology}
-	\section{Turing Machines}
-		\subsection{Turing-Completeness}
+
 	\section{Intrinsic Currency}
 		The smallest unit of currency in Ethereum is the Wei, which is $1*10^(18)$ Ether. All units at the machine level are counted in Wei.
-	\section{Computation Flow}
 	
 	\section{External Actors} A person or other entity able to interface to an Ethereum node, but not a part of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and its state. By nature of the fact that external actors need an account in order to interface with the Blockchain, they necessarily (in the context of this paper, at least) have one or more intrinsic accounts.
-
-	\section{ECDSA}
-
-		\subsection{Public Key Cryptography}
-				\paragraph{Diffie Helman} hypothesis--stated in their paper (citation to it)
-			\subsubsection{Public Keys}
-
-			\subsubsection{Private Keys}
 
 	\section{Programming Languages}
 
@@ -298,7 +248,6 @@
 			and this is what turns your solidity code into EVM code and how it's executed in the EVM
 
 \clearpage
-\part{Concrete Details}
 
 	\section{Memory and Storage}
 			
@@ -309,14 +258,10 @@
 			
 				\subsubsection{World State}
 					Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-		\subsection{Byte Arrays}
 
-		\subsection{Bit Sequences}
-			Message Calls are either bit sequences or byte arrays.
 
 		\subsection{The Block}
-			\paragraph{Notation}: $\mathbb{B}$
-			\paragraph{Description}: A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
+			A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
 
 			\begin{enumerate}
 				\item \textbf{Parent Hash}: The hash of the parent block's header: given in Keccak-256.
@@ -421,7 +366,6 @@
 \texttt{transaction.sender}
 
 		\subsection{Execution}
-			\paragraph{Notation}: \texttt{execution}
 			\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
 			\subsubsection{Intrinsic Validity}
 				The criteria for intrinsic validity are as follows:
@@ -581,17 +525,6 @@
 			\subsubsection{Opcodes/EVM Assembly}
 		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix B} \\
 
-\begin{tabular}{|rclll|}
-	\hline
-	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{In} & \textbf{Out}  \\
-	\hline
-	0x00 & STOP & 0 & 2 & 1 \\
-	0x01 & ADD & 3 & 2 & 1 \\
-	0x02 & MUL & 5 & 2 & 1 \\
-	0x03 & SUB & 3 & 2 & 1 \\
-	0x04 & DIV & 5 & 2 & 1 \\ 
-	\hline
-\end{tabular}
 
 				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{machine\_state}), the state which decides every new \texttt{world\_state}. 
 
