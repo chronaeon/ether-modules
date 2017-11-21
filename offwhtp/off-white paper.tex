@@ -153,8 +153,8 @@
 \newglossaryentry{block header}{name={block header}, description={The information in a block besides transaction information. It consists of a dozen parts: (lists the 12 parts) }}
 \newglossaryentry{state}{name={state}, description={A permanent, static, state  \texttt{state}}}
 \newglossaryentry{transition}{name={state-transition}, description={}}
-\newglossaryentry{bit}{name={bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. It is common to speak of cryptographic hashing algorithms using bits (e.g. 160-bits instead of 20-bytes)}}
-
+\newglossaryentry{bit}{name={bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. It is common to use bits when referring to cryptographic hashing algorithms (e.g. 160-bits instead of 20-bytes).}}
+\newglossaryentry{storage\_root}{name={storage\_root}, description={}}
 \addbibresource{References.bib}
 
 
@@ -361,7 +361,6 @@
 
 		\subsubsection{Transaction Receipts}
 
-\clearpage
 
 	\section{Processing and Computation}
 	
@@ -384,7 +383,7 @@
 			\subsubsection{\texttt{Is\_Sibling} Property}
 
 		\subsection{Transactions}
-			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and evolution of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which are all the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and evolution of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
 \paragraph{Notation}: \texttt{sender}
 \paragraph{Description}: A function that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve, (excepting the latter three signature fields) as the datum to sign. The sender of a given transaction can be represented:
 \texttt{transaction.sender}
@@ -532,7 +531,7 @@
 		\begin{itemize}
 			\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
 			\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
-			\begin{itemize}
+		\begin{itemize}
 				\item[true] indicating that in the run of computation, an exception was signaled
 				\item[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
 			\end{itemize}
