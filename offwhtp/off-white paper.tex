@@ -101,63 +101,51 @@
  }
  \makeatother
 
+%	╔═══════════════════DELETED═TERMS═════════════════════╗
+%	║Autonomous Object				      ║
+%	║Design Pattern				              ║
+%	║Object-Oriented Programming			      ║
+%	║External Actor				              ║
+%	║Abstract Machine				      ║
+%	║Hacker Ethic					      ║ 
+%	╚═════════════════════════════════════════════════════╝
 
 \makenoidxglossaries
 \setacronymstyle{long-short}
-\newacronym{OOP}{OOP}{Object-Oriented Programming}
 \newacronym{EVM}{EVM}{Ethereum Virtual Machine}
-\newacronym{YP}{YP}{Yellowpaper}
 \newacronym{ERE}{ERE}{Ethereum Runtime Environment}
 \newacronym{LLL}{LLL}{Lower Level Lisp}
-\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner} In Ethereum, most data is serialized through \gls{Recursive Length Prefix} tree structures.}}
-\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsc{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all \textsc{previous states} on the \textbf{EVM} which a client might need to reference}}
-\newglossaryentry{abstract machine}{name={abstract machine}, description={An abstract machine is a conceptual model of a computer that describes its own operations with perfect accuracy. Since abstract machines are theoretical, all possible outputs can be determined beforehand}}
-\newglossaryentry{design pattern}{name={design pattern}, description={a pattern of design in OOP}}
-\newglossaryentry{transaction}{name={transaction}, description={An input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}} 
-\newglossaryentry{hacker ethic}{name={hacker ethic}, description={A maxim purporting that knowledge about and access to proprietary computer systems should be free and unhindered for anyone who is willing and able to explore and improve it.\autocite{Levy2010} The open-source and decentralized nature of Ethereum makes it one of the most thorough and robust implementations of the \textsl{Hacker Ethic} to date.}}
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner} In Ethereum, most data is serialized through tree structures.}}
+\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsl{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all previous \textsl{world states} which a client might need to reference}}
+\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. A transaction can also be an input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}} 
 \newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
-\newglossaryentry{blockchain}{name={blockchain}, description={A consensus-based record of agreement where chunks of data\footnote{As of \today, roughly between 1 and 25 kilobytes in size\autocite{Etherscan2017}} (called blocks) are stored with cryptographic hashes linking each Block to the next, ensuring their validity. See also: \textit{hashing functions}.}}
 \newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there can only be one given output.\footnote{Actually, most hashing functions eventually have some collision points where two viable inputs reproduce the same output. But actual collision points are rare discoveries and tend to be followed (if not preceded by) newer more powerful hashing algorithms that are yet harder to break or find collisions in. Since the number space is infinite, we aren't likely to run out of potential new and larger hashing algorithms any time soon. Older hashing algorithms with known collisions, such as MD5 are not recommended for use in applications with  stringent security requirements.}The reason this works is because the hash of a block's data is a certainty, just like two plus two equals four is a certainty.  }}
-\newglossaryentry{state machine}{name={state machine}, description={A state machine rests in a universal, stable, singular condition, called a state. State machines  transition to new states given certain compatible inputs.}}
+\newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
 \newglossaryentry{Ethereum Foundation}{name={Ethereum Foundation}, description={The non-profit organization in charge of executing the development processes of Ethereum in line with the \gls{Whitepaper}}}
 \newglossaryentry{Whitepaper}{name={Whitepaper}, description={A conceptual map, distinct from the Yellowpaper, which highlights the development goals for Ethereum as a whole\autocite{EF2017}}}
 \newglossaryentry{Yellowpaper}{name={Yellowpaper}, description={Ethereum's primary formal specification, written by Dr. Gavin Wood, one of the founders of Ethereum. }}
-\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programmdng which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
-\newglossaryentry{specification}{name={specification}, description={Technical descriptions, instructions, and definitions from which other people can create working prototypes}}
-\newglossaryentry{State Database}{name={State Database}, description={A database backend that maintains a mapping of bytearrays to bytearrays}}
+\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programming which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
+\newglossaryentry{specification}{name={specification}, description={Technical descriptions, instructions, and definitions from which other people can create models}}
 \newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state$^\sigma$ at a particular time}}
 \newglossaryentry{trie}{name={trie}, description={A tree-structure for organizing data, the position of data in the tree contains the particular path from root to leaf node that represents the key (the path from root to leaf is ``one'' key) you are searching the trie structure for. The data of the key is contained in the trie relationships that emerge from related nodes in the trie structure}}
 \newglossaryentry{leaf node}{name={leaf node},description={the bottom-most node in a particular tree, of blocks, one half of the ``key'' the other half being the root node, which creates the path between}}
 \newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.}}
-\newglossaryentry{public key}{name={public key}, description={A term originating from \textsl{cryptography} and corresponding to  \textbf{private key}, this is the 42-byte (i.e. 42-character) string of ASCII digits which transacts on the public network}}
 \newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
 \newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
-\newglossaryentry{External Actor}{name={External Actor}, description={A person or other entity able to interface to an Ethereum node, but external to the world of Ethereum. It can interact with Ethereum through depositing signed Transactions and inspecting the blockchain and associated state. Has one (or more) intrinsic Accounts}}
-%\newglossaryentry{Intrinsic Account}{name={Instrinsic Account}, description={An}}
 \newglossaryentry{Address}{name={Address}, description={A 160-bit (20-byte) code used for identifying Accounts}}
 \newglossaryentry{Bit}{name={Bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. The Yellowpaper gives certain values in bits (e.g. 160 bits instead of 20 bytes)}}
-\newglossaryentry{YP-transaction}{name={Transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain}}
-\newglossaryentry{Autonomous Object}{name={Autonomous Object}, description={A notional object existent only within the hypothetical state of Ethereum. Has an intrinsic address and thus an associated account; the account will have non-empty associated EVM Code. Incorporated only as the Storage State of that account}}
-\newglossaryentry{Storage State}{name={Storage State}, description={The information particular to a given Account that is maintained between the times that the Account's associated EVM Code runs}}
-\newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two Accounts, either through the deterministic operation of an Autonomous Object or the cryptographically secure signature of the Transaction}}
-\newglossaryentry{Message Call}{name={Message}, description={The act of passing a message from one Account to another. If the destination account is associated with non-empty EVM Code, then the VM will be started with the state of said Object and the Message acted upon. If the message sender is an Autonomous Object, then the Call passes any data returned from the VM operation}}
-\newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit. Paid for exclusively by Ether (as of PoC-4), which is converted freely to and from Gas as required. Gas does not exist outside of the internal Ethereum computation engine; its price is set by the Transaction and miners are free to ignore Transactions whose Gas price is too low}}
+\newglossaryentry{YP-transaction}{name={Transaction}, description={}}
+\newglossaryentry{Storage State}{name={Storage State}, description={The information particular to a given account that is maintained between the times that the account's associated EVM Code runs}}
+\newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two accounts.}}
+\newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit; gas is paid for exclusively by Ether}}
 \newglossaryentry{Contract}{name={Contract}, description={A piece of EVM Code that may be associated with an Account or an Autonomous Object}}
-\newglossaryentry{Object}{name={Object}, description={Synonym for Autonomous Object}}
-\newglossaryentry{Dapp}{name={Dapp}, description={An end-user-visible application hosted in an Ethereum browser.}}
-\newglossaryentry{Ethereum Browser}{name={Ethereum Browser}, description={\footnote{a.k.a. Ethereum Reference Client} A cross-platform GUI of an interface similar to a simplified browser (a la Chrome) that is able to host applications, the backend of which is purely on the Ethereum protocol.}}
 \newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
 \newglossaryentry{Lower-Level Lisp}{name={Lower-Level Lisp}, description={The Lisp-like Low-level Language, a human-writable language used for authoring simple contracts and general low-level language toolkit for trans-compiling to}}
-\newglossaryentry{Balance}{name={Balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
-\newglossaryentry{beneficiary}{name={beneficiary}, description={The 160-bit address to which all fees collected from the successful mining of this block be transferred}}
-\newglossaryentry{block header}{name={block header}, description={The information in a block besides transaction information. It consists of a dozen parts: (lists the 12 parts) }}
-\newglossaryentry{state}{name={state}, description={A permanent, static, state  \texttt{state}}}
-\newglossaryentry{transition}{name={state-transition}, description={}}
-\newglossaryentry{bit}{name={bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. It is common to use bits when referring to cryptographic hashing algorithms (e.g. 160-bits instead of 20-bytes).}}
-\newglossaryentry{storage_root}{name={storage_root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
-\newglossaryentry{interfacer}{name={interfacer}, description={A person or a piece of software that is able to interface to an Ethereum node. This denotes anyone or anything that can effect the state of the blockchain. Since Ethereum's state is effected only through actions made by accounts, every factual  interfacer with Ethereum has at least one account.
-
-}}
+\newglossaryentry{balance}{name={balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
+\newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of this block be transferred}}
+\newglossaryentry{block header}{name={block header}, description={Any information in a block besides transaction information}}
+\newglossaryentry{storage root}{name={storage root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
+\newglossaryentry{Recursive Length Prefix}{name={Recursive Length Prefix}, description={Recursive Length Prefix}}
 
 \addbibresource{References.bib}
 
@@ -228,7 +216,7 @@
 \hfill \hfill
 \begin{center}\textbf{Abstract}\end{center}\par
 	\abstract{The goal of this paper\footnote{Formally, \textit{Blanched-Almond} Paper}is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsc{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source has been the Ethereum \textit{Yellowpaper}, but much supplemental knowledge has been found elsewhere and crucial points from other sources have been added as well for the reader's benefit.}
-	
+		\index{pseudocode}	
 
 \clearpage
 %dominitoc 
@@ -264,18 +252,18 @@
 		\end{tabular}
 		\subsection{Mining}
 			\subsubsection{Total Difficulty}
-				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
-			\par
-		\begin{tabular}{cc}
+				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. \\ 
+\flushleft			
+   \begin{tabular}{ll}
 	   \toprule
 	   \textbf{Pseudocode} & \textbf{Definition} \\
 	   \midrule
-	   \texttt{presentstate(total.difficulty)} & Total difficulty of \textsl{this block}. \\
-	   \texttt{presentstate(block.parent)}     & \textsl{This block's} parent block. \\
-	   \texttt{presentstate(block.difficulty)} & \textsl{This block's} difficulty. \\
+	   \texttt{\scriptsize{presentstate(total.difficulty)}} & \scriptsize{Total difficulty of \textsl{this block}.} \\
+	   \texttt{\scriptsize{presentstate(block.parent)}}     & \scriptsize{\textsl{This block's} parent block.} \\
+	   \texttt{\scriptsize{presentstate(block.difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
 	   \bottomrule
-		  \end{tabular}
-
+   \end{tabular}
+\justify
 
 
 		\subsection{EVM Code}
@@ -312,7 +300,7 @@
 			
 			\end{enumerate}
 				\subsubsection{Block Header}
-				\paragraph{Notation}: \texttt{H} 
+				\paragraph{Notation}: \texttt{header} 
 				\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
 
 				\begin{enumerate}
@@ -408,7 +396,7 @@
 			\subsubsection{Intrinsic Validity}
 				The criteria for intrinsic validity are as follows:
 				\begin{itemize}
-				\item The transaction follows the rules for \textsl{well-formed RLPs} (recursive length prefixes.)
+				\item The transaction follows the rules for \textsl{well-formed RLP} (recursive length prefix.)
 				\item The \textsl{signature} on the transaction is valid.
 				\item The \textsl{nonce} on the transaction is valid, i.e. it is equivalent to the sender account's current nonce.
 				\item The \texttt{gas\_limit} is greater than or equal to the \texttt{intrinsic\_gas} used by the transaction.
