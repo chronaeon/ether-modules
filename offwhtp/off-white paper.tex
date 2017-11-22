@@ -111,17 +111,6 @@
 %	╚═════════════════════════════════════════════════════╝
 
 
-
-%┌───────────────────┐
-%│                   │▒
-%│                   │▒
-%╞                   ╡▒
-%│                   │▒
-%│                   │▒
-%└───────────────────┘▒
-% ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-
-
 \makenoidxglossaries
 \setacronymstyle{long-short}
 \newacronym{EVM}{EVM}{Ethereum Virtual Machine}
@@ -192,7 +181,7 @@
 
 \setlength{\columnseprule}{0pt}
 
-\setlength{\columnsep}{2.5mm}
+\setlength{\columnsep}{5mm}
 
 \hfuzz=0.84074pt
 
@@ -299,7 +288,15 @@
 
 
 		\subsection{The Block}
-			A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
+			A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
+
+			\begin{supertabular}{|rl|}
+				\hline
+				The & Block \\
+				\hline
+				 Parent Hash & \\
+				\hline
+			\end{supertabular}
 
 				\subsubsection{Block Header}
 				\paragraph{Notation}: \texttt{header} 
@@ -329,7 +326,7 @@
 
 
 			\subsubsection{RLP}
-			\paragraph{Notation}: \texttta{rlp}
+			\paragraph{Notation}: \texttt{rlp}
 			\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
 			\par
 
