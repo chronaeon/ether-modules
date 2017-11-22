@@ -13,32 +13,31 @@
 \BOOKMARK [2][-]{subsection.2.2}{The Block}{section.2}% 13
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Block Header}{subsection.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.3}{State Database}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.4}{Merkle-Patricia Trees}{section.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.4.1}{RLP}{subsection.2.4}% 17
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Account State}{subsection.2.4}% 18
-\BOOKMARK [2][-]{subsection.2.5}{Bloom Filter}{section.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.5.1}{Transaction Receipts}{subsection.2.5}% 20
-\BOOKMARK [1][-]{section.3}{Processing and Computation}{}% 21
-\BOOKMARK [2][-]{subsection.3.1}{State Transition Function}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Ethash}{subsection.3.1}% 23
-\BOOKMARK [2][-]{subsection.3.2}{Verification}{section.3}% 24
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Ommers}{subsection.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.3}{Transactions}{section.3}% 26
-\BOOKMARK [2][-]{subsection.3.4}{Execution}{section.3}% 27
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Intrinsic Validity}{subsection.3.4}% 28
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Execution Model}{subsection.3.4}% 29
-\BOOKMARK [2][-]{subsection.3.5}{Substate}{section.3}% 30
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Message Calls}{subsection.3.5}% 31
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Contract Creation}{subsection.3.5}% 32
-\BOOKMARK [3][-]{subsubsection.3.5.3}{Account Creation}{subsection.3.5}% 33
-\BOOKMARK [2][-]{subsection.3.6}{Halting}{section.3}% 34
-\BOOKMARK [2][-]{subsection.3.7}{Gas}{section.3}% 35
-\BOOKMARK [3][-]{subsubsection.3.7.1}{Machine State}{subsection.3.7}% 36
-\BOOKMARK [3][-]{subsubsection.3.7.2}{Exceptional Halting}{subsection.3.7}% 37
-\BOOKMARK [3][-]{subsubsection.3.7.3}{EVM Code}{subsection.3.7}% 38
-\BOOKMARK [3][-]{subsubsection.3.7.4}{Opcodes/EVM Assembly}{subsection.3.7}% 39
-\BOOKMARK [-1][-]{part.1}{Appendix}{}% 40
-\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.1}% 41
-\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 42
-\BOOKMARK [1][-]{section*.3}{Glossary}{appendix.A}% 43
-\BOOKMARK [1][-]{section*.5}{Acronyms}{appendix.A}% 44
+\BOOKMARK [3][-]{subsubsection.2.3.1}{RLP}{subsection.2.3}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Account State}{subsection.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.4}{Bloom Filter}{section.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Transaction Receipts}{subsection.2.4}% 19
+\BOOKMARK [1][-]{section.3}{Processing and Computation}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{State Transition Function}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Ethash}{subsection.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.2}{Verification}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Ommers}{subsection.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.3}{Transactions}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.4}{Execution}{section.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Intrinsic Validity}{subsection.3.4}% 27
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Execution Model}{subsection.3.4}% 28
+\BOOKMARK [2][-]{subsection.3.5}{Substate}{section.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Message Calls}{subsection.3.5}% 30
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Contract Creation}{subsection.3.5}% 31
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Account Creation}{subsection.3.5}% 32
+\BOOKMARK [2][-]{subsection.3.6}{Halting}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.7}{Gas}{section.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Machine State}{subsection.3.7}% 35
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Exceptional Halting}{subsection.3.7}% 36
+\BOOKMARK [3][-]{subsubsection.3.7.3}{EVM Code}{subsection.3.7}% 37
+\BOOKMARK [3][-]{subsubsection.3.7.4}{Opcodes/EVM Assembly}{subsection.3.7}% 38
+\BOOKMARK [-1][-]{part.1}{Appendix}{}% 39
+\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.1}% 40
+\BOOKMARK [1][-]{table.1}{References}{appendix.A}% 41
+\BOOKMARK [1][-]{section*.3}{Glossary}{appendix.A}% 42
+\BOOKMARK [1][-]{section*.5}{Acronyms}{appendix.A}% 43

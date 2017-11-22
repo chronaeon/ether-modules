@@ -101,7 +101,7 @@
  }
  \makeatother
 
-%	╔═══════════════════DELETED═TERMS═════════════════════╗
+%	╔═══════════════════DELETED TERMS═════════════════════╗
 %	║Autonomous Object				      ║
 %	║Design Pattern				              ║
 %	║Object-Oriented Programming			      ║
@@ -109,6 +109,18 @@
 %	║Abstract Machine				      ║
 %	║Hacker Ethic					      ║ 
 %	╚═════════════════════════════════════════════════════╝
+
+
+
+%┌───────────────────┐
+%│                   │▒
+%│                   │▒
+%╞                   ╡▒
+%│                   │▒
+%│                   │▒
+%└───────────────────┘▒
+% ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
 
 \makenoidxglossaries
 \setacronymstyle{long-short}
@@ -169,9 +181,7 @@
 \DTLsort{description}{list}% Sort list
 \DTLforeach*{list}{\theDesc=description}{%
 \item \theDesc}% Print each item
-
 }
-
 
 \newenvironment{alphafootnotes}
 {\par\edef\savedfootnotenumber{\number\value{footnote}}
@@ -182,7 +192,7 @@
 
 \setlength{\columnseprule}{0pt}
 
-\setlength{\columnsep}{5mm}
+\setlength{\columnsep}{2.5mm}
 
 \hfuzz=0.84074pt
 
@@ -190,9 +200,9 @@
 
 \date{}
 
-\author{\textnormal{\textbf{Micah Dameron}}}
+\author{\large{\textbf{Micah Dameron}}}
 
-\title{\LARGE{Off-Whitepaper} \\ \hfill \\ \large{Ethereum}}
+\title{\LARGE{Off-Whitepaper} \\ \hfill \\ \Large{Ethereum}}
 
 \makeindex
 
@@ -219,7 +229,7 @@
 		\index{pseudocode}	
 
 \clearpage
-%dominitoc 
+%dominitoc
 
 \begin{center}\section*{Acknowledgements}\end{center}
 
@@ -291,43 +301,64 @@
 		\subsection{The Block}
 			A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
 
-			\begin{enumerate}
-				\item \textbf{Parent Hash}: The hash of the parent block's header: given in Keccak-256.
-				\item \textbf{Ommers Hash}: The hash of the \textsl{Ommers List} portion of this block: given in Keccak-256.
-				\item \textbf{Beneficiary}: The 20-character (160-bit) hash to which block rewards are transferred when the block is successfully mined.
-				\item \textbf{State Root}: The Keccak-256 bit hash of the root node of the state. 
-			
-			\end{enumerate}
 				\subsubsection{Block Header}
 				\paragraph{Notation}: \texttt{header} 
 				\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
 
 				\begin{enumerate}
-					\item \textsc{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
-					\item \textsc{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
-					\item \textsc{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
-					\item \textsc{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
-					\item \textsc{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
-					\item \textsc{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
-					\item \textsc{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
-					\item \textsc{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
-					\item \textsc{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
-					\item \textsc{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
-					\item \textsc{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
-					\item \textsc{Timestamp} -- This is a record of Unix's time at this block's inception.
-					\item \textsc{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
-					\item \textsc{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
-					\item \textsc{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
-					\item \textsc{Ommer Block Headers} -- These are the same components listed above for any ommers.
-					\item \textsc{Transaction Series} -- This is the only non-header content in the block.
+					\item \textbf{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
+					\item \textbf{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
+					\item \textbf{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
+					\item \textbf{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
+					\item \textbf{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
+					\item \textbf{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
+					\item \textbf{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
+					\item \textbf{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
+					\item \textbf{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
+					\item \textbf{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
+					\item \textbf{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
+					\item \textbf{Timestamp} -- This is a record of Unix's time at this block's inception.
+					\item \textbf{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
+					\item \textbf{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
+					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
 				\end{enumerate}
 
 		\subsection{State Database}
 
-		\subsection{Merkle-Patricia Trees}
 
 			\subsubsection{RLP}
-				Well-Formed RLP
+			\paragraph{Notation}: \texttta{rlp}
+			\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
+			\par
+
+		Positive RLP integers are represented with the most significant value stored at the lowest memory adddress (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeros it is invalid.\supercite{EF2017}
+			\par
+
+			The global state database is encoded as RLP for fast traversal and inspection of data. In structure it constitutes a mapping between \textsl{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be traversed speedily and without network delay. RLP encodes values as byte-arrays, or as sequences of further values. \supercite{Wood2017} 
+			\par 
+
+			This means that:
+			\\
+
+			\texttt{%
+				\begin{tabular}{ r l c l }
+					if & rlp(x) &  = & bytearray \\
+					then & rlp(bytearray) & = & true \\
+					elif & rlp(x) & = & value \\
+					then & rlp(value) & = & true \\
+					elif & rlp(x) & = & null \\
+					then & rlp(x) & = & false \\
+				\end{tabular}
+				}
+				\\~\\
+
+				\begin{enumerate}
+							\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
+				\end{enumerate}
+
+				In other words:
 	
 			\subsubsection{Account State}
 				\paragraph{Notation}: \texttt{body}
@@ -561,7 +592,6 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{machine\_state}), the state which decides every new \texttt{world\_state}. 
 
-\clearpage
 \end{multicols*}
 \part{Appendix}
 
@@ -571,7 +601,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \texttt{%
 \begin{longtable}{|ccccc|}
 \hline
-\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output}  \\
+\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} \\
 \hline
 0x00 & STOP & 0 & 0 & 0 \\
 0x01 & ADD & 3 & 2 & 1 \\

@@ -30,41 +30,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}The Block}{5}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Block Header}{6}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1}Block Header}{5}{subsubsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Notation}{6}{subsubsection.2.2.1}
+\contentsline {paragraph}{\relax Notation}{5}{subsubsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Description}{6}{subsubsection.2.2.1}
+\contentsline {paragraph}{\relax Description}{5}{subsubsection.2.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}State Database}{6}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Merkle-Patricia Trees}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.3.1}RLP}{6}{subsubsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}RLP}{6}{subsubsection.2.4.1}
+\contentsline {paragraph}{\relax Notation}{6}{subsubsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Account State}{6}{subsubsection.2.4.2}
+\contentsline {paragraph}{\relax Description}{6}{subsubsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Notation}{6}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.3.2}Account State}{6}{subsubsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Description}{6}{subsubsection.2.4.2}
+\contentsline {paragraph}{\relax Notation}{6}{subsubsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Description}{6}{subsubsection.2.4.2}
+\contentsline {paragraph}{\relax Description}{6}{subsubsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Nonce}{7}{Item.26}
+\contentsline {paragraph}{\relax Description}{7}{subsubsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Storage Root}{7}{Item.26}
+\contentsline {paragraph}{\relax Nonce}{7}{Item.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Code Hash}{7}{Item.26}
+\contentsline {paragraph}{\relax Storage Root}{7}{Item.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Balance}{7}{Item.26}
+\contentsline {paragraph}{\relax Code Hash}{7}{Item.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Bloom Filter}{7}{subsection.2.5}
+\contentsline {paragraph}{\relax Balance}{7}{Item.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Notation}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.4}Bloom Filter}{7}{subsection.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Description}{7}{subsection.2.5}
+\contentsline {paragraph}{\relax Notation}{7}{subsection.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.1}Transaction Receipts}{7}{subsubsection.2.5.1}
+\contentsline {paragraph}{\relax Description}{7}{subsection.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Transaction Receipts}{7}{subsubsection.2.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Processing and Computation}{7}{section.3}
 \defcounter {refsection}{0}\relax 
@@ -84,9 +86,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\relax Ommershash}{7}{subsubsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Transactions}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Transactions}{8}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Notation}{7}{subsection.3.3}
+\contentsline {paragraph}{\relax Notation}{8}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\relax Description}{8}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
@@ -160,30 +162,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.7.1}Machine State}{10}{subsubsection.3.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2}Exceptional Halting}{12}{subsubsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2}Exceptional Halting}{11}{subsubsection.3.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Substate}{13}{subsubsection.3.7.2}
+\contentsline {paragraph}{\relax Substate}{11}{subsubsection.3.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.3}EVM Code}{13}{subsubsection.3.7.3}
+\contentsline {subsubsection}{\numberline {3.7.3}EVM Code}{11}{subsubsection.3.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax }{13}{subsubsection.3.7.3}
+\contentsline {paragraph}{\relax }{11}{subsubsection.3.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Notation}{13}{subsubsection.3.7.3}
+\contentsline {paragraph}{\relax Notation}{11}{subsubsection.3.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax Description}{13}{subsubsection.3.7.3}
+\contentsline {paragraph}{\relax Description}{11}{subsubsection.3.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.4}Opcodes/EVM Assembly}{13}{subsubsection.3.7.4}
+\contentsline {subsubsection}{\numberline {3.7.4}Opcodes/EVM Assembly}{11}{subsubsection.3.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\relax }{13}{subsubsection.3.7.4}
+\contentsline {paragraph}{\relax }{12}{subsubsection.3.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {I}Appendix}{15}{part.1}
+\contentsline {part}{\numberline {I}Appendix}{13}{part.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {xpart}{Appendix}{15}{part.1}
+\contentsline {xpart}{Appendix}{13}{part.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Opcodes}{15}{appendix.A}
+\contentsline {section}{\numberline {A}Opcodes}{13}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\relax References}{17}{table.1}
+\contentsline {section}{\relax References}{15}{table.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Glossary}{18}{section*.3}
+\contentsline {section}{Glossary}{16}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Acronyms}{19}{section*.5}
+\contentsline {section}{Acronyms}{17}{section*.5}
