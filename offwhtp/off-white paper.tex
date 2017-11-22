@@ -58,8 +58,6 @@
 \usepackage{longtable}
 \usepackage{fancyhdr}
 
-
-
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[C]{Off-Whitepaper: Ethereum}
@@ -290,13 +288,6 @@
 		\subsection{The Block}
 			A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
 
-			\begin{supertabular}{|rl|}
-				\hline
-				The & Block \\
-				\hline
-				 Parent Hash & \\
-				\hline
-			\end{supertabular}
 
 				\subsubsection{Block Header}
 				\paragraph{Notation}: \texttt{header} 
@@ -598,7 +589,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 \section{Opcodes}
 \texttt{%
-\begin{longtable}{|ccccc|}
+\begin{longtable}{ccccc}
 \hline
 \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} \\
 \hline
