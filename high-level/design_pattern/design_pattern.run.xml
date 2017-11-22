@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>blockchain.bcf</file>
+      <file>design_pattern.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>blockchain.bbl</file>
+      <file>design_pattern.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -62,23 +62,23 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>blockchain</infile>
+      <infile>design_pattern</infile>
     </cmdline>
     <input>
-      <file>blockchain.bcf</file>
+      <file>design_pattern.bcf</file>
     </input>
     <output>
-      <file>blockchain.bbl</file>
+      <file>design_pattern.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>blockchain.bbl</file>
+      <file>design_pattern.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>blockchain.bcf</file>
+      <file>design_pattern.bcf</file>
     </requires>
     <requires type="editable">
       <file>~/modules/References.bib</file>

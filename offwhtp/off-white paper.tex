@@ -239,20 +239,20 @@
 			
 
 	\section{Native Currency \& Mining}
-		Because Ethereum is turing-complete, there needs to be a \textsl{fundamental network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		Because Ethereum is turing-complete, there needs to be a \textsl{network price  unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
 		\begin{tabular}{llr}
 			\toprule
 			\textbf{Unit} & \textbf{Ether} & \textbf{Wei} \\
 			\midrule
-			\scriptsize{Ether} & \scriptsize{$\Xi$1.000000000000000000} & \scriptsize{1,000,000,000,000,000,000} \\		
-			\scriptsize{Finney} & \scriptsize{$\Xi$0.001000000000000000} & \scriptsize{1,000,000,000,000,000} \\
-			\scriptsize{Szabo} & \scriptsize{$\Xi$0.000001000000000000} & \scriptsize{1,000,000,000,000} \\
-			\scriptsize{Wei} & \scriptsize{$\Xi$0.000000000000000001} & \scriptsize{1} \\
+			\scriptsize{Ether} & \scriptsize{$\Xi$\textbf{1}.000000000000000000} & \scriptsize{1,000,000,000,000,000,000} \\
+			\scriptsize{Finney} & \scriptsize{$\Xi$0.00\textbf{1}000000000000000} & \scriptsize{1,000,000,000,000,000} \\
+			\scriptsize{Szabo} & \scriptsize{$\Xi$0.00000\textbf{1}000000000000} & \scriptsize{1,000,000,000,000} \\
+			\scriptsize{Wei} & \scriptsize{$\Xi$0.00000000000000000\textbf{1}} & \scriptsize{1} \\
 			\bottomrule
 		\end{tabular}
 		\subsection{Mining}
 			\subsubsection{Total Difficulty}
-				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. \\ 
+				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
 \flushleft			
    \begin{tabular}{ll}
 	   \toprule
@@ -264,7 +264,6 @@
 	   \bottomrule
    \end{tabular}
 \justify
-
 
 		\subsection{EVM Code}
 		
@@ -343,14 +342,14 @@
 					\item \textbf{code\_hash} The hash of the EVM code of this account's contract.
 				\end{enumerate}
 
-				The account state is the state of any particular account during some specified world state $\sigma$.\footnote{Formally \textbf{world state} $=$ $\sigma$.} \par
+				The account state is the state of any particular account during some specified world state.
 
     				\paragraph{Nonce} 
 					The \textbf{nonce} aspect of an \textsc{account's state} is the number of transactions sent from, or the number of contract-creations by, the address of that account.\footnote{$\sigma$ is the world state at a certain given time, and \textit{n} is the number of transactions or contract creations by that account.}
     				\paragraph{Storage Root}
     					The \textbf{storage root} aspect of an \textsc{account's state} is the hash of the trie\footnote{A particular path from root to leaf in the \textbf{\gls{state database}} that encodes the \textsc{storage contents} of the account.}
     				\paragraph{Code Hash}
-    					The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.\footnote{A message call is any interaction with the account on-chain.}\footnote{Formal notation is $\sigma[a]_c$}\footnote{More formal notation is $\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$}
+    					The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.
     				\paragraph{Balance}
     					The amount of \textbf{Wei} \textsc{owned} by this account. 
 					    \begin{itemize}
@@ -421,7 +420,6 @@
 
 	
 			\subsubsection{Execution Model}
-				\paragraph{Notation}: \texttt{EVM}
 				\paragraph{Description}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
 	
 				In addition to the system state $\boldsymbol{\sigma}$, and the remaining gas for computation $g$, there are several pieces of important information used in the execution environment that the execution agent must provide; these are contained in the tuple $I$:

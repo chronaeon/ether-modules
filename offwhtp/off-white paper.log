@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  21 NOV 2017 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  21 NOV 2017 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2485,13 +2485,11 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 23
 \openout12 = `"off-white paper.toc"'.
 
  [4]
-Overfull \hbox (3.15166pt too wide) in paragraph at lines 242--253
+LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <7> not available
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 247.
+
+Overfull \hbox (3.69498pt too wide) in paragraph at lines 242--253
 [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
  []
 
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 261.
@@ -2508,58 +2506,64 @@ Overfull \hbox (6.58957pt too wide) in paragraph at lines 257--266
 []  
  []
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 304.
-
-
 [5
 
 ]
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 346.
- [6]
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 357.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 350.
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 6 might be wrong on input line 351.
+
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 356.
 
  (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 357
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 356
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 357.
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 356.
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 [] \T1/cmss/bx/n/10 Ap-ply Re-wards[][] \T1/ccr/m/n/10 (+20) The third pro-cess
  in
  []
 
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 7 might be wrong on input line 395.
+
+
 [7]
-Underfull \hbox (badness 5504) in paragraph at lines 406--410
+Underfull \hbox (badness 5504) in paragraph at lines 405--409
 []\T1/ccr/m/n/10 (+20) Accordingly, the post-transactional state of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--410
+Underfull \hbox (badness 10000) in paragraph at lines 405--409
 \T1/cmtt/m/n/10 transaction(post.state) = stf(present.state,
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 8 might be wrong on input line 434.
+(multicol)                Footnotes on page 8 might be wrong on input line 432.
 
 
 [8]
-Underfull \hbox (badness 7907) in paragraph at lines 444--445
+Underfull \hbox (badness 7907) in paragraph at lines 442--443
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
@@ -2569,7 +2573,7 @@ Package multicol Warning: I moved some lines to the next page.
 
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
@@ -2581,38 +2585,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--562
 part I.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 568.
+(scrkbase)              on input line 566.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 572.
+(hyperref)                than one, level fixed on input line 570.
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 651.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 649.
 
-Underfull \vbox (badness 10000) detected at line 651
+Underfull \vbox (badness 10000) detected at line 649
  []
 
 [15] [16]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 656.
+(biblatex)                Using fallback driver on input line 654.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 656.
+(biblatex)                Using fallback driver on input line 654.
 
 [17
 
 ]
 No file "off-white paper".acr.
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--660
+Underfull \hbox (badness 10000) in paragraph at lines 658--658
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 18 might be wrong on input line 660
+(multicol)                Footnotes on page 18 might be wrong on input line 658
 .
 
 [18
@@ -2629,40 +2633,32 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the "off-white paper".log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 668.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 668.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
 (./off-white paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 668.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 668.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 666.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 666.
 Package rerunfilecheck Info: File `"off-white paper".out' has not changed.
 (rerunfilecheck)             Checksum: AAD560740ADFAA8A36F637951C1A5C77;2880.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to '"off-white paper".run.xml'.
 \openout1 = `"off-white paper.run.xml"'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 668.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 666.
  ) 
 Here is how much of TeX's memory you used:
- 51402 strings out of 493013
- 974233 string characters out of 6135683
+ 51378 strings out of 493013
+ 973884 string characters out of 6135683
  1867114 words of memory out of 5000000
- 53551 multiletter control sequences out of 15000+600000
- 47551 words of font info for 184 fonts, out of 8000000 for 9000
+ 53538 multiletter control sequences out of 15000+600000
+ 44768 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,11n,104p,10426b,3386s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
 ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2699,38 +2695,35 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/mddhattr/.te
 xlive2016/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.600pk></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfocc10.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sform10.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sform6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfo
-rm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfosl7.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfosl8.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfosl9.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfoti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-ftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "off-white paper.pdf" (19 pages, 531900 bytes).
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0700.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfocc10.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sform10.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sform6.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sform7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfosl7.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfosl8.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfosl9.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfoti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sftt1000.pfb>
+Output written on "off-white paper.pdf" (19 pages, 496636 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 623 compressed objects within 7 object streams
- 156 named destinations out of 1000 (max. 500000)
- 43469 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 603 compressed objects within 7 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 40909 words of extra memory for PDF output out of 42996 (max. 10000000)
 

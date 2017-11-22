@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  21 NOV 2017 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.9)  21 NOV 2017 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**blockchain.tex
-(./blockchain.tex
+**design_pattern.tex
+(./design_pattern.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -591,8 +591,8 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 \@quotelevel=\count295
 \@quotereset=\count296
 
-(./blockchain.aux)
-\openout1 = `blockchain.aux'.
+No file design_pattern.aux.
+\openout1 = `design_pattern.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -606,7 +606,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count297
@@ -643,12 +642,12 @@ e
 Package biblatex Info: Input encoding 'latin1' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'latin1'.
-\openout4 = `blockchain.bcf'.
+\openout4 = `design_pattern.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'blockchain.bbl' not found.
+Package biblatex Info: ... file 'design_pattern.bbl' not found.
 
-No file blockchain.bbl.
+No file design_pattern.bbl.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 LaTeX Font Info:    Try loading font information for U+msa on input line 22.
@@ -662,23 +661,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./blockchain.aux)
-Package logreq Info: Writing requests to 'blockchain.run.xml'.
-\openout1 = `blockchain.run.xml'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./design_pattern.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                design_pattern
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'design_pattern.run.xml'.
+\openout1 = `design_pattern.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12385 strings out of 493013
- 221816 string characters out of 6135683
- 916258 words of memory out of 5000000
+ 12383 strings out of 493013
+ 221826 string characters out of 6135683
+ 916248 words of memory out of 5000000
  15804 multiletter control sequences out of 15000+600000
  7300 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,6n,51p,8850b,1357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,6n,51p,8854b,1357s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on blockchain.pdf (1 page, 36437 bytes).
+Output written on design_pattern.pdf (1 page, 28600 bytes).
 PDF statistics:
  20 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream
