@@ -583,56 +583,76 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{machine\_state}), the state which decides every new \texttt{world\_state}. 
 
 \end{multicols*}
-\part{Appendix}
 
 \appendix
 
 \section{Opcodes}
-\texttt{%
-\begin{longtable}{ccccc}
+	\subsection{Byte value 0x10's: Comparisons and Bitwise Logic Operations}
+\begin{longtable}{|ccccc|}
 \hline
-\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} \\
+	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
-0x00 & STOP & 0 & 0 & 0 \\
-0x01 & ADD & 3 & 2 & 1 \\
-0x02 & MUL & 5 & 2 & 1 \\
-0x03 & SUB & 3 & 2 & 1 \\
-0x04 & DIV & 5 & 2 & 1 \\
-0x05 & SDIV & 5 & 2 & 1 \\
-0x06 & MOD & 5 & 2 & 1 \\
-0x07 & SMOD & 5 & 2 & 1 \\
-0x08 & ADDMOD & 8 & 3 & 1 \\
-0x09 & MULMOD & 8 & 3 & 1 \\
-0x0a & EXP & 10 & 2 & 1 \\
-0x0b & SIGNEXTEND & 5  & 2 & 1 \\
-0x10 & LT & 3 & 2 & 1 \\
-0x11 & GT & 3 & 2 & 1 \\
-0x12 & SLT & 3 & 2 & 1 \\
-0x13 & SGT & 3 & 2 & 1 \\
-0x14 & EQ & 3 & 2 & 1 \\
-0x15 & ISZERO & 3 & 1 & 1 \\
-0x16 & AND & 3 & 2 & 1 \\
-0x17 & OR & 3 & 2 & 1 \\
-0x18 & XOR & 3 & 2 & 1 \\
-0x19 & NOT & 3 & 1 & 1 \\
-0x1a & BYTE & 3 & 2 & 1 \\
-0x20 & SHA3 & 30 & 2 & 1 \\
-0x30 & ADDRESS & 2 & 0 & 1 \\
-0x31 & BALANCE & 400 & 1 & 1 \\
-0x32 & ORIGIN & 2 & 0 & 1 \\
-0x33 & CALLER & 2 & 0 & 1 \\
-0x34 & CALLVALUE & 2 & 0 & 1 \\
-0x35 & CALLDATALOAD & 3 & 1 & 1 \\
-0x36 & CALLDATASIZE & 2 & 0 & 1 \\
-0x37 & CALLDATACOPY & 3 & 3 & 0 \\
-0x38 & CODESIZE & 2 & 0 & 1 \\
-0x39 & CODECOPY & 3 & 3 & 0 \\
-0x3a & GASPRICE & 2 & 0 & 1 \\
-0x3b & EXTCODESIZE & 700 & 1 & 1 \\
-0x3c & EXTCODECOPY & 700 & 4 & 0 \\
-0x3d & RETURNDATASIZE & 2 & 0 & 1 \\
+	0x00 & STOP & 0 & 0 & 0 & Halts execution. \\
+	0x01 & ADD & 3 & 2 & 1 & Addition operation. \\
+	0x02 & MUL & 5 & 2 & 1 & Multiplication operation. \\
+	0x03 & SUB & 3 & 2 & 1 & Subtraction operation. \\
+	0x04 & DIV & 5 & 2 & 1 & Integer division operation. \\
+	0x05 & SDIV & 5 & 2 & 1 & Signed integer division operation (truncated.)\\
+	0x06 & MOD & 5 & 2 & 1 & Modulo remainder operation. \\
+	0x07 & SMOD & 5 & 2 & 1 & Signed modulo remainder operation. \\
+	0x08 & ADDMOD & 8 & 3 & 1 & Modulo addition operation. \\
+	0x09 & MULMOD & 8 & 3 & 1 & Modulo multiplication operation. \\
+	0x0a & EXP & 10 & 2 & 1 & Exponential operation. \\
+	0x0b & SIGNEXTEND & 5  & 2 & 1 & Extend the length of two's complementary signed integer. \\
+	0x10 & LT & 3 & 2 & 1 & Less-than comparison. \\
+	0x11 & GT & 3 & 2 & 1 & Greater-than comparison. \\
+	0x12 & SLT & 3 & 2 & 1 & Signed less-than comparison. \\
+	0x13 & SGT & 3 & 2 & 1 & Signed greater-than comparison. \\
+	0x14 & EQ & 3 & 2 & 1 & Equality comparison. \\
+	0x15 & ISZERO & 3 & 1 & 1 & Simple not operator. \\
+	0x16 & AND & 3 & 2 & 1 & Bitwise \textsc{and} operation. \\
+	0x17 & OR & 3 & 2 & 1 & Bitwise \textsc{or} operation. \\
+	0x18 & XOR & 3 & 2 & 1 & Bitwise \textsc{xor} operation. \\
+	0x19 & NOT & 3 & 1 & 1 & Bitwise \textsc{not} operation. \\
+	0x1a & BYTE & 3 & 2 & 1 & Retrieve single byte from word. \\
+\hline
+\end{longtable}
+
+        \subsection{Byte value 0x20's: SHA3}
+\begin{longtable}{|ccccc|}
+\hline
+        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+\hline
+
+	0x20 & SHA3 & 30 & 2 & 1 & Compute a Keccak-256 hash. \\
+\hline
+\end{longtable}
+
+        \subsection{Byte value 0x30's: Environmental Information}
+\begin{longtable}{|ccccc|}
+\hline
+        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+\hline
+
+	0x30 & ADDRESS & 2 & 0 & 1 & Get the address of the currently executing account. \\
+	0x31 & BALANCE & 400 & 1 & 1 & Get the balance of the given account. \\
+	0x32 & ORIGIN & 2 & 0 & 1 & Get execution origination address. This is always the original sender of a transaction, never a contract account. \\
+	0x33 & CALLER & 2 & 0 & 1 & Get caller address. This is the address of the account that is directly responsible for this execution. \\
+	0x34 & CALLVALUE & 2 & 0 & 1 & Get deposited value by the instruction/transaction responsible for this execution. \\
+	0x35 & CALLDATALOAD & 3 & 1 & 1 & Get input data of the current environment. \\
+	0x36 & CALLDATASIZE & 2 & 0 & 1 & Get size of input data in current environment. This refers to the optional data field that can be passed with a message call instruction or transaction.\\
+	0x37 & CALLDATACOPY & 3 & 3 & 0 & Copy input data in the current environment to memory. This refers to the optional data field passed with the message call instruction or transaction. \\
+	0x38 & CODESIZE & 2 & 0 & 1 & Get size of code running in the current environment. \\
+	0x39 & CODECOPY & 3 & 3 & 0 & Copy the code running in the current environment to memory. \\
+	0x3a & GASPRICE & 2 & 0 & 1 & Get the price of gas in the current environment. This is the gas price specified by the originating transaction. \\
+	0x3b & EXTCODESIZE & 700 & 1 & 1 & Get the size of an account's code. \\
+	0x3c & EXTCODECOPY & 700 & 4 & 0 & Copy an account's code to memory. \\
+	0x3d & RETURNDATASIZE & 2 & 0 & 1 & \\
 0x3e & RETURNDATACOPY & 3 & 3 & 0 \\
-0x40 & BLOCKHASH & 20 & 1 & 1 \\
+
+	\hline
+\end{longtable}
+x40 & BLOCKHASH & 20 & 1 & 1 \\
 0x41 & COINBASE & 2 & 0 & 1 \\
 0x42 & TIMESTAMP & 2 & 0 & 1 \\
 0x43 & NUMBER & 2  & 0 & 1 \\
@@ -666,7 +686,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 0xff & SUICIDE & 5000 & 1 & 1 \\
 \hline
 \end{longtable}
-}
+
 
 
 \clearpage
