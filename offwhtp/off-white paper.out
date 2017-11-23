@@ -37,8 +37,17 @@
 \BOOKMARK [3][-]{subsubsection.3.7.2}{Exceptional Halting}{subsection.3.7}% 37
 \BOOKMARK [3][-]{subsubsection.3.7.3}{EVM Code}{subsection.3.7}% 38
 \BOOKMARK [3][-]{subsubsection.3.7.4}{Opcodes/EVM Assembly}{subsection.3.7}% 39
-\BOOKMARK [-1][-]{part.1}{Appendix}{}% 40
-\BOOKMARK [0][-]{appendix.A}{Opcodes}{part.1}% 41
-\BOOKMARK [1][-]{section*.53}{References}{appendix.A}% 42
-\BOOKMARK [1][-]{section*.54}{Glossary}{appendix.A}% 43
-\BOOKMARK [1][-]{section*.56}{Acronyms}{appendix.A}% 44
+\BOOKMARK [1][-]{appendix.A}{Opcodes}{}% 40
+\BOOKMARK [2][-]{subsection.A.1}{Byte value 0x10's: Comparisons and Bitwise Logic Operations}{appendix.A}% 41
+\BOOKMARK [2][-]{subsection.A.2}{Byte value 0x20's: SHA3}{appendix.A}% 42
+\BOOKMARK [2][-]{subsection.A.3}{Byte value 0x30's: Environmental Information}{appendix.A}% 43
+\BOOKMARK [2][-]{subsection.A.4}{Byte value 0x40 to 0x45: Block Data}{appendix.A}% 44
+\BOOKMARK [2][-]{subsection.A.5}{Byte value 0x50's: Stack, memory, storage, and flow operations.}{appendix.A}% 45
+\BOOKMARK [2][-]{subsection.A.6}{0x60 to 0x7f: Push Operations}{appendix.A}% 46
+\BOOKMARK [2][-]{subsection.A.7}{0x80 to 0x8f: Duplication Operations}{appendix.A}% 47
+\BOOKMARK [2][-]{subsection.A.8}{90s: Swap Operations}{appendix.A}% 48
+\BOOKMARK [2][-]{subsection.A.9}{0xa0 to 0xa4: Logging Operations}{appendix.A}% 49
+\BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 50
+\BOOKMARK [1][-]{table.10}{References}{}% 51
+\BOOKMARK [1][-]{section*.3}{Glossary}{}% 52
+\BOOKMARK [1][-]{section*.5}{Acronyms}{}% 53

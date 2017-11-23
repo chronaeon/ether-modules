@@ -588,9 +588,9 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 \section{Opcodes}
 	\subsection{Byte value 0x10's: Comparisons and Bitwise Logic Operations}
-\begin{longtable}{|ccccc|}
+\begin{longtable}{|cccccc|}
 \hline
-	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{Input} & \textbf{Output} & \textbf{Description} \\
 \hline
 	0x00 & STOP & 0 & 0 & 0 & Halts execution. \\
 	0x01 & ADD & 3 & 2 & 1 & Addition operation. \\
@@ -619,7 +619,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x20's: SHA3}
-\begin{longtable}{|ccccc|}
+\begin{longtable}{|cccccc|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -629,7 +629,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x30's: Environmental Information}
-\begin{longtable}{|ccccc|}
+\begin{longtable}{|cccccc|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -654,12 +654,12 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x40 to 0x45: Block Data}
-	\begin{longtable}{|ccccc|}
+	\begin{longtable}{|cccccc|}
 	\hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 	\hline
 
-		0x40 & BLOCKHASH & 20 & 1 & 1 & Get the hash of one of the 256 most recent blocks. A value of 0 is left on the stack if the block number is more than 256 in number behind the current one, or if it is a number greater than the current one.} \\ 
+		0x40 & BLOCKHASH & 20 & 1 & 1 & Get the hash of one of the 256 most recent blocks. \footnote{A value of 0 is left on the stack if the block number is more than $256$ in number behind the current one, or if it is a number greater than the current one.} \\ 
 		0x41 & COINBASE & 2 & 0 & 1 & Look up a block's beneficiary address by its hash.\\
 		0x42 & TIMESTAMP & 2 & 0 & 1 & Look up a block's timestamp by its hash.\\
 		0x43 & NUMBER & 2  & 0 & 1 & Look up a block's number by its hash. \\
@@ -670,7 +670,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 	\subsection{Byte value 0x50's: Stack, memory, storage, and flow operations.}
-	\begin{longtable}{|ccccc|}
+	\begin{longtable}{|cccccc|}
 	\hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 	\hline
@@ -690,7 +690,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 		\subsection{0x60 to 0x7f: Push Operations}
-        \begin{longtable}{|ccccc|}
+        \begin{longtable}{|cccccc|}
         \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline
@@ -699,15 +699,15 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 		\subsection{0x80 to 0x8f: Duplication Operations}
-        \begin{longtable}{|ccccc|}
+        \begin{longtable}{|cccccc|}
         \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline
-	0x80-0x8f & DUP1-DUP16 & - & 1-16 & 2-17 & Duplicate a stack item based on its order in the stack, 1st through 16th.
+	0x80-0x8f & DUP1-DUP16 & - & 1-16 & 2-17 & Duplicate a stack item based on its order in the stack, 1st through 16th. \\
 	\hline
 	\end{longtable}
         \subsection{90s: Swap Operations}
-        \begin{longtable}{|ccccc|}
+        \begin{longtable}{|cccccc|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -716,7 +716,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 	\subsection{0xa0 to 0xa4: Logging Operations}
-        \begin{longtable}{|ccccc|}
+        \begin{longtable}{|cccccc|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -725,7 +725,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
         \subsection{0xf0's: System Operations}
-        \begin{longtable}{|ccccc|}
+        \begin{longtable}{|cccccc|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -737,7 +737,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 		0xf5 & CALLBLACKBOX & 40 & 7 & 1 & - \\
 		0xfa & STATICCALL & 40 & 6 & 1 & - \\
 		0xfd & REVERT & 0 & 2 & 0 & - \\
-		0xfe & INVALID & - & 1 & 0 & Designated invalid instruction.
+		0xfe & INVALID & - & 1 & 0 & Designated invalid instruction. \\
 		0xff & SELFDESTRUCT & 5000 & 1 & 0 & Halt execution and register the account for later deletion. \\
 \hline
 \end{longtable}
