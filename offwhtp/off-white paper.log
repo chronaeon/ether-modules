@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  24 NOV 2017 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  24 NOV 2017 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2766,24 +2766,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 807.
 (./off-white paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 807.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 807.
-
-
-Package rerunfilecheck Warning: File `"off-white paper".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"off-white paper".out':
-(rerunfilecheck)             Before: 8082CB125FDA9E821C31873B288A83BE;3637
-(rerunfilecheck)             After:  C2C6D23124CBC60D431F9B28045996FA;3670.
+Package rerunfilecheck Info: File `"off-white paper".out' has not changed.
+(rerunfilecheck)             Checksum: C2C6D23124CBC60D431F9B28045996FA;3670.
 Package logreq Info: Writing requests to '"off-white paper".run.xml'.
 \openout1 = `"off-white paper.run.xml"'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 807.
  ) 
 Here is how much of TeX's memory you used:
- 52528 strings out of 492990
- 1000001 string characters out of 6135004
- 1913306 words of memory out of 5000000
+ 52523 strings out of 492990
+ 999934 string characters out of 6135004
+ 1913303 words of memory out of 5000000
  54631 multiletter control sequences out of 15000+600000
  570330 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2830,21 +2823,6 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.58} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.4.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.3.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/micah/.texli
 ve2017/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.600pk></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -2871,10 +2849,10 @@ xmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "off-white paper.pdf" (21 pages, 499774 bytes).
+Output written on "off-white paper.pdf" (21 pages, 499831 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 737 compressed objects within 8 object streams
- 225 named destinations out of 1000 (max. 500000)
+ 811 PDF objects out of 1000 (max. 8388607)
+ 733 compressed objects within 8 object streams
+ 220 named destinations out of 1000 (max. 500000)
  40477 words of extra memory for PDF output out of 42996 (max. 10000000)
 
