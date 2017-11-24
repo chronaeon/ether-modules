@@ -212,30 +212,27 @@
 	}}{\textit{The Zen of Python}}
 
 
-\hfill \hfill
-\begin{center}\textbf{Abstract}\end{center}\par
-	\abstract{The goal of this paper\footnote{Formally, \textit{Blanched-Almond} Paper}is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsc{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source has been the Ethereum \textit{Yellowpaper}, but much supplemental knowledge has been found elsewhere and crucial points from other sources have been added as well for the reader's benefit.}
-		\index{pseudocode}	
+	\hfill \hfill
+	\begin{center}\textbf{Abstract}\end{center}\par
+	\abstract{The goal of this paper\footnote{Formally, \textit{Blanched-Almond} Paper} is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsl{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source is the Ethereum \textit{Yellowpaper}, but supplemental knowledge and crucial points from other sources have also been used for the reader's benefit.}
+		\index{pseudocode}
+		\index{abstract!state-machines}
+		\index{Yellowpaper}
 
-\clearpage
-%dominitoc
+	\clearpage
 
-\begin{center}\section*{Acknowledgements}\end{center}
+	\begin{center}\section*{Acknowledgements}\end{center}
+	Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, by contributing your vast knowledge and expertise. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
 
- Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, by contributing your vast knowledge and expertise. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
+	\clearpage
 
-\clearpage
+	\tableofcontents
 
-\tableofcontents
+	\clearpage
 
-\clearpage
-
-\begin{multicols*}{2}
-\TrickSupertabularIntoMulticols
-\justify
-
-
-			
+	\begin{multicols*}{2}
+	\TrickSupertabularIntoMulticols
+	\justify	
 
 	\section{Native Currency \& Mining}
 		Because Ethereum is turing-complete, there needs to be a \textsl{network price  unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
@@ -252,7 +249,7 @@
 		\subsection{Mining}
 			\subsubsection{Total Difficulty}
 				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
-\flushleft			
+	\flushleft			
    \begin{tabular}{ll}
 	   \toprule
 	   \textbf{Pseudocode} & \textbf{Definition} \\
@@ -262,22 +259,20 @@
 	   \texttt{\scriptsize{presentstate(block.difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
 	   \bottomrule
    \end{tabular}
-\justify
+	\justify
 
-		\subsection{EVM Code}
 	\section{Memory and Storage}
 			
 		\subsection{Data Structures}
 
-				\paragraph{Merkle-Patricia Trees}
-					Merkle-Patricia Trees
+			\subsubsection{Merkle-Patricia Trees} Merkle Derkle Fee-Fi-Fo-Ferkle Merkle--\textit{patricia-tries}
 			
-				\subsubsection{World State}
-					Also known simply as "state", this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} (RLP data structures), this is also known as \textit{state}, or $\sigma$. This mapping is not stored on the blockchain, rather it is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}\footnote{A database backend is accessed by users indirectly through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+			\subsubsection{World State}
+				Also known as \textit{Actual State}, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP.The mapping is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
 
 
-		\subsection{The Block}
-			A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
+			\subsubsection{The Block}
+				A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
 
 
 				\subsubsection{Block Header}
@@ -523,28 +518,15 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 		
 		\begin{verbatim}
 		forall instruction.x
-		if gas_empty = true
-		then signal halt
-		elif instruction.x = fake
-		then signal halt
-		elif stack = terse
-		then signal halt
-		elif jumpdest = bad
-		then signal halt
-		else exec instruction.x
-		
-		forall instruction.y 
-		[...]
-		[...]
-		[...]
-		[...]
-		
-		forall instruction.z 
-		[...]
-		[...]
-		[...]
-		[...]
-		
+		if empty_gas = true
+		then signal exceptional_halt
+		elif invalid_instruction = true
+		then signal exceptional_halt
+		elif undersize_stack = true
+		then signal exceptional_halt
+		elif bad_jumpdest = true
+		then signal exceptional_halt
+		else exec instruction.x	
 		then signal controlled_halt
 		\end{verbatim}
 		
@@ -573,53 +555,53 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{potential\_state}), the state which decides every new \texttt{actual\_state}. 
 
-\end{multicols*}
+	\end{multicols*}
 
-\appendix
+	\appendix
 
-\section{Opcodes}
-	\subsection{Byte value 0x10's: Comparisons and Bitwise Logic Operations}
-\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-\hline
-	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{Input} & \textbf{Output} & \textbf{Description} \\
-\hline
-	0x00 & STOP & 0 & 0 & 0 & Halts execution. \\
-	0x01 & ADD & 3 & 2 & 1 & Addition operation. \\
-	0x02 & MUL & 5 & 2 & 1 & Multiplication operation. \\
-	0x03 & SUB & 3 & 2 & 1 & Subtraction operation. \\
-	0x04 & DIV & 5 & 2 & 1 & Integer division operation. \\
-	0x05 & SDIV & 5 & 2 & 1 & Signed integer division operation (truncated.)\\
-	0x06 & MOD & 5 & 2 & 1 & Modulo remainder operation. \\
-	0x07 & SMOD & 5 & 2 & 1 & Signed modulo remainder operation. \\
-	0x08 & ADDMOD & 8 & 3 & 1 & Modulo addition operation. \\
-	0x09 & MULMOD & 8 & 3 & 1 & Modulo multiplication operation. \\
-	0x0a & EXP & 10 & 2 & 1 & Exponential operation. \\
-	0x0b & SIGNEXTEND & 5  & 2 & 1 & Extend the length of two's complementary signed integer. \\
-	0x10 & LT & 3 & 2 & 1 & Less-than comparison. \\
-	0x11 & GT & 3 & 2 & 1 & Greater-than comparison. \\
-	0x12 & SLT & 3 & 2 & 1 & Signed less-than comparison. \\
-	0x13 & SGT & 3 & 2 & 1 & Signed greater-than comparison. \\
-	0x14 & EQ & 3 & 2 & 1 & Equality comparison. \\
-	0x15 & ISZERO & 3 & 1 & 1 & Simple not operator. \\
-	0x16 & AND & 3 & 2 & 1 & Bitwise \textsc{and} operation. \\
-	0x17 & OR & 3 & 2 & 1 & Bitwise \textsc{or} operation. \\
-	0x18 & XOR & 3 & 2 & 1 & Bitwise \textsc{xor} operation. \\
-	0x19 & NOT & 3 & 1 & 1 & Bitwise \textsc{not} operation. \\
-	0x1a & BYTE & 3 & 2 & 1 & Retrieve single byte from word. \\
-\hline
-\end{longtable}
+	\section{Opcodes}
 
-        \subsection{Byte value 0x20's: SHA3}
-\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-\hline
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-	\hline
+		\subsection{0x10's: Comparisons and Bitwise Logic Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+			\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{Input} & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x00 & STOP & 0 & 0 & 0 & Halts execution. \\
+			0x01 & ADD & 3 & 2 & 1 & Addition operation. \\
+			0x02 & MUL & 5 & 2 & 1 & Multiplication operation. \\
+			0x03 & SUB & 3 & 2 & 1 & Subtraction operation. \\
+			0x04 & DIV & 5 & 2 & 1 & Integer division operation. \\
+			0x05 & SDIV & 5 & 2 & 1 & Signed integer division operation (truncated.)\\
+			0x06 & MOD & 5 & 2 & 1 & Modulo remainder operation. \\
+			0x07 & SMOD & 5 & 2 & 1 & Signed modulo remainder operation. \\
+			0x08 & ADDMOD & 8 & 3 & 1 & Modulo addition operation. \\
+			0x09 & MULMOD & 8 & 3 & 1 & Modulo multiplication operation. \\
+			0x0a & EXP & 10 & 2 & 1 & Exponential operation. \\
+			0x0b & SIGNEXTEND & 5  & 2 & 1 & Extend the length of two's complementary signed integer. \\
+			0x10 & LT & 3 & 2 & 1 & Less-than comparison. \\
+			0x11 & GT & 3 & 2 & 1 & Greater-than comparison. \\
+			0x12 & SLT & 3 & 2 & 1 & Signed less-than comparison. \\
+			0x13 & SGT & 3 & 2 & 1 & Signed greater-than comparison. \\
+			0x14 & EQ & 3 & 2 & 1 & Equality comparison. \\
+			0x15 & ISZERO & 3 & 1 & 1 & Simple not operator. \\
+			0x16 & AND & 3 & 2 & 1 & Bitwise \textsc{and} operation. \\
+			0x17 & OR & 3 & 2 & 1 & Bitwise \textsc{or} operation. \\
+			0x18 & XOR & 3 & 2 & 1 & Bitwise \textsc{xor} operation. \\
+			0x19 & NOT & 3 & 1 & 1 & Bitwise \textsc{not} operation. \\
+			0x1a & BYTE & 3 & 2 & 1 & Retrieve single byte from word. \\
+			\hline
+			\end{longtable}
 
-	0x20 & SHA3 & 30 & 2 & 1 & Compute a Keccak-256 hash. \\
-\hline
-\end{longtable}
+	        \subsection{0x20's: SHA3}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x20 & SHA3 & 30 & 2 & 1 & Compute a Keccak-256 hash. \\
+			\hline
+			\end{longtable}
 
-        	\subsection{Byte value 0x30's: Environmental Information}
+        	\subsection{0x30's: Environmental Information}
 			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 			\hline
 	        	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
@@ -642,7 +624,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 			\hline
 			\end{longtable}
 
-	        \subsection{Byte value 0x40 to 0x45: Block Data}
+	        \subsection{0x40 to 0x45: Block Data}
 			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 			\hline
 			\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
@@ -681,135 +663,131 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
         		\hline
         		\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         		\hline
-			0x60 & PUSH1 & - & 0 & 1 & Place a 1-byte item on the stack.\footnote{The bytes are read in line from the programs code's bytes array. If the bytes extend past the limit of PUSH-byte, their value will default to 0. As for all other push operations, the byte(s) are right-aligned, meaning the lowest significant value is placed in big-endian order.} \\
-		0x61 & PUSH2 & - & 0 & 1 & Place a 2-byte item on the stack. \\
-		0x62 & PUSH3 & - & 0 & 1 & Place a 3-byte item on the stack. \\
-		0x63 & PUSH4 & - & 0 & 1 & Place a 4-byte item on the stack. \\
-		0x64 & PUSH5 & - & 0 & 1 & Place a 5-byte item on the stack. \\
-		0x65 & PUSH6 & - & 0 & 1 & Place a 6-byte item on the stack. \\
-		0x66 & PUSH7 & - & 0 & 1 & Place a 7-byte item on the stack. \\
-		0x67 & PUSH8 & - & 0 & 1 & Place a 8-byte item on the stack. \\
-		0x68 & PUSH9 & - & 0 & 1 & Place a 9-byte item on the stack. \\
-		0x69 & PUSH10 & - & 0 & 1 & Place a 10-byte item on the stack. \\
-		0x6a & PUSH11 & - & 0 & 1 & Place a 11-byte item on the stack. \\
-		0x6b & PUSH12 & - & 0 & 1 & Place a 12-byte item on the stack. \\
-		0x6c & PUSH13 & - & 0 & 1 & Place a 13-byte item on the stack. \\
-		0x6d & PUSH14 & - & 0 & 1 & Place a 14-byte item on the stack. \\
-		0x6e & PUSH15 & - & 0 & 1 & Place a 15-byte item on the stack. \\
-		0x6f & PUSH16 & - & 0 & 1 & Place a 16-byte item on the stack. \\
-		0x70 & PUSH17 & - & 0 & 1 & Place a 17-byte item on the stack. \\
-		0x71 & PUSH18 & - & 0 & 1 & Place a 18-byte item on the stack. \\
-		0x72 & PUSH19 & - & 0 & 1 & Place a 19-byte item on the stack. \\
-		0x73 & PUSH20 & - & 0 & 1 & Place a 20-byte item on the stack. \\
-		0x74 & PUSH21 & - & 0 & 1 & Place a 21-byte item on the stack. \\
-		0x75 & PUSH22 & - & 0 & 1 & Place a 22-byte item on the stack. \\
-		0x76 & PUSH23 & - & 0 & 1 & Place a 23-byte item on the stack. \\
-		0x77 & PUSH24 & - & 0 & 1 & Place a 24-byte item on the stack. \\
-		0x78 & PUSH25 & - & 0 & 1 & Place a 25-byte item on the stack. \\
-		0x79 & PUSH26 & - & 0 & 1 & Place a 26-byte item on the stack. \\
-		0x7a & PUSH27 & - & 0 & 1 & Place a 27-byte item on the stack. \\
-		0x7b & PUSH28 & - & 0 & 1 & Place a 28-byte item on the stack. \\
-		0x7c & PUSH29 & - & 0 & 1 & Place a 29-byte item on the stack. \\
-		0x7d & PUSH30 & - & 0 & 1 & Place a 30-byte item on the stack. \\
-		0x7e & PUSH31 & - & 0 & 1 & Place a 31-byte item on the stack. \\
-		0x7f & PUSH32 & - & 0 & 1 & Place a 32-byte item on the stack. \\
-	
-		
-		\hline
-	\end{longtable}
+			0x60 & PUSH1 & - & 0 & 1 & Place a 1-byte item on the stack. \\
+			0x61 & PUSH2 & - & 0 & 1 & Place a 2-byte item on the stack. \\
+			0x62 & PUSH3 & - & 0 & 1 & Place a 3-byte item on the stack. \\
+			0x63 & PUSH4 & - & 0 & 1 & Place a 4-byte item on the stack. \\
+			0x64 & PUSH5 & - & 0 & 1 & Place a 5-byte item on the stack. \\
+			0x65 & PUSH6 & - & 0 & 1 & Place a 6-byte item on the stack. \\
+			0x66 & PUSH7 & - & 0 & 1 & Place a 7-byte item on the stack. \\
+			0x67 & PUSH8 & - & 0 & 1 & Place a 8-byte item on the stack. \\
+			0x68 & PUSH9 & - & 0 & 1 & Place a 9-byte item on the stack. \\
+			0x69 & PUSH10 & - & 0 & 1 & Place a 10-byte item on the stack. \\
+			0x6a & PUSH11 & - & 0 & 1 & Place a 11-byte item on the stack. \\
+			0x6b & PUSH12 & - & 0 & 1 & Place a 12-byte item on the stack. \\
+			0x6c & PUSH13 & - & 0 & 1 & Place a 13-byte item on the stack. \\
+			0x6d & PUSH14 & - & 0 & 1 & Place a 14-byte item on the stack. \\
+			0x6e & PUSH15 & - & 0 & 1 & Place a 15-byte item on the stack. \\
+			0x6f & PUSH16 & - & 0 & 1 & Place a 16-byte item on the stack. \\
+			0x70 & PUSH17 & - & 0 & 1 & Place a 17-byte item on the stack. \\
+			0x71 & PUSH18 & - & 0 & 1 & Place a 18-byte item on the stack. \\
+			0x72 & PUSH19 & - & 0 & 1 & Place a 19-byte item on the stack. \\
+			0x73 & PUSH20 & - & 0 & 1 & Place a 20-byte item on the stack. \\
+			0x74 & PUSH21 & - & 0 & 1 & Place a 21-byte item on the stack. \\
+			0x75 & PUSH22 & - & 0 & 1 & Place a 22-byte item on the stack. \\
+			0x76 & PUSH23 & - & 0 & 1 & Place a 23-byte item on the stack. \\
+			0x77 & PUSH24 & - & 0 & 1 & Place a 24-byte item on the stack. \\
+			0x78 & PUSH25 & - & 0 & 1 & Place a 25-byte item on the stack. \\
+			0x79 & PUSH26 & - & 0 & 1 & Place a 26-byte item on the stack. \\
+			0x7a & PUSH27 & - & 0 & 1 & Place a 27-byte item on the stack. \\
+			0x7b & PUSH28 & - & 0 & 1 & Place a 28-byte item on the stack. \\
+			0x7c & PUSH29 & - & 0 & 1 & Place a 29-byte item on the stack. \\
+			0x7d & PUSH30 & - & 0 & 1 & Place a 30-byte item on the stack. \\
+			0x7e & PUSH31 & - & 0 & 1 & Place a 31-byte item on the stack. \\
+			0x7f & PUSH32 & - & 0 & 1 & Place a 32-byte item on the stack. \\			
+			\hline
+			\end{longtable}
 
 		\subsection{0x80 to 0x8f: Duplication Operations}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-        \hline
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-        \hline
-	0x80 & DUP1 & - & 1 & 2 & Duplicate the 1st item in the stack. \\
-	0x81 & DUP2 & - & 2 & 3 & Duplicate the 2nd item in the stack. \\
-	0x82 & DUP3 & - & 3 & 4 & Duplicate the 3rd item in the stack. \\
-	0x83 & DUP4 & - & 4 & 5 & Duplicate the 4th item in the stack. \\
-	0x84 & DUP5 & - & 5 & 6 & Duplicate the 5th item in the stack. \\
-	0x85 & DUP6 & - & 6 & 7 & Duplicate the 6th item in the stack. \\
-	0x86 & DUP7 & - & 7 & 8 & Duplicate the 7th item in the stack. \\
-	0x87 & DUP8 & - & 8 & 9 & Duplicate the 8th item in the stack. \\
-	0x88 & DUP9 & - & 9 & 10 & Duplicate the 9th item in the stack. \\
-	0x89 & DUP10 & - & 10 & 11 & Duplicate the 10th item in the stack. \\
-	0x8a & DUP11 & - & 11 & 12 & Duplicate the 11th item in the stack. \\
-	0x8b & DUP12 & - & 12 & 13 & Duplicate the 12th item in the stack. \\
-	0x8c & DUP13 & - & 13 & 14 & Duplicate the 13th item in the stack. \\
-	0x8d & DUP14 & - & 14 & 15 & Duplicate the 14th item in the stack. \\
-	0x8e & DUP15 & - & 15 & 16 & Duplicate the 15th item in the stack. \\
-	0x8f & DUP16 & - & 16 & 17 & Duplicate the 16th item in the stack. \\		
-	\hline
-	\end{longtable}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+		        \hline
+			0x80 & DUP1 & - & 1 & 2 & Duplicate the 1st item in the stack. \\
+			0x81 & DUP2 & - & 2 & 3 & Duplicate the 2nd item in the stack. \\
+			0x82 & DUP3 & - & 3 & 4 & Duplicate the 3rd item in the stack. \\
+			0x83 & DUP4 & - & 4 & 5 & Duplicate the 4th item in the stack. \\
+			0x84 & DUP5 & - & 5 & 6 & Duplicate the 5th item in the stack. \\
+			0x85 & DUP6 & - & 6 & 7 & Duplicate the 6th item in the stack. \\
+			0x86 & DUP7 & - & 7 & 8 & Duplicate the 7th item in the stack. \\
+			0x87 & DUP8 & - & 8 & 9 & Duplicate the 8th item in the stack. \\
+			0x88 & DUP9 & - & 9 & 10 & Duplicate the 9th item in the stack. \\
+			0x89 & DUP10 & - & 10 & 11 & Duplicate the 10th item in the stack. \\
+			0x8a & DUP11 & - & 11 & 12 & Duplicate the 11th item in the stack. \\
+			0x8b & DUP12 & - & 12 & 13 & Duplicate the 12th item in the stack. \\
+			0x8c & DUP13 & - & 13 & 14 & Duplicate the 13th item in the stack. \\
+			0x8d & DUP14 & - & 14 & 15 & Duplicate the 14th item in the stack. \\
+			0x8e & DUP15 & - & 15 & 16 & Duplicate the 15th item in the stack. \\
+			0x8f & DUP16 & - & 16 & 17 & Duplicate the 16th item in the stack. \\		
+			\hline
+			\end{longtable}
         
 	
-	\subsection{90s: Swap Operations}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-        \hline  
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-        \hline  
-	0x90 & SWAP1 & - & 2 & 2 & Exchange the 1st and 2nd stack items. \\
-	0x91 & SWAP2 & - & 3 & 3 & Exchange the 1st and 3rd stack items. \\
-	0x92 & SWAP3 & - & 4 & 4 & Exchange the 1st and 4th stack items. \\
-	0x93 & SWAP4 & - & 5 & 5 & Exchange the 1st and 5th stack items. \\
-	0x94 & SWAP5 & - & 6 & 6 & Exchange the 1st and 6th stack items. \\
-	0x95 & SWAP6 & - & 7 & 7 & Exchange the 1st and 7th stack items. \\
-	0x96 & SWAP7 & - & 8 & 8 & Exchange the 1st and 8th stack items. \\
-	0x97 & SWAP8 & - & 9 & 9 & Exchange the 1st and 9th stack items. \\
-	0x98 & SWAP9 & - & 10 & 10 & Exchange the 1st and 10th stack items. \\
-	0x99 & SWAP10 & - & 11 & 11 & Exchange the 1st and 11th stack items. \\
-	0x9a & SWAP11 & - & 12 & 12 & Exchange the 1st and 12th stack items. \\
-	0x9b & SWAP12 & - & 13 & 13 & Exchange the 1st and 13th stack items. \\
-	0x9c & SWAP13 & - & 14 & 14 & Exchange the 1st and 14th stack items. \\
-	0x9d & SWAP14 & - & 15 & 15 & Exchange the 1st and 15th stack items. \\
-	0x9e & SWAP15 & - & 16 & 16 & Exchange the 1st and 16th stack items. \\
-	0x9f & SWAP16 & - & 17 & 17 & Exchange the 1st and 17th stack items. \\
-	
-	\hline
-	\end{longtable}
+		\subsection{90s: Swap Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline  
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+		        \hline  
+			0x90 & SWAP1 & - & 2 & 2 & Exchange the 1st and 2nd stack items. \\
+			0x91 & SWAP2 & - & 3 & 3 & Exchange the 1st and 3rd stack items. \\
+			0x92 & SWAP3 & - & 4 & 4 & Exchange the 1st and 4th stack items. \\
+			0x93 & SWAP4 & - & 5 & 5 & Exchange the 1st and 5th stack items. \\
+			0x94 & SWAP5 & - & 6 & 6 & Exchange the 1st and 6th stack items. \\
+			0x95 & SWAP6 & - & 7 & 7 & Exchange the 1st and 7th stack items. \\
+			0x96 & SWAP7 & - & 8 & 8 & Exchange the 1st and 8th stack items. \\
+			0x97 & SWAP8 & - & 9 & 9 & Exchange the 1st and 9th stack items. \\
+			0x98 & SWAP9 & - & 10 & 10 & Exchange the 1st and 10th stack items. \\
+			0x99 & SWAP10 & - & 11 & 11 & Exchange the 1st and 11th stack items. \\
+			0x9a & SWAP11 & - & 12 & 12 & Exchange the 1st and 12th stack items. \\
+			0x9b & SWAP12 & - & 13 & 13 & Exchange the 1st and 13th stack items. \\
+			0x9c & SWAP13 & - & 14 & 14 & Exchange the 1st and 14th stack items. \\
+			0x9d & SWAP14 & - & 15 & 15 & Exchange the 1st and 15th stack items. \\
+			0x9e & SWAP15 & - & 16 & 16 & Exchange the 1st and 16th stack items. \\
+			0x9f & SWAP16 & - & 17 & 17 & Exchange the 1st and 17th stack items. \\	
+			\hline
+			\end{longtable}
 
-	\subsection{0xa0 to 0xa4: Logging Operations}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-        \hline  
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-        \hline  
-		0xa0 & LOG0 & 375 & 2 & 0 & Append log record with 0 topics. \\
-		0xa1 & LOG1 & 750 & 3 & 0 & Append log record with 1 topic. \\
-		0xa2 & LOG2 & 1125 & 4 & 0 & Append log record with 2 topic. \\
-		0xa3 & LOG3 & 1500 & 5 & 0 & Append log record with 3 topic. \\
-		0xa4 & LOG4 & 1875 & 6 & 0 & Append log record with 4 topic. \\
-	\hline
-	\end{longtable}
+		\subsection{0xa0 to 0xa4: Logging Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline  
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+		        \hline  
+			0xa0 & LOG0 & 375 & 2 & 0 & Append log record with 0 topics. \\
+			0xa1 & LOG1 & 750 & 3 & 0 & Append log record with 1 topic. \\
+			0xa2 & LOG2 & 1125 & 4 & 0 & Append log record with 2 topic. \\
+			0xa3 & LOG3 & 1500 & 5 & 0 & Append log record with 3 topic. \\
+			0xa4 & LOG4 & 1875 & 6 & 0 & Append log record with 4 topic. \\
+			\hline
+			\end{longtable}
 
-        \subsubsection{0xf0's: System Operations}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-        \hline  
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-        \hline  
-		0xf0 & CREATE & 32000 & 3 & 1 & Create a new contract account. Operand order is: value, input offset, input size. \\
-		0xf1 & CALL & 700 & 7 & 1 & Message-call into an account. The operand order is: gas, to, value, in offset, in size, out offset, out size. \\
-		0xf2 & CALLCODE & 700 & 7 & 1 & Message-call into this account with an alternative account's code. Exactly equivalent to CALL, except the recipient is the same account as at present, but the code is overwritten. \\
-		0xf3 & RETURN & 0 & 2 & 0 & Halt execution, then return output data. This defines the output at the moment of the halt. \\
-		0xf4 & DELEGATECALL & 700 & 6 & 1 & Message-call into this account with an alternative account's code, but with persisting values for \texttt{sender} and \texttt{value}. DELEGATECALL takes one less argument than CALL. This means that the recipient is in fact the same account as at present, but that the code is overwritten \textit{and} the context is almost entirely identical. \\
-		0xf5 & CALLBLACKBOX & 40 & 7 & 1 & - \\
-		0xfa & STATICCALL & 40 & 6 & 1 & - \\
-		0xfd & REVERT & 0 & 2 & 0 & - \\
-		0xfe & INVALID & - & 1 & 0 & Designated invalid instruction. \\
-		0xff & SELFDESTRUCT & 5000 & 1 & 0 & Halt execution and register the account for later deletion. \\
-\hline
-\end{longtable}
+	        \subsection{0xf0's: System Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline  
+	        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline  
+			0xf0 & CREATE & 32000 & 3 & 1 & Create a new contract account. Operand order is: value, input offset, input size. \\
+			0xf1 & CALL & 700 & 7 & 1 & Message-call into an account. The operand order is: gas, to, value, in offset, in size, out offset, out size. \\
+			0xf2 & CALLCODE & 700 & 7 & 1 & Message-call into this account with an alternative account's code. Exactly equivalent to CALL, except the recipient is the same account as at present, but the code is overwritten. \\
+			0xf3 & RETURN & 0 & 2 & 0 & Halt execution, then return output data. This defines the output at the moment of the halt. \\
+			0xf4 & DELEGATECALL & 700 & 6 & 1 & Message-call into this account with an alternative account's code, but with persisting values for \texttt{sender} and \texttt{value}. DELEGATECALL takes one less argument than CALL. This means that the recipient is in fact the same account as at present, but that the code is overwritten \textit{and} the context is almost entirely identical. \\
+			0xf5 & CALLBLACKBOX & 40 & 7 & 1 & - \\
+			0xfa & STATICCALL & 40 & 6 & 1 & - \\
+			0xfd & REVERT & 0 & 2 & 0 & - \\
+			0xfe & INVALID & - & 1 & 0 & Designated invalid instruction. \\
+			0xff & SELFDESTRUCT & 5000 & 1 & 0 & Halt execution and register the account for later deletion. \\
+			\hline
+			\end{longtable}
 
 		
- 		\subsection{EVM-script}
-	
-		\subsubsection{Lower-Level Lisp}
+	\section{Higher Level Languages}
+		\subsection{Lower-Level Lisp}
 			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and trans-compiling to higher-level languages.
 	
-		\subsubsection{Solidity}
+		\subsection{Solidity}
 			A language similar in syntax to Javascript, and the most commonly used language for creating smart contracts in Ethereum.
-		\subsubsection{Serpent}
+		\subsection{Serpent}
 
-		\subsubsection{Viper}
+		\subsection{Viper}
 
 
 
