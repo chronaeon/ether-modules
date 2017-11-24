@@ -613,80 +613,75 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-\hline
+	\hline
 
 	0x20 & SHA3 & 30 & 2 & 1 & Compute a Keccak-256 hash. \\
 \hline
 \end{longtable}
 
-        \subsection{Byte value 0x30's: Environmental Information}
-\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-\hline
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-\hline
+        	\subsection{Byte value 0x30's: Environmental Information}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+	        	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x30 & ADDRESS & 2 & 0 & 1 & Get the address of the currently executing account. \\
+			0x31 & BALANCE & 400 & 1 & 1 & Get the balance of the given account. \\
+			0x32 & ORIGIN & 2 & 0 & 1 & Get execution origination address. This is always the original sender of a transaction, never a contract account. \\
+			0x33 & CALLER & 2 & 0 & 1 & Get caller address. This is the address of the account that is directly responsible for this execution. \\
+			0x34 & CALLVALUE & 2 & 0 & 1 & Get deposited value by the instruction/transaction responsible for this execution. \\
+			0x35 & CALLDATALOAD & 3 & 1 & 1 & Get input data of the current environment. \\
+			0x36 & CALLDATASIZE & 2 & 0 & 1 & Get size of input data in current environment. This refers to the optional data field that can be passed with a message call instruction or transaction.\\
+			0x37 & CALLDATACOPY & 3 & 3 & 0 & Copy input data in the current environment to memory. This refers to the optional data field passed with the message call instruction or transaction. \\
+			0x38 & CODESIZE & 2 & 0 & 1 & Get size of code running in the current environment. \\
+			0x39 & CODECOPY & 3 & 3 & 0 & Copy the code running in the current environment to memory. \\
+			0x3a & GASPRICE & 2 & 0 & 1 & Get the price of gas in the current environment. This is the gas price specified by the originating transaction. \\
+			0x3b & EXTCODESIZE & 700 & 1 & 1 & Get the size of an account's code. \\
+			0x3c & EXTCODECOPY & 700 & 4 & 0 & Copy an account's code to memory. \\
+			0x3d & RETURNDATASIZE & 2 & 0 & 1 & \\
+			0x3e & RETURNDATACOPY & 3 & 3 & 0 & \\
+			\hline
+			\end{longtable}
 
-	0x30 & ADDRESS & 2 & 0 & 1 & Get the address of the currently executing account. \\
-	0x31 & BALANCE & 400 & 1 & 1 & Get the balance of the given account. \\
-	0x32 & ORIGIN & 2 & 0 & 1 & Get execution origination address. This is always the original sender of a transaction, never a contract account. \\
-	0x33 & CALLER & 2 & 0 & 1 & Get caller address. This is the address of the account that is directly responsible for this execution. \\
-	0x34 & CALLVALUE & 2 & 0 & 1 & Get deposited value by the instruction/transaction responsible for this execution. \\
-	0x35 & CALLDATALOAD & 3 & 1 & 1 & Get input data of the current environment. \\
-	0x36 & CALLDATASIZE & 2 & 0 & 1 & Get size of input data in current environment. This refers to the optional data field that can be passed with a message call instruction or transaction.\\
-	0x37 & CALLDATACOPY & 3 & 3 & 0 & Copy input data in the current environment to memory. This refers to the optional data field passed with the message call instruction or transaction. \\
-	0x38 & CODESIZE & 2 & 0 & 1 & Get size of code running in the current environment. \\
-	0x39 & CODECOPY & 3 & 3 & 0 & Copy the code running in the current environment to memory. \\
-	0x3a & GASPRICE & 2 & 0 & 1 & Get the price of gas in the current environment. This is the gas price specified by the originating transaction. \\
-	0x3b & EXTCODESIZE & 700 & 1 & 1 & Get the size of an account's code. \\
-	0x3c & EXTCODECOPY & 700 & 4 & 0 & Copy an account's code to memory. \\
-	0x3d & RETURNDATASIZE & 2 & 0 & 1 & \\
-	0x3e & RETURNDATACOPY & 3 & 3 & 0 & \\
+	        \subsection{Byte value 0x40 to 0x45: Block Data}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+			\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x40 & BLOCKHASH & 20 & 1 & 1 & Get the hash of one of the 256 most recent blocks. \footnote{A value of 0 is left on the stack if the block number is more than $256$ in number behind the current one, or if it is a number greater than the current one.} \\ 
+			0x41 & COINBASE & 2 & 0 & 1 & Look up a block's beneficiary address by its hash.\\
+			0x42 & TIMESTAMP & 2 & 0 & 1 & Look up a block's timestamp by its hash.\\
+			0x43 & NUMBER & 2  & 0 & 1 & Look up a block's number by its hash. \\
+			0x44 & DIFFICULTY & 2 & 0 & 1 & Look up a block's difficulty by its hash. \\
+			0x45 & GASLIMIT & 2  & 0 & 1 & Look up a block's gas limit by its hash. \\
+			\hline
+			\end{longtable}
 
-	\hline
-\end{longtable}
-
-        \subsection{Byte value 0x40 to 0x45: Block Data}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-	\hline
-	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-	\hline
-
-		0x40 & BLOCKHASH & 20 & 1 & 1 & Get the hash of one of the 256 most recent blocks. \footnote{A value of 0 is left on the stack if the block number is more than $256$ in number behind the current one, or if it is a number greater than the current one.} \\ 
-		0x41 & COINBASE & 2 & 0 & 1 & Look up a block's beneficiary address by its hash.\\
-		0x42 & TIMESTAMP & 2 & 0 & 1 & Look up a block's timestamp by its hash.\\
-		0x43 & NUMBER & 2  & 0 & 1 & Look up a block's number by its hash. \\
-		0x44 & DIFFICULTY & 2 & 0 & 1 & Look up a block's difficulty by its hash. \\
-		0x45 & GASLIMIT & 2  & 0 & 1 & Look up a block's gas limit by its hash. \\
-	
-	\hline
-	\end{longtable}
-
-	\subsection{Byte value 0x50's: Stack, memory, storage, and flow operations.}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-	\hline
-	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-	\hline
-
-		0x50 & POP & 2 & 1 & 0 & Removes an item from the stack. \\
-		0x51 & MLOAD & 3 & 1 & 1 & Load a word from memory. \\
-		0x52 & MSTORE & 3 & 2 & 0 & Save a word to memory. \\
-		0x53 & MSTORE8 & 3 & 2 & 0 & Save a byte to memory. \\
-		0x54 & SLOAD & 200 & 1 & 1 & Load a word from storage. \\
-		0x55 & SSTORE & 0 & 2 & 0 & Save a word to storage.\\
-		0x56 & JUMP & 8 & 1 & 0 & Alter the program counter. \\
-		0x57 & JUMPI & 10 & 2 & 0 & Conditionally alter the program counter. \\
-		0x58 & PC & 2 & 0 & 1 & Look up the value of the program counter prior to the increment resulting from this instruction. \\
-		0x59 & MSIZE & 2 & 0 & 1 & Get the size of active memory in bytes. \\
-		0x5a & GAS & 2 & 0 & 1 & Get the amount of available gas, including the corresponding reduction for the cost of this instruction. \\
-		0x5b & JUMPDEST & 1 & 0 & 0 & Mark a valid destination for jumps. \footnote{This operation has no effect on the \texttt{machine\_state during execution.}} \\
-	\hline
-	\end{longtable}
+		\subsection{Byte value 0x50's: Stack, memory, storage, and flow operations.}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+			\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x50 & POP & 2 & 1 & 0 & Removes an item from the stack. \\
+			0x51 & MLOAD & 3 & 1 & 1 & Load a word from memory. \\
+			0x52 & MSTORE & 3 & 2 & 0 & Save a word to memory. \\
+			0x53 & MSTORE8 & 3 & 2 & 0 & Save a byte to memory. \\
+			0x54 & SLOAD & 200 & 1 & 1 & Load a word from storage. \\
+			0x55 & SSTORE & 0 & 2 & 0 & Save a word to storage.\\
+			0x56 & JUMP & 8 & 1 & 0 & Alter the program counter. \\
+			0x57 & JUMPI & 10 & 2 & 0 & Conditionally alter the program counter. \\
+			0x58 & PC & 2 & 0 & 1 & Look up the value of the program counter prior to the increment resulting from this instruction. \\
+			0x59 & MSIZE & 2 & 0 & 1 & Get the size of active memory in bytes. \\
+			0x5a & GAS & 2 & 0 & 1 & Get the amount of available gas, including the corresponding reduction for the cost of this instruction. \\
+			0x5b & JUMPDEST & 1 & 0 & 0 & Mark a valid destination for jumps. \footnote{This operation has no effect on the \texttt{machine\_state during execution.}} \\
+			\hline
+			\end{longtable}
 
 		\subsection{0x60 to 0x7f: Push Operations}
-	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
-        \hline
-        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
-        \hline
-		0x60 & PUSH1 & - & 0 & 1 & Place a 1-byte item on the stack. \footnote{The bytes are read in line from the programs code's bytes array. If the bytes extend past the limit of 1-byte, their value will default to 0. As for all other push operations, the byte(s) are right-aligned, meaning the lowest significant value is placed in big-endian order.} \\
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+        		\hline
+        		\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+        		\hline
+			0x60 & PUSH1 & - & 0 & 1 & Place a 1-byte item on the stack.\footnote{The bytes are read in line from the programs code's bytes array. If the bytes extend past the limit of PUSH-byte, their value will default to 0. As for all other push operations, the byte(s) are right-aligned, meaning the lowest significant value is placed in big-endian order.} \\
 		0x61 & PUSH2 & - & 0 & 1 & Place a 2-byte item on the stack. \\
 		0x62 & PUSH3 & - & 0 & 1 & Place a 3-byte item on the stack. \\
 		0x63 & PUSH4 & - & 0 & 1 & Place a 4-byte item on the stack. \\
