@@ -1,0 +1,18 @@
+[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[3] Config.pm:357> INFO - Logfile is 'total_difficulty.blg'
+[59] biber:303> INFO - === Sat Nov  4, 2017, 15:13:50
+[83] Biber.pm:360> INFO - Reading 'total_difficulty.bcf'
+[254] Biber.pm:836> INFO - Found 1 citekeys in bib section 0
+[285] Biber.pm:3671> INFO - Processing section 0
+[307] Biber.pm:3841> INFO - Looking for bibtex format file '~/modules/References.bib' for section 0
+[418] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[426] bibtex.pm:1281> INFO - Found BibTeX data source '/home/micah/modules/References.bib'
+[436] Utils.pm:164> WARN - BibTeX subsystem: /tmp/sQd4O1YSWR/References.bib_6206.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[463] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[464] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[464] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[464] Biber.pm:3500> INFO - Sorting list 'cms/global/' of type 'entry' with scheme 'cms' and locale 'en-US'
+[464] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[468] bbl.pm:608> INFO - Writing 'total_difficulty.bbl' with encoding 'latin1'
+[469] bbl.pm:712> INFO - Output to total_difficulty.bbl
+[469] Biber.pm:110> INFO - WARNINGS: 1

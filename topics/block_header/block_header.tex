@@ -1,0 +1,45 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	authordate,
+	strict,
+	backend=biber
+]
+{biblatex-chicago}
+\usepackage{mathtools}
+\author{}
+\title{Block Header}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{H} 
+\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
+
+\begin{enumerate}
+	\item \textsc{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
+	\item \textsc{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
+	\item \textsc{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
+	\item \textsc{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
+	\item \textsc{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
+	\item \textsc{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
+	\item \textsc{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
+	\item \textsc{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
+	\item \textsc{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
+	\item \textsc{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
+	\item \textsc{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
+	\item \textsc{Timestamp} -- This is a record of Unix's time at this block's inception.
+	\item \textsc{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
+	\item \textsc{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
+	\item \textsc{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
+	\item \textsc{Ommer Block Headers} -- These are the same components listed above for any ommers.
+	\item \textsc{Transaction Series} -- This is the only non-header content in the block.
+\end{enumerate}
+\end{document}
+
