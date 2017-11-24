@@ -19,6 +19,30 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{EF2017}{paper}{}
+      \name{author}{1}{}{%
+        {{hash=b8a91f4b79257e293f63378b4030938e}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Ethereum},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{b8a91f4b79257e293f63378b4030938e}
+      \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
+      \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
+      \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Ethereum Whitepaper}
+      \field{year}{2017}
+    \endentry
     \entry{Wood2017}{paper}{}
       \name{author}{1}{}{%
         {{hash=e2eeb49d9390c82ee05b47c738b5ff4e}{%
@@ -34,56 +58,14 @@
       \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
       \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
       \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
       \field{journaltitle}{GitHub repository}
       \field{title}{Ethereum: A Secure Decentralised Generalised Transaction Ledger}
       \field{year}{2017}
-    \endentry
-    \entry{Etherscan2017}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=6a04a374d549abc7a9c36f67baccad50}{%
-           family={etherscan.io},
-           familyi={e\bibinitperiod}}}%
-      }
-      \strng{namehash}{6a04a374d549abc7a9c36f67baccad50}
-      \strng{fullhash}{6a04a374d549abc7a9c36f67baccad50}
-      \strng{authornamehash}{6a04a374d549abc7a9c36f67baccad50}
-      \strng{authorfullhash}{6a04a374d549abc7a9c36f67baccad50}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Ethereum Average BlockSize Chart}
-      \field{title}{Charts: Ethereum BlockSize History}
-      \verb{url}
-      \verb https://etherscan.io/chart/blocksize
-      \endverb
-    \endentry
-    \entry{Levy2010}{book}{}
-      \name{author}{1}{}{%
-        {{hash=7e521cf3616b7c888d511a80e9b82ad5}{%
-           family={Levy},
-           familyi={L\bibinitperiod},
-           given={Steven},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {O'Reilly}%
-      }
-      \strng{namehash}{7e521cf3616b7c888d511a80e9b82ad5}
-      \strng{fullhash}{7e521cf3616b7c888d511a80e9b82ad5}
-      \strng{authornamehash}{7e521cf3616b7c888d511a80e9b82ad5}
-      \strng{authorfullhash}{7e521cf3616b7c888d511a80e9b82ad5}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Hackers: Heroes of the Computer Revolution}
-      \field{year}{2010}
     \endentry
     \entry{billwagner}{misc}{}
       \name{author}{1}{}{%
@@ -141,30 +123,6 @@
       \field{labeltitlesource}{title}
       \field{title}{A dictionary of computer science}
       \field{year}{2016}
-    \endentry
-    \entry{EF2017}{paper}{}
-      \name{author}{1}{}{%
-        {{hash=b8a91f4b79257e293f63378b4030938e}{%
-           family={Foundation},
-           familyi={F\bibinitperiod},
-           given={Ethereum},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {GitHub}%
-      }
-      \strng{namehash}{b8a91f4b79257e293f63378b4030938e}
-      \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
-      \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
-      \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}
-      \field{journaltitle}{GitHub repository}
-      \field{title}{Ethereum Whitepaper}
-      \field{year}{2017}
     \endentry
   \endsortlist
 \endrefsection

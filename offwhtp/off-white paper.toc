@@ -192,18 +192,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.5}Byte value 0x50's: Stack, memory, storage, and flow operations.}{14}{subsection.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.6}0x60 to 0x7f: Push Operations}{14}{subsection.A.6}
+\contentsline {subsection}{\numberline {A.6}0x60 to 0x7f: Push Operations}{15}{subsection.A.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.7}0x80 to 0x8f: Duplication Operations}{14}{subsection.A.7}
+\contentsline {subsection}{\numberline {A.7}0x80 to 0x8f: Duplication Operations}{15}{subsection.A.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.8}90s: Swap Operations}{15}{subsection.A.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.9}0xa0 to 0xa4: Logging Operations}{15}{subsection.A.9}
+\contentsline {subsection}{\numberline {A.9}0xa0 to 0xa4: Logging Operations}{16}{subsection.A.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.10}0xf0's: System Operations}{15}{subsection.A.10}
+\contentsline {subsection}{\numberline {A.10}0xf0's: System Operations}{16}{subsection.A.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\relax References}{16}{table.10}
+\contentsline {section}{\relax References}{17}{table.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Glossary}{17}{section*.3}
+\contentsline {section}{Glossary}{18}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Acronyms}{18}{section*.5}
+\contentsline {section}{Acronyms}{19}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\relax Index}{20}{section*.6}

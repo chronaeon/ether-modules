@@ -588,7 +588,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 \section{Opcodes}
 	\subsection{Byte value 0x10's: Comparisons and Bitwise Logic Operations}
-\begin{longtable}{|cccccc|}
+\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
 \hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{Input} & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -619,7 +619,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x20's: SHA3}
-\begin{longtable}{|cccccc|}
+\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -629,7 +629,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x30's: Environmental Information}
-\begin{longtable}{|cccccc|}
+\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -654,7 +654,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x40 to 0x45: Block Data}
-	\begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
 	\hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 	\hline
@@ -670,7 +670,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 	\subsection{Byte value 0x50's: Stack, memory, storage, and flow operations.}
-	\begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
 	\hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 	\hline
@@ -686,11 +686,12 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 		0x58 & PC & 2 & 0 & 1 & Look up the value of the program counter prior to the increment resulting from this instruction. \\
 		0x59 & MSIZE & 2 & 0 & 1 & Get the size of active memory in bytes. \\
 		0x5a & GAS & 2 & 0 & 1 & Get the amount of available gas, including the corresponding reduction for the cost of this instruction. \\
-		0x5b & JUMPDEST & 1 & 0 & 0 Mark a valid destination for jumps. \footnote{This operation has no effect on the \texttt{machine\_state during execution.}} \\
+		0x5b & JUMPDEST & 1 & 0 & 0 & Mark a valid destination for jumps. \footnote{This operation has no effect on the \texttt{machine\_state during execution.}} \\
+	\hline
 	\end{longtable}
 
 		\subsection{0x60 to 0x7f: Push Operations}
-        \begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
         \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline
@@ -699,7 +700,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 		\subsection{0x80 to 0x8f: Duplication Operations}
-        \begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
         \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline
@@ -707,7 +708,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\hline
 	\end{longtable}
         \subsection{90s: Swap Operations}
-        \begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -716,7 +717,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 	\subsection{0xa0 to 0xa4: Logging Operations}
-        \begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -725,7 +726,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
         \subsection{0xf0's: System Operations}
-        \begin{longtable}{|cccccc|}
+	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
