@@ -57,6 +57,8 @@
 \usepackage[totoc]{idxlayout}
 \usepackage{longtable}
 \usepackage{fancyhdr}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -577,7 +579,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 \section{Opcodes}
 	\subsection{Byte value 0x10's: Comparisons and Bitwise Logic Operations}
-\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 \hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{Input} & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -608,7 +610,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x20's: SHA3}
-\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -618,7 +620,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x30's: Environmental Information}
-\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 \hline
@@ -643,7 +645,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 \end{longtable}
 
         \subsection{Byte value 0x40 to 0x45: Block Data}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 	\hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 	\hline
@@ -659,7 +661,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 	\subsection{Byte value 0x50's: Stack, memory, storage, and flow operations.}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
 	\hline
 	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
 	\hline
@@ -680,7 +682,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 		\subsection{0x60 to 0x7f: Push Operations}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
         \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline
@@ -722,7 +724,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 		\subsection{0x80 to 0x8f: Duplication Operations}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
         \hline
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline
@@ -747,7 +749,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
         
 	
 	\subsection{90s: Swap Operations}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -772,7 +774,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
 	\subsection{0xa0 to 0xa4: Logging Operations}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
@@ -785,7 +787,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 	\end{longtable}
 
         \subsubsection{0xf0's: System Operations}
-	\begin{longtable}{|cp{2.8cm}cccp{6cm}|}
+	\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
         \hline  
         \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
         \hline  
