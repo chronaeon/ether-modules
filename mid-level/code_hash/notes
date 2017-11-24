@@ -1,6 +1,0 @@
-The code hash aspect of an account’s state
-is the hash of the evm code of this account.
-Code hashes are stored in the state database.
-Code hashes are permanent and they are exe-
-cuted when the address belonging to that ac-
-count receives a message call. def

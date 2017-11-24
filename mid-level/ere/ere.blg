@@ -1,9 +1,0 @@
-[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
-[0] Config.pm:357> INFO - Logfile is 'ere.blg'
-[46] biber:303> INFO - === Sat Nov 18, 2017, 04:31:38
-[69] Biber.pm:360> INFO - Reading 'ere.bcf'
-[225] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
-[238] Utils.pm:164> WARN - The file 'ere.bcf' does not contain any citations!
-[247] bbl.pm:608> INFO - Writing 'ere.bbl' with encoding 'latin1'
-[248] bbl.pm:712> INFO - Output to ere.bbl
-[248] Biber.pm:110> INFO - WARNINGS: 1
