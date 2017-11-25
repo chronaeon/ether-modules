@@ -1,9 +1,0 @@
-[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
-[1] Config.pm:357> INFO - Logfile is 'contract_creation.blg'
-[136] biber:303> INFO - === Sat Nov 18, 2017, 20:40:27
-[205] Biber.pm:360> INFO - Reading 'contract_creation.bcf'
-[649] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
-[694] Utils.pm:164> WARN - The file 'contract_creation.bcf' does not contain any citations!
-[721] bbl.pm:608> INFO - Writing 'contract_creation.bbl' with encoding 'latin1'
-[721] bbl.pm:712> INFO - Output to contract_creation.bbl
-[722] Biber.pm:110> INFO - WARNINGS: 1

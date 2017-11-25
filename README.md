@@ -2,9 +2,15 @@
 
 Modular documentation for Ethereum. 
 
-This project is built entirely in LaTeX. This project aims to provide complete, coherent, modular documentation for Ethereum. Topic folders with the file "template.tex" in them are entries that still need to be created. Each module should be 1 to 3 pages in length and follow the format already laid out in the template.tex files inside each module directory. Formatting is critical. When defining formal math operations, prefer pseudocode. 
+In the "modules" directory, you'll find single LaTeX articles covering various topics that are both *intrinsic*, and conceptually *centripetal*, to understanding Ethereum's technical specification. 
 
-The three main directories high-level, mid-level, and low-level. Low-level contains the most basic Ethereum concepts that easily translate into regular language. Mid-level contains core Ethereum concepts that outline the whole of its operation. High-level  contains concepts that have a broad range of applications and use cases and are not specific just to Ethereum.
+This project is built and maintained in LaTeX. This project aims to provide complete, coherent, modular documentation for Ethereum. Topic folders with the file "template.tex" in them are entries that still need to be created. 
+
+When defining formal math operations, prefer pseudocode. Anyone can write pseudocode by imagining whatever process one is trying to describe in terms of operational steps: 
+
+
+*first* do *this*, *then* do *that*.
+
 
 Links to several but not all of the various resources cited can be found in the references directory.
 

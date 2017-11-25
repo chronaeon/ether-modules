@@ -1,9 +1,0 @@
-[2] Config.pm:354> INFO - This is Biber 2.7 (beta)
-[2] Config.pm:357> INFO - Logfile is 'provisional_state.blg'
-[160] biber:303> INFO - === Sun Nov 19, 2017, 22:04:53
-[253] Biber.pm:360> INFO - Reading 'provisional_state.bcf'
-[669] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
-[722] Utils.pm:164> WARN - The file 'provisional_state.bcf' does not contain any citations!
-[743] bbl.pm:608> INFO - Writing 'provisional_state.bbl' with encoding 'latin1'
-[744] bbl.pm:712> INFO - Output to provisional_state.bbl
-[745] Biber.pm:110> INFO - WARNINGS: 1
