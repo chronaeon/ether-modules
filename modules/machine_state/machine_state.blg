@@ -1,0 +1,17 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[2] Config.pm:357> INFO - Logfile is 'machine_state.blg'
+[165] biber:303> INFO - === Sun Nov 19, 2017, 13:29:01
+[249] Biber.pm:360> INFO - Reading 'machine_state.bcf'
+[540] Biber.pm:836> INFO - Found 1 citekeys in bib section 0
+[602] Biber.pm:3671> INFO - Processing section 0
+[681] Biber.pm:3841> INFO - Looking for bibtex format file '~/modules/References.bib' for section 0
+[902] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[918] bibtex.pm:1281> INFO - Found BibTeX data source '/home/mddhattr/modules/References.bib'
+[995] Utils.pm:164> WARN - BibTeX subsystem: /tmp/Zy2w6xR4Uk/References.bib_6621.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[1046] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1046] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1047] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[1047] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[1051] bbl.pm:608> INFO - Writing 'machine_state.bbl' with encoding 'latin1'
+[1055] bbl.pm:712> INFO - Output to machine_state.bbl
+[1056] Biber.pm:110> INFO - WARNINGS: 1

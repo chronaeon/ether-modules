@@ -1,0 +1,46 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	authordate,
+	strict,
+	backend=biber
+]
+{biblatex-chicago}
+\usepackage{mathtools}
+\author{}
+\title{Execution}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{execution}
+\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf} However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. The criteria for intrinsic validity are as follows:
+
+	\begin{enumerate}
+		\item The transaction follows the rules for \textsl{well-formed RLPs} (recursive length prefixes.)
+		\item The \textsl{signature} on the transaction is valid.
+		\item The \textsl{nonce} on the transaction is valid, i.e. it is equivalent to the sender account's current nonce.
+		\item The \texttt{gas\_limit} is greater than or equal to the \texttt{intrinsic\_gas} used by the transaction.
+		\item The sender's account balance contains the cost required in up-front payment.
+	\end{enumerate}
+
+Accordingly, the post-transactional state of Ethereum is expressed thus: 
+
+	\begin{lstlisting}
+	transaction(post.state) = stf(present.state, transaction)  
+	\end{lstlisting}
+
+Information concering the result of a transaction's execution is stored in the \textit{transaction receipt}\footnote{Notation: \texttt{tx\_receipt}}.
+The set of log events which are created through the execution of the transaction, in addition to the bloom filter which contains the actual information from those log events are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gasUsed) are stored in the transaction receipt. Thusly the transaction receipt is a record of any given \texttt{execution}. \par
+
+
+
+\end{document}
+

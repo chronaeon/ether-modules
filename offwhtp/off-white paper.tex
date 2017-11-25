@@ -518,14 +518,14 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 		
 		\begin{verbatim}
 		forall instruction.x
-		if empty_gas = true
-		then signal exceptional_halt
-		elif invalid_instruction = true
-		then signal exceptional_halt
-		elif undersize_stack = true
-		then signal exceptional_halt
-		elif bad_jumpdest = true
-		then signal exceptional_halt
+			if empty_gas = true
+			then signal exceptional_halt
+			elif invalid_instruction = true
+			then signal exceptional_halt
+			elif undersize_stack = true
+			then signal exceptional_halt
+			elif bad_jumpdest = true
+			then signal exceptional_halt
 		else exec instruction.x	
 		then signal controlled_halt
 		\end{verbatim}
@@ -550,7 +550,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 				\paragraph{Description}: A piece of EVM Code that may be associated with an Account or an Autonomous Object. 
 
 			\subsubsection{Opcodes/EVM Assembly}
-		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix B} \\
+		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix A} \\
 
 
 				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{potential\_state}), the state which decides every new \texttt{actual\_state}. 

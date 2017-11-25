@@ -1,0 +1,32 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	authordate,
+	strict,
+	backend=biber
+]
+{biblatex-chicago}
+\usepackage{mathtools}
+\author{}
+\title{Balance}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{bal}
+\paragraph{Description}: The amount of \textbf{Wei} \textsc{owned} by this account. \footnote{This formal notation is $\sigma[a]_b$}
+    \begin{itemize}
+        \item Key/value pair stored inside the root hash. \footnote{$\texttt{\small TRIE}\big(L_I^*(\boldsymbol{\sigma}[a]_\mathbf{s})\big) \equiv \boldsymbol{\sigma}[a]_s$}
+        \item $L_I^*$, is defined as the element-wise transformation of the base function\footnote{$L_I$, given as: $L_I\big( (k, v) \big) \equiv \big(\texttt{\small KEC}(k
+), \texttt{\small RLP}(v)\big)$}
+        \item The \textsl{element-wise transformation of the base-function} refers to all of the key/value pairs in \textit{$L_I$}
+        \item $L_I$ refers to a particular \gls{trie}.
+    \end{itemize}
+\end{document}
+

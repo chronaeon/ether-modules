@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	style=ieee
+]
+{biblatex}
+\usepackage{mathtools}
+\author{}
+\title{Recursive Length Prefix}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{rlp}
+\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
+\par
+
+Positive RLP integers are represented with the most significant value stored at the lowest memory address (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeros it is invalid.\supercite{EF2017}
+\par
+
+The global state database is encoded as RLP for fast traversal and inspection of data. In structure it constitutes a mapping between \textsl{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be traversed speedily and without network delay. RLP encodes values as byte-arrays, or as sequences of further values. \supercite{Wood2017} 
+\par 
+
+This means that:
+\\
+
+\texttt{%
+	\begin{tabular}{ r l c l }
+		if & rlp(x) &  = & bytearray \\
+		then & rlp(bytearray) & = & true \\
+		elif & rlp(x) & = & value \\
+		then & rlp(value) & = & true \\
+		elif & rlp(x) & = & null \\
+		then & rlp(x) & = & false \\
+	\end{tabular}
+}
+\\~\\
+
+\begin{enumerate}
+	\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
+\end{enumerate}
+
+In other words:
+
+
+\printbibliography
+\end{document}
+

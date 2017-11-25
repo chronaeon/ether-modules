@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	   style=ieee
+	   ]
+	   {biblatex}
+\usepackage{mathtools}
+\author{}
+\title{Machine State}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{machine\_state}
+\paragraph{Description}: The machine state is a tuple consisting of five elements:
+
+	\begin{enumerate}
+		\item \texttt{gas\_available}
+		\item \texttt{program\_counter}
+		\item \texttt{memory\_contents} A series of zeroes of size $2^{256}$
+		\item \texttt{memory\_words.count}
+		\item \texttt{stack\_contents}
+	\end{enumerate}
+	
+	There is also, \texttt[to\_execute]: the current operation to be executed
+
+\subsubsection{Exceptional Halting}
+An exceptional halt may be caused by a handful of boolean values:
+
+\begin{verbatim}
+	forall instruction.x
+	if gas_empty = true
+	then signal halt
+	elif instruction.x = fake
+	then signal halt
+	elif stack = terse
+	then signal halt
+	elif jumpdest = bad
+	then signal halt
+	else exec instruction.x
+	
+	forall instruction.y 
+	[...]
+	[...]
+	[...]
+	[...]
+
+	forall instruction.z 
+	[...]
+	[...]
+	[...]
+	[...]
+
+	then signal controlled_halt
+\end{verbatim}
+
+No instruction can, through its execution, cause an exceptional halt. They can only happen if some instruction, for whatever reason, fails to execute.
+
+\begin{itemize}
+	\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
+	\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
+		\begin{itemize}
+		\item	[true] indicating that in the run of computation, an exception was signaled
+		\item	[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
+		\end{itemize}
+\end{itemize}
+
+
+\printbibliography
+\end{document}
+
