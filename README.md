@@ -8,9 +8,9 @@ This project is built and maintained in LaTeX. This project aims to provide comp
 
 When defining formal math operations, prefer pseudocode. Anyone can write pseudocode by imagining whatever process one is trying to describe in terms of operational steps: 
 
-
-*first* do *this*, *then* do *that*.
-
+<pre>
+<i>first</i> do <i>this</i>, <i>then</i> do <i>that</i>.
+</pre>
 
 Links to several but not all of the various resources cited can be found in the references directory.
 
