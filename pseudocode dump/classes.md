@@ -1,9 +1,9 @@
-#Pseudocode Dump
+# Pseudocode Dump
 
 Pseudocodes that express Ethereum's working parts operationally as objects.
 
 
-##Transaction Receipt
+## Transaction Receipt
 ```
 class transactions_receipt
 	group=tuple
@@ -16,7 +16,7 @@ class transactions_receipt
 		}
 ```
 
-###Logs Set
+### Logs Set
 ```
 class logs_set
 	group=set
@@ -30,7 +30,7 @@ class logs_set
 	}
 ```
 
-###Log Entry
+### Log Entry
 ```
 class log_entry
 	group=tuple
@@ -38,12 +38,14 @@ class log_entry
 	members={
 		logger(address)
 		log_topics(series)
-		bytes_data(n)
+		uint(bytes_data)
 		}
 ```
-###Logs Bloom
+### Logs Bloom
 ```
+class logs_bloom
 
+	
 ```
 
 
