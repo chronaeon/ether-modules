@@ -54,22 +54,3 @@ class log_entry
 		uint(bytes_data)
 		}
 ```
-### Logs Bloom
-```
-class logs_bloom
-	group=set
-	size=n+1
-	members{
-		hash log_entry(1)
-		hash log_entry(2)
-		hash log_entry(3)
-		hash log_entry(n)
-		forall(logs_in_set)
-		}
-	
-```
-
-
-
-
-
