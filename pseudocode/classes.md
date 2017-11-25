@@ -11,8 +11,21 @@ class transactions_receipt
 	members={
 		transaction(poststate) 
 		total_gas(used)
-		log_entries
+		logs_set
+			log_entry(n)
+			log_entry(n+1)
 		logs(bloom_filter)
+		}
+```
+
+### Post Transaction State
+ 
+```
+class receipt_state
+	group=mono
+	size=1
+	members={
+		RLP_trie(root)
 		}
 ```
 
@@ -22,12 +35,12 @@ class logs_set
 	group=set
 	size=n+1
 	members={
-	log_entry(1)
-	log_entry(2)
-	log_entry(3)
-	log_entry(n)
-	forall(logs_in_set)
-	}
+		log_entry(1)
+		log_entry(2)
+		log_entry(3)
+		log_entry(n)
+		forall(logs_in_set)
+		}
 ```
 
 ### Log Entry
@@ -44,7 +57,15 @@ class log_entry
 ### Logs Bloom
 ```
 class logs_bloom
-
+	group=set
+	size=n+1
+	members{
+		hash log_entry(1)
+		hash log_entry(2)
+		hash log_entry(3)
+		hash log_entry(n)
+		forall(logs_in_set)
+		}
 	
 ```
 
