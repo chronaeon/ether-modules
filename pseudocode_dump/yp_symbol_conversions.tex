@@ -1,0 +1,34 @@
+\documentclass[9pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	   style=ieee
+	   ]
+	   {biblatex}
+\usepackage[a4paper,width=170mm,top=18mm,bottom=22mm,includeheadfoot]{geometry}
+\usepackage{mathtools}
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+\author{}
+\title{Yellowpaper Pseudocode Equivalents}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+
+\begin{tabular}{rl}
+	\textbf{Yellowpaper Notation} & \textbf{Pseudocode Equivalent} \\
+	$\sigma$ & \texttt{world\_state\footnote{Alternatively, global\_state, or actual\_state.}} \\
+	$\Upsilon$ & \texttt{state\_transition\footnote{Alternatively, state\_transition\_function, or stf}} \\
+	$\mu$ & \texttt{actualizing\_state \footnote{Alternatively, machine\_state.}} \\
+	
+\end{tabular}
+
+\printbibliography
+\end{document}
+
