@@ -176,17 +176,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.3}0x30's: Environmental Information}{12}{subsection.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.4}0x40 to 0x45: Block Data}{13}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.4}0x40's: Block Data}{13}{subsection.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.5}Byte value 0x50's: Stack, memory, storage, and flow operations.}{13}{subsection.A.5}
+\contentsline {subsection}{\numberline {A.5}0x50's: Stack, memory, storage, and flow operations.}{13}{subsection.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.6}0x60 to 0x7f: Push Operations}{14}{subsection.A.6}
+\contentsline {subsection}{\numberline {A.6}0x60-70's: Push Operations}{14}{subsection.A.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.7}0x80 to 0x8f: Duplication Operations}{15}{subsection.A.7}
+\contentsline {subsection}{\numberline {A.7}0x80's: Duplication Operations}{15}{subsection.A.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.8}90s: Swap Operations}{15}{subsection.A.8}
+\contentsline {subsection}{\numberline {A.8}0x90's: Swap Operations}{15}{subsection.A.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.9}0xa0 to 0xa4: Logging Operations}{16}{subsection.A.9}
+\contentsline {subsection}{\numberline {A.9}0xa0's: Logging Operations}{16}{subsection.A.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.10}0xf0's: System Operations}{16}{subsection.A.10}
 \defcounter {refsection}{0}\relax 
