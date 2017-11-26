@@ -22,9 +22,3 @@ When defining formal math operations, prefer pseudocode. Anyone can write pseudo
 </pre>
 
 Links to several but not all of the various resources cited can be found in the references directory.
-
-Support this work: 
-
-ETH: 0xb7F7511e3f69cdD40963ba6cfb996E9c0a3F8b05
-
-BTC: 17aBhPVeTk3o5zKY9kJsBYNpDdCx8YxFkM
