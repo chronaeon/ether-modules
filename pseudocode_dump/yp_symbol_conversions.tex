@@ -18,12 +18,14 @@
 \begin{document}
 \maketitle
 
-\begin{tabular}{|rlll|}
-	\textbf{Yellowpaper Notation} & \textbf{Pseudocode Equivalent 1} & \textbf{Pseudocode Equivalent 2} & \textbf{Pseudocode Equivalent 3} \\
-	$\sigma$ & \texttt{world\_state} & \texttt{global\_state} & \texttt{actual\_state} \\
-	$\Upsilon$ & \texttt{state\_transition} & \texttt{state\_transition\_function} & \texttt{stf} \\
-	$\mu$ & \texttt{actualizing\_state} & \texttt{machine\_state} & \texttt{}  \\
-	
+\begin{tabular}{|cll|}
+	\hline
+	\textbf{YP Notation} & \textbf{YP Verbiage} & \textbf{Pseudocode} \\
+	\hline
+	$\boldsymbol{\sigma}$ & World State & \texttt{actual\_state} \\
+	$\mu$ & Machine State & \texttt{actualizing\_state} \\
+	$\Upsilon$ & State Transition Function & \texttt{state\_actualization\_function} \\
+	\hline
 \end{tabular}
 
 

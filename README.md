@@ -6,7 +6,6 @@ Focuses of this project:
 
 1. To help users build working Ethereum client implementations.
 2. To be accurate to the facts as laid out in the Yellowpaper 
-3. To be accurate to the facts in successful client implementations.
 4. Including all necessary parts, and only those parts.
 
 
