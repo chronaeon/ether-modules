@@ -1,29 +1,3 @@
-\documentclass[9pt,a4paper,oneside]{scrartcl}
-\usepackage[latin1]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{makeidx}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage[
-	   style=ieee
-	   ]
-	   {biblatex}
-\usepackage[a4paper,width=170mm,top=18mm,bottom=22mm,includeheadfoot]{geometry}
-\usepackage{mathtools}
-\usepackage{concmath}
-\usepackage[T1]{fontenc}
-\usepackage{pgf}
-\usepackage{tikz}
-\author{}
-\title{Ethereum Block}
-\date{}
-\addbibresource{~/modules/References.bib}
-\begin{document}
-\maketitle
-\paragraph{Mechanism}: \textsc{block}
-\paragraph{Description}: Contains 16 elements in the block header and $\geq 0$ transactions in the block footer.
 \ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
 \divide\dimen1 by 6864
 \ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
@@ -88,8 +62,3 @@
 \pgftext[base,left,at=\pgfqpointxy{4185}{-3240}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}mix(hash)};
 \pgftext[base,left,at=\pgfqpointxy{4185}{-3435}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}nonce\_hash};
 \endtikzpicture%
-
-
-\printbibliography
-\end{document}
-
