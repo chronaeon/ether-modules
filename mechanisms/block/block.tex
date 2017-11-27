@@ -23,71 +23,85 @@
 \begin{document}
 \maketitle
 \paragraph{Mechanism}: \textsc{block}
-\paragraph{Description}: Contains 16 elements in the block header and $\geq 0$ transactions in the block footer.
+\paragraph{Description}: Contains 16 elements in the block header and $\geq 0$ transactions in the block footer. \\
+
+
+
 \ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
 \divide\dimen1 by 6864
 \ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
-\divide\dimen3 by 4062
+\divide\dimen3 by 4017
 \ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
   \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
 \tikzpicture[x=+\dimen1, y=+\dimen3]
 {\ifx\XFigu\undefined\catcode`\@11
 \def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
 \XFigu4143sp
+
 % Uncomment to scale line thicknesses with the same
 % factor as width of the drawing.
 %\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
 \ifdim\XFigu<0pt\XFigu-\XFigu\fi
-\definecolor{xfigc32}{rgb}{0.776,0.718,0.592}
-\definecolor{xfigc33}{rgb}{0.937,0.973,1.000}
-\definecolor{xfigc34}{rgb}{0.863,0.796,0.651}
+\definecolor{xfigc32}{rgb}{0.773,0.714,0.588}
+\definecolor{xfigc33}{rgb}{0.933,0.969,0.996}
+\definecolor{xfigc34}{rgb}{0.859,0.792,0.647}
 \definecolor{xfigc35}{rgb}{0.251,0.251,0.251}
 \definecolor{xfigc36}{rgb}{0.502,0.502,0.502}
-\definecolor{xfigc37}{rgb}{0.753,0.753,0.753}
-\definecolor{xfigc38}{rgb}{0.878,0.878,0.878}
-\definecolor{xfigc39}{rgb}{0.557,0.561,0.557}
-\definecolor{xfigc40}{rgb}{0.667,0.667,0.667}
+\definecolor{xfigc37}{rgb}{0.749,0.749,0.749}
+\definecolor{xfigc38}{rgb}{0.875,0.875,0.875}
+\definecolor{xfigc39}{rgb}{0.553,0.557,0.553}
+\definecolor{xfigc40}{rgb}{0.663,0.663,0.663}
 \definecolor{xfigc41}{rgb}{0.333,0.333,0.333}
-\definecolor{xfigc42}{rgb}{0.780,0.765,0.780}
+\definecolor{xfigc42}{rgb}{0.776,0.761,0.776}
 \definecolor{xfigc43}{rgb}{0.337,0.318,0.318}
-\definecolor{xfigc44}{rgb}{0.557,0.557,0.557}
-\definecolor{xfigc45}{rgb}{0.843,0.843,0.843}
-\definecolor{xfigc46}{rgb}{0.522,0.502,0.490}
-\definecolor{xfigc47}{rgb}{0.824,0.824,0.824}
+\definecolor{xfigc44}{rgb}{0.553,0.553,0.553}
+\definecolor{xfigc45}{rgb}{0.839,0.839,0.839}
+\definecolor{xfigc46}{rgb}{0.518,0.502,0.490}
+\definecolor{xfigc47}{rgb}{0.820,0.820,0.820}
 \definecolor{xfigc48}{rgb}{0.227,0.227,0.227}
-\definecolor{xfigc49}{rgb}{0.271,0.451,0.667}
-\definecolor{xfigc50}{rgb}{0.682,0.682,0.682}
-\definecolor{xfigc51}{rgb}{0.482,0.475,0.647}
+\definecolor{xfigc49}{rgb}{0.271,0.451,0.663}
+\definecolor{xfigc50}{rgb}{0.678,0.678,0.678}
+\definecolor{xfigc51}{rgb}{0.482,0.475,0.643}
 \definecolor{xfigc52}{rgb}{0.267,0.267,0.267}
-\definecolor{xfigc53}{rgb}{0.451,0.459,0.549}
-\definecolor{xfigc54}{rgb}{0.969,0.969,0.969}
+\definecolor{xfigc53}{rgb}{0.451,0.459,0.545}
+\definecolor{xfigc54}{rgb}{0.965,0.965,0.965}
 \definecolor{xfigc55}{rgb}{0.255,0.271,0.255}
-\definecolor{xfigc56}{rgb}{0.388,0.365,0.808}
-\definecolor{xfigc57}{rgb}{0.745,0.745,0.745}
+\definecolor{xfigc56}{rgb}{0.388,0.365,0.804}
+\definecolor{xfigc57}{rgb}{0.741,0.741,0.741}
 \definecolor{xfigc58}{rgb}{0.318,0.318,0.318}
-\definecolor{xfigc59}{rgb}{0.906,0.890,0.906}
+\definecolor{xfigc59}{rgb}{0.902,0.886,0.902}
 \definecolor{xfigc60}{rgb}{0.000,0.000,0.286}
 \definecolor{xfigc61}{rgb}{0.475,0.475,0.475}
 \definecolor{xfigc62}{rgb}{0.188,0.204,0.188}
 \definecolor{xfigc63}{rgb}{0.255,0.255,0.255}
-\definecolor{xfigc64}{rgb}{0.780,0.714,0.588}
-\clip(3948,-5682) rectangle (10812,-1620);
+\definecolor{xfigc64}{rgb}{0.776,0.710,0.584}
+\clip(3948,-5637) rectangle (10812,-1620);
 \tikzset{inner sep=+0pt, outer sep=+0pt}
 \pgfsetlinewidth{+7.5\XFigu}
+\draw (3960,-1845) rectangle (10800,-5625);
 \draw (3960,-3645)--(10800,-3645);
-\draw (3960,-1890) rectangle (10800,-5670);
-\pgftext[base,left,at=\pgfqpointxy{6615}{-3915}] {\fontsize{14}{16.8}\usefont{T1}{pcr}{b}{n}BLOCK FOOTER};
 \pgftext[base,left,at=\pgfqpointxy{6615}{-2115}] {\fontsize{14}{16.8}\usefont{T1}{pcr}{b}{n}BLOCK HEADER};
-\pgftext[base,left,at=\pgfqpointxy{5805}{-1800}] {\fontsize{18}{21.6}\usefont{T1}{pcr}{b}{n}ACTUALIZED BLOCK};
-\pgftext[base,left,at=\pgfqpointxy{4140}{-2115}] {\fontsize{15}{18}\usefont{T1}{pcr}{m}{n}8 Hashes:};
-\pgftext[base,left,at=\pgfqpointxy{4140}{-2610}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}sibling\_block(hash)};
-\pgftext[base,left,at=\pgfqpointxy{4140}{-2385}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}progenitor\_block(hash)};
-\pgftext[base,left,at=\pgfqpointxy{4185}{-2790}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}presentstate\_root(hash)};
-\pgftext[base,left,at=\pgfqpointxy{4185}{-2985}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}priorstate\_root(hash)};
-\pgftext[base,left,at=\pgfqpointxy{4185}{-3105}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}receipts\_root(hash)};
-\pgftext[base,left,at=\pgfqpointxy{4185}{-3240}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}mix(hash)};
-\pgftext[base,left,at=\pgfqpointxy{4185}{-3435}] {\fontsize{11}{13.2}\usefont{T1}{pcr}{m}{n}nonce\_hash};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-2475}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}siblings\_list(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-2295}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}progenitor\_block(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-2655}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}presentstate\_root(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-2835}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}priorstate\_root(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-3015}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}receipts\_root(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-3195}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}mix(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-3555}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}winner\_address(hash)};
+\pgftext[base,left,at=\pgfqpointxy{4050}{-3375}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}nonce(hash)};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-2295}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}bloom\_filter};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-2775}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}gas\_limit};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-2970}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}gas\_used};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-3165}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}timestamp};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-3360}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}extra\_data};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-3555}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}sibling\_headers};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-2475}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}difficulty};
+\pgftext[base,left,at=\pgfqpointxy{7830}{-2610}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}block\_number};
+\pgftext[base,left,at=\pgfqpointxy{6165}{-1800}] {\fontsize{18}{21.6}\usefont{T1}{pcr}{b}{n}ACTUALIZED BLOCK};
+\pgftext[base,left,at=\pgfqpointxy{6165}{-3915}] {\fontsize{14}{16.8}\usefont{T1}{pcr}{b}{n}TRANSACTION LIST};
+\pgftext[base,left,at=\pgfqpointxy{4095}{-4140}] {\fontsize{12}{14.4}\usefont{T1}{pcr}{m}{n}f};
 \endtikzpicture%
+
 
 
 \printbibliography
