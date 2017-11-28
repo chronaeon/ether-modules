@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  27 NOV 2017 05:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.24)  28 NOV 2017 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1065,34 +1065,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-\XFigu=\dimen192
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 83.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+\du=\skip76
 
-
-LaTeX Warning: Empty bibliography on input line 107.
+LaTeX Warning: Empty bibliography on input line 340.
 
 [1
 
@@ -1103,26 +1078,23 @@ Package logreq Info: Writing requests to 'block.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22128 strings out of 492990
- 422883 string characters out of 6135004
- 906354 words of memory out of 5000000
- 25283 multiletter control sequences out of 15000+600000
- 17976 words of font info for 54 fonts, out of 8000000 for 9000
+ 22073 strings out of 492990
+ 422256 string characters out of 6135004
+ 913355 words of memory out of 5000000
+ 25237 multiletter control sequences out of 15000+600000
+ 16113 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,58p,8845b,702s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/micah/.tex
-live2017/texmf-var/fonts/pk/ljfour/public/concrete/ccr9.600pk> </home/micah/.te
-xlive2017/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy9.600pk>{/usr/sh
-are/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type
-1/public/cm-super/sfocc10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfo
-rm9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/courier/ucrr8a.pfb>
-Output written on block.pdf (1 page, 72158 bytes).
+ </home/micah/.texlive2017/texmf-var/fonts/pk/ljfour/public/concrete/ccr9.600
+pk> </home/micah/.texlive2017/texmf-var/fonts/pk/ljfour/public/concmath-fonts/x
+ccsy9.600pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/sh
+are/texmf/fonts/type1/public/cm-super/sfocc10.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0
+900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on block.pdf (1 page, 59334 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
