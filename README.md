@@ -4,7 +4,7 @@ Complete, coherent, and modular documentation for Ethereum.
 
 This project is built and maintained primarily in LaTeX. Folders in the modules/ directory that contain the file "template.tex" represent topical entries which have not yet been written. 
 
-## Focuses of this project
+##### Focuses of this project:
 
 1. To help users build working Ethereum client implementations.
 2. To include all necessary facts, and only those facts.
@@ -15,7 +15,7 @@ In the "modules" directory, you'll find single LaTeX articles covering various t
 
 A partially complete version of a revised Yellowpaper is being constructed in: offwhtp/off-whitepaper.pdf
 
-### Pseudocode
+##### Pseudocode
 
 When defining formal math operations, prefer pseudocode. Anyone can write pseudocode by imagining whatever process one is trying to describe in terms of operational steps: 
 
