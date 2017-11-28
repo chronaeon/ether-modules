@@ -2,6 +2,8 @@
 
 Complete, coherent, and modular documentation for Ethereum. 
 
+This project is built and maintained primarily in LaTeX. Folders in the modules/ directory that contain the file "template.tex" represent topical entries which have not yet been written. 
+
 Focuses of this project:
 
 1. To help users build working Ethereum client implementations.
@@ -10,8 +12,6 @@ Focuses of this project:
 4. To re-word, re-phrase, or re-identify concepts and terms which are not intuitively clear, to make them intuitively clear.
 
 In the "modules" directory, you'll find single LaTeX articles covering various topics that are both *intrinsic*, and conceptually *centripetal*, to understanding the technical details which undergird Ethereum. 
-
-This project is built and maintained primarily in LaTeX. Folders in the modules/ directory that contain the file "template.tex" represent topical entries which have not yet been written. 
 
 A partially complete version of a revised Yellowpaper is being constructed in: offwhtp/off-whitepaper.pdf
 
