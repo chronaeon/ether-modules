@@ -7,8 +7,6 @@ Focuses of this project:
 1. To help users build working Ethereum client implementations.
 2. To include all necessary facts, and only those facts.
 
-
-
 In the "modules" directory, you'll find single LaTeX articles covering various topics that are both *intrinsic*, and conceptually *centripetal*, to understanding the technical details which undergird Ethereum. 
 
 This project is built and maintained primarily in LaTeX, aiming to provide complete, coherent, and modular technical documentation for Ethereum. Topic folders with the file "template.tex" in them are entries that still need to be created. 
