@@ -1,0 +1,43 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 7044
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 7654
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=1491sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu1491sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\definecolor{xfigc32}{rgb}{0.000,0.000,0.000}
+\definecolor{xfigc33}{rgb}{0.996,0.996,0.996}
+\clip(9478,-11406) rectangle (16522,-3752);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+30\XFigu}
+\pgfsetdash{}{+0pt}
+\pgfsetstrokecolor{xfigc32}
+\pgfsetfillcolor{xfigc33}
+\filldraw (9511,-4440)--(16220,-4440)--(16220,-11373)--(9511,-11373)--cycle;
+\pgfsetfillcolor{xfigc32}
+\pgftext[base,left,at=\pgfqpointxy{11374}{-4172}] {\fontsize{12}{14.4}\usefont{T1}{phv}{m}{n}Block Header:};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-4928}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 1. progenitor_block  hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-5306}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 2. siblings          hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-5684}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 3. presentstate_root hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-6062}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 4. priorstate_root   hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-6440}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 5. receipts_root     hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-6818}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 6. mix               hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-7196}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 7. nonce             hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-7574}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 8. winner            hash};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-7952}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n} 9. bloom_filter      logs};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-8330}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}10. block_difficulty  value};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-8708}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}11. block_number      value};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-9086}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}12. gaslimit          value};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-9464}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}13. gasused           value};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-9842}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}14. timestamp         value};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-10220}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}15. extradata         value};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-10598}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}       - - - - - - -};
+\pgftext[base,left,at=\pgfqpointxy{9862}{-10975}] {\fontsize{8}{9.6}\usefont{T1}{pcr}{m}{n}16. sibling_header(s) #1-15};
+\endtikzpicture%
