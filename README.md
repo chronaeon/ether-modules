@@ -2,7 +2,7 @@
 
 Complete, coherent, and modular documentation for Ethereum. This project is built and maintained in LaTeX. A module is a chunk of technical documentation that is larger than a sentence but smaller than a chapter, and which (being neutral in regard to content) can be put into a backend database and reproduced in any number of frontend applications.
 
-In the modules/ directory, you'll find single LaTeX articles covering various topics that are both *intrinsic*, and conceptually *centripetal*, to understanding the technical details which undergird Ethereum. Folders in the modules/ directory that contain the file "template.tex" represent topical entries which have not yet been written.
+All modules are in the modules/ directory. Directories containing the file "template.tex" represent entries that still need to be written.
 
 ##### Focuses of this project:
 
