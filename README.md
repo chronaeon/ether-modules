@@ -8,7 +8,7 @@ The Modules directory contains sectionally complete and descriptively precise *c
 
 ##### Revised Yellowpaper
 
-A shorter and more concise Ethereum specification functions as a companion piece to this website. This is being constructed, modified, and maintained in the directory "off-whitepaper". 
+A shorter and more concise Ethereum specification functions as a companion piece to this website. This is written and maintained in the directory "off-whitepaper". 
 
 ##### Pseudocode
 
