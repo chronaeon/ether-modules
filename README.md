@@ -1,14 +1,16 @@
 # Ethereology
 
-This project is built and maintained in LaTeX, XML (RDF, OWL), and HTML. It uses frontend and backend technologies to create a seamless environment between which anyone can explore, use, and understand Ethereum. It is composed of three separate parts that all work in complementary relationships to each other. sections utilizes APIs from [Etherscan](https://www.etherscan.io/apis) to track specific instances as examples.
+This project is built and maintained in LaTeX, XML (RDF, OWL), and HTML. It uses frontend and backend technologies to create a seamless environment between which anyone can explore, use, and understand Ethereum. It is composed of three separate parts that all work in complementary relationships to each other. Some sections of the Ontology utilize APIs from [Etherscan](https://www.etherscan.io/apis) to track specific instances as examples.
 
 ## Modules
 
-Modules represent sectionally complete, linguistically coherent, and descriptively precise documentation for Ethereum. A module is a chunk of technical writing that is larger than a sentence but smaller than a chapter, and which (being neutral in regard to content) can be put into a backend database and reproduced in any number of frontend applications.
+The Modules directory contains sectionally complete and descriptively precise *chunks* of documentation; these chunks are larger than sentences, smaller than chapters, and non-preferential in regards to content. They are stored in the "modules" directory as XML data; the underlying directory tree follows the RDF/OWL schema.
 
-All modules are stored in the modules/ directory using XML formatting. They are reproduced on the main site Directories containing the file "template.tex" represent entries that still need to be written.
+## Revised Yellowpaper
 
-### Pseudocode
+There is need for a shorter and more concise Ethereum specification as a companion piece to this website. This is being written, modified, and maintained in the directory "off-whitepaper." 
+
+##### Pseudocode
 
 When defining formal math operations, e.g. those from the Yellowpaper, prefer pseudocode. Anyone can write pseudocode by imagining whatever process one is trying to describe in terms of operational steps: 
 
@@ -16,10 +18,6 @@ When defining formal math operations, e.g. those from the Yellowpaper, prefer ps
 <i>first</i> do <i>this</i>
 <i>then</i> do <i>that</i>
 </pre>
-
-## Revised Yellowpaper
-
-There is need for a shorter and more concise Ethereum specification as a companion piece to this website. This is being written, modified, and maintained in the directory "off-whitepaper." 
 
 ## Ontology
 
