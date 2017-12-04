@@ -22,14 +22,37 @@
 \paragraph{Notation}: $\mathbb{B}$
 \paragraph{Description}: A block is made up of 17 different elements, all of which play a unique role in the Blockchain. The first 15 elements that make up the block are part of what is called the \textsl{block header}. 
 
-\begin{enumerate}
-	\item \textbf{Parent Hash}: The hash of the parent block's header: given in Keccak-256.
-	\item \textbf{Ommers Hash}: The hash of the \textsl{Ommers List} portion of this block: given in Keccak-256.
-	\item \textbf{Beneficiary}: The 20-character (160-bit) hash to which block rewards are transferred when the block is successfully mined.
-	\item \textbf{State Root}: The Keccak-256 bit hash of the root node of the state. 
+  \subsubsection{The Block}
+                                A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
 
 
-\end{enumerate}
+                                \subsubsection{Block Header}
+                                \paragraph{Notation}: \texttt{header}
+                                \paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
+
+                                \begin{enumerate}
+                                        \item \textbf{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
+                                        \item \textbf{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
+                                        \item \textbf{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
+                                        \item \textbf{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
+                                        \item \textbf{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
+                                        \item \textbf{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
+                                        \item \textbf{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
+                                        \item \textbf{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
+                                        \item \textbf{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
+                                        \item \textbf{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
+                                        \item \textbf{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
+                                        \item \textbf{Timestamp} -- This is a record of Unix's time at this block's inception.
+                                        \item \textbf{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
+                                        \item \textbf{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
+                                        \item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
+                                        \item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
+
+                                        \subsubsection{Block Footer}
+                                        \item \textbf{Transaction Series} -- This is the only non-header content in the block.
+                                \end{enumerate}
+                                                                                                                                     278,1-8       35%
+
 
 \end{document}
 

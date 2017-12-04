@@ -1,18 +1,18 @@
 # Ethereology
 
-This project is built and maintained in LaTeX, XML (using RDF and OWL), and HTML. It traces the order of mechanism operations in Ethereum with complete documentation, and in minute detail. Some sections of the Ontology utilize APIs from [Etherscan](https://www.etherscan.io/apis) to track specific instances as examples.
+This project is built and maintained in LaTeX, XML (using RDF and OWL), and HTML. 
 
 ##### Modules
 
-The Modules directory contains sectionally complete and descriptively precise *chunks* of documentation; these chunks are larger than sentences, smaller than chapters, and non-preferential in regards to content. They are stored in the "modules" directory as XML data; the underlying directory tree follows the RDF/OWL schema.
+The Modules directory contains sectionally complete and descriptively precise *chunks* of documentation; these chunks are larger than sentences, smaller than chapters, and not subject to a particular ordering of the content.
 
 ##### Revised Yellowpaper
 
-A shorter and more concise Ethereum specification functions as a companion piece to this website. This is written and maintained in the directory "off-whitepaper". 
+A shorter and more concise Ethereum specification functions as a companion piece to the ontology.
 
 ##### Pseudocode
 
-When defining formal math operations, e.g. those from the Yellowpaper, prefer pseudocode. You can write pseudocode by imagining whatever process you're trying to describe in terms of operational steps: 
+When defining formal math operations, e.g. those from the Yellowpaper, we use pseudocode. Anyone can write pseudocode by imagining whatever process you're trying to describe in terms of operational steps: 
 
 <pre>
 <i>first</i> do <i>this</i>
