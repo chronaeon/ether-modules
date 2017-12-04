@@ -1,6 +1,6 @@
 # Ethereology
 
-This project is built and maintained in LaTeX, XML (RDF, OWL), and HTML. It uses frontend and backend technologies to create a seamless environment between which anyone can explore, use, and understand Ethereum. It is composed of three separate parts that all work in complementary relationships to each other. Some sections of the Ontology utilize APIs from [Etherscan](https://www.etherscan.io/apis) to track specific instances as examples.
+This project is built and maintained in LaTeX, XML (using RDF and OWL), and HTML. It traces the order of mechanism operations in Ethereum with complete documentation, and in minute detail. Some sections of the Ontology utilize APIs from [Etherscan](https://www.etherscan.io/apis) to track specific instances as examples.
 
 ##### Modules
 
@@ -8,11 +8,11 @@ The Modules directory contains sectionally complete and descriptively precise *c
 
 ##### Revised Yellowpaper
 
-There is need for a shorter and more concise Ethereum specification as a companion piece to this website. This is being written, modified, and maintained in the directory "off-whitepaper." 
+A shorter and more concise Ethereum specification functions as a companion piece to this website. This is being constructed, modified, and maintained in the directory "off-whitepaper". 
 
 ##### Pseudocode
 
-When defining formal math operations, e.g. those from the Yellowpaper, prefer pseudocode. Anyone can write pseudocode by imagining whatever process one is trying to describe in terms of operational steps: 
+When defining formal math operations, e.g. those from the Yellowpaper, prefer pseudocode. You can write pseudocode by imagining whatever process you're trying to describe in terms of operational steps: 
 
 <pre>
 <i>first</i> do <i>this</i>
@@ -21,13 +21,14 @@ When defining formal math operations, e.g. those from the Yellowpaper, prefer ps
 
 ##### Ontology
 
-For those who want to go *very* deep in their understanding of Ethereum, of its various parts, and of how they relate to the whole, a key component is the Ontology, which classifies the data stored in each module in logical relation to its component and exponent parts.
+The Ontology classifies the data stored in each module in logical relation to its component and exponent parts.
 
 ##### Project Goals:
 
-1. To help Ethereum developers build increasingly efficient and robust client implementations.
-2. To include all necessary facts about Ethereum, and only those facts which are necessary for describing it.
-3. To re-word, re-phrase, and/or re-identify concepts and terms which are not necessarily intuitively clear, to make them more intuitively clear.
+1. Build documentation that is broad enough to be helpful to all readers.
+2. Build documentation that is deep enough to be a utility for all developers.
+3. Build documentation that covers all necessary facts, and only those facts.
+3. Build documentation that fosters global, systematic, and intuitive clarity about Ethereum.
 
 ##### Further Resources
 
