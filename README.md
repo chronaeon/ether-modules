@@ -4,7 +4,7 @@ This project is built and maintained in LaTeX, XML (using RDF and OWL), and HTML
 
 ##### Modules
 
-The Modules directory contains sectionally complete and descriptively precise *chunks* of documentation; these chunks are larger than sentences, smaller than chapters, and not subject to a particular ordering of the content.
+The Modules directory contains sectionally complete and descriptively precise *chunks* of documentation; these chunks are larger than sentences, smaller than chapters, and not subject to a particular ordering of the content, so they can be placed anywhere and used as source documentation. 
 
 ##### Revised Yellowpaper
 
