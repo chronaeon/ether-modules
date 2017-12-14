@@ -1,0 +1,31 @@
+\documentclass[9pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[
+	   style=ieee
+	   ]
+	   {biblatex}
+\usepackage[a4paper,width=170mm,top=18mm,bottom=22mm,includeheadfoot]{geometry}
+\usepackage{mathtools}
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+\author{}
+\title{Keccak 256 Hash}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\paragraph{Notation}: \texttt{K256}
+\paragraph{Description}: A cryptographic hashing function which outputs a unique singleton 256-bit (64-byte) string of HEX UTF-8 characters for an arbitrary input.
+\paragraph{Example}: Here is the SHA-256 hash for the string 'smart cookie'.
+	\texttt{15bbecab56663c3f6327e1da775badf40c2a19abaf306bff97d7641bb61d951f}
+
+
+\printbibliography
+\end{document}
+
