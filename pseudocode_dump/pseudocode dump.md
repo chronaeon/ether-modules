@@ -57,5 +57,9 @@ class log_entry
 
 ### Exceptional Halting
 ```
+if ( empty_gas or invalid_instruction or undersize_stack or oversize_stack or bad_jumpdest) 
+	then signal exceptional_halt
+else exec instruction.x 
+	then signal controlled_halt
 
 ```
