@@ -54,3 +54,8 @@ class log_entry
 		uint(bytes_data)
 		}
 ```
+
+### Exceptional Halting
+```
+
+```
