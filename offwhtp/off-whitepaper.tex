@@ -517,17 +517,11 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 		An exceptional halt may be caused by a handful of boolean values:
 		
 		\begin{verbatim}
-		forall instruction.x
-			if empty_gas = true
+		if ( empty_gas or invalid_instruction or undersize_stack or oversize_stack or bad_jumpdest) 
 			then signal exceptional_halt
-			elif invalid_instruction = true
-			then signal exceptional_halt
-			elif undersize_stack = true
-			then signal exceptional_halt
-			elif bad_jumpdest = true
-			then signal exceptional_halt
-		else exec instruction.x	
-		then signal controlled_halt
+		else exec instruction.x 
+			then signal controlled_halt
+
 		\end{verbatim}
 		
 		No instruction can, through its execution, cause an exceptional halt. They can only happen if some instruction, for whatever reason, fails to execute.
