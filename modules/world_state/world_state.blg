@@ -1,0 +1,9 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[2] Config.pm:357> INFO - Logfile is 'world_state.blg'
+[140] biber:303> INFO - === Sat Dec 23, 2017, 09:48:50
+[216] Biber.pm:360> INFO - Reading 'world_state.bcf'
+[475] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[521] Utils.pm:164> WARN - The file 'world_state.bcf' does not contain any citations!
+[541] bbl.pm:608> INFO - Writing 'world_state.bbl' with encoding 'latin1'
+[542] bbl.pm:712> INFO - Output to world_state.bbl
+[542] Biber.pm:110> INFO - WARNINGS: 1
