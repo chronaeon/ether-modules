@@ -1,0 +1,9 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'storage_state.blg'
+[146] biber:303> INFO - === Sat Dec 23, 2017, 05:19:04
+[221] Biber.pm:360> INFO - Reading 'storage_state.bcf'
+[497] Biber.pm:836> INFO - Found 0 citekeys in bib section 0
+[542] Utils.pm:164> WARN - The file 'storage_state.bcf' does not contain any citations!
+[571] bbl.pm:608> INFO - Writing 'storage_state.bbl' with encoding 'latin1'
+[571] bbl.pm:712> INFO - Output to storage_state.bbl
+[572] Biber.pm:110> INFO - WARNINGS: 1
