@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>trie.bcf</file>
+      <file>tree.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>trie.bbl</file>
+      <file>tree.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,19 +67,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>trie</infile>
+      <infile>tree</infile>
     </cmdline>
     <input>
-      <file>trie.bcf</file>
+      <file>tree.bcf</file>
     </input>
     <output>
-      <file>trie.bbl</file>
+      <file>tree.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>trie.bbl</file>
+      <file>tree.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>trie.bcf</file>
+      <file>tree.bcf</file>
     </requires>
     <requires type="editable">
       <file>~/modules/References.bib</file>
