@@ -15,3 +15,10 @@ When defining formal math operations, prefer pseudocode. Anyone can write pseudo
 
 Links to several but not all of the various resources cited can be found in the references directory.
 
+### What determines a topic's deserving a module?
+
+It needs to:
+
+1. Be mentioned in the Yellowpaper
+2. Not fall better under a different 1.5 to 2-page module.
+
