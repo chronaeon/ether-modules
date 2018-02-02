@@ -13,14 +13,18 @@
 ]
 {biblatex-chicago}
 \usepackage{mathtools}
+\usepackage{paracol}
 \author{}
 \title{Big Endian Function}
 \date{}
 \addbibresource{~/modules/References.bib}
 \begin{document}
 \maketitle
-\paragraph{Notation}: \texttt{big\_endian}
-\paragraph{Description}: This function expands a positive-integer value to a big-endian byte array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation. The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
 
+\begin{paracol}{3}
+
+\paragraph{Notation}: \texttt{big\_endian}
+	\paragraph{Description}: This function expands a positive-integer value to a big-endian byte  array of minimal length. \switchcolumn When accompanied by a $\cdot$ operator, it signals sequence concatenation. \switchcolumn The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
+\end{paracol}
 \end{document}
 

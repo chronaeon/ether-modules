@@ -274,10 +274,11 @@
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
-      <bcf:value order="1" type="field">eventyear</bcf:value>
-      <bcf:value order="2" type="field">origyear</bcf:value>
-      <bcf:value order="3" type="field">year</bcf:value>
-      <bcf:value order="4" type="field">urlyear</bcf:value>
+      <bcf:value order="1" type="field">eventdate</bcf:value>
+      <bcf:value order="2" type="field">origdate</bcf:value>
+      <bcf:value order="3" type="field">date</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="field">urldate</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxalphanames</bcf:key>
@@ -465,10 +466,11 @@
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
-      <bcf:value order="1" type="field">eventyear</bcf:value>
-      <bcf:value order="2" type="field">origyear</bcf:value>
-      <bcf:value order="3" type="field">year</bcf:value>
-      <bcf:value order="4" type="field">urlyear</bcf:value>
+      <bcf:value order="1" type="field">eventdate</bcf:value>
+      <bcf:value order="2" type="field">origdate</bcf:value>
+      <bcf:value order="3" type="field">date</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="field">urldate</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxalphanames</bcf:key>
@@ -656,10 +658,11 @@
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
-      <bcf:value order="1" type="field">eventyear</bcf:value>
-      <bcf:value order="2" type="field">origyear</bcf:value>
-      <bcf:value order="3" type="field">year</bcf:value>
-      <bcf:value order="4" type="field">urlyear</bcf:value>
+      <bcf:value order="1" type="field">eventdate</bcf:value>
+      <bcf:value order="2" type="field">origdate</bcf:value>
+      <bcf:value order="3" type="field">date</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="field">urldate</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxalphanames</bcf:key>
@@ -847,10 +850,11 @@
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
-      <bcf:value order="1" type="field">eventyear</bcf:value>
-      <bcf:value order="2" type="field">origyear</bcf:value>
-      <bcf:value order="3" type="field">year</bcf:value>
-      <bcf:value order="4" type="field">urlyear</bcf:value>
+      <bcf:value order="1" type="field">eventdate</bcf:value>
+      <bcf:value order="2" type="field">origdate</bcf:value>
+      <bcf:value order="3" type="field">date</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="field">urldate</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxalphanames</bcf:key>
@@ -1148,6 +1152,7 @@
     <bcf:option datatype="boolean">booklongxref</bcf:option>
     <bcf:option datatype="boolean">xrefurl</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
+    <bcf:option datatype="boolean">ordinalgb</bcf:option>
     <bcf:option datatype="boolean">isbn</bcf:option>
     <bcf:option datatype="boolean">url</bcf:option>
     <bcf:option datatype="boolean">doi</bcf:option>
